@@ -180,8 +180,7 @@
       new google.translate.TranslateElement({
         pageLanguage: 'en',
         includedLanguages: 'es',
-        autoDisplay: false,
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        autoDisplay: false
       }, 'google_translate_element');
     }
 
@@ -190,30 +189,31 @@
       var isSpanish = btn.classList.contains('active');
 
       if (isSpanish) {
-        // Revert to English
-        var frame = document.querySelector('.goog-te-banner-frame');
-        if (frame) {
-          var innerDoc = frame.contentDocument || frame.contentWindow.document;
-          var restore = innerDoc.querySelector('.goog-close-link');
-          if (restore) restore.click();
-        }
-        // Fallback: clear the cookie
+        // Revert to English — clear cookies and reload
         document.cookie = 'googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC';
-        document.cookie = 'googtrans=; path=/; domain=.' + location.hostname + '; expires=Thu, 01 Jan 1970 00:00:00 UTC';
+        document.cookie = 'googtrans=; path=/; domain=' + location.hostname + '; expires=Thu, 01 Jan 1970 00:00:00 UTC';
+        document.cookie = 'googtrans=; path=/; domain=.github.io; expires=Thu, 01 Jan 1970 00:00:00 UTC';
         btn.classList.remove('active');
         btn.textContent = 'Español';
         btn.setAttribute('aria-label', 'Translate to Spanish');
         location.reload();
       } else {
-        // Translate to Spanish
-        var select = document.querySelector('#google_translate_element select');
-        if (select) {
-          select.value = 'es';
-          select.dispatchEvent(new Event('change'));
-          btn.classList.add('active');
-          btn.textContent = 'English';
-          btn.setAttribute('aria-label', 'Translate to English');
+        // Translate to Spanish — find and trigger the select
+        var attempts = 0;
+        function tryTranslate() {
+          var select = document.querySelector('#google_translate_element select');
+          if (select) {
+            select.value = 'es';
+            select.dispatchEvent(new Event('change'));
+            btn.classList.add('active');
+            btn.textContent = 'English';
+            btn.setAttribute('aria-label', 'Translate to English');
+          } else if (attempts < 20) {
+            attempts++;
+            setTimeout(tryTranslate, 200);
+          }
         }
+        tryTranslate();
       }
     });
   </script>
