@@ -37,7 +37,11 @@
       target: '.school-tile',
       title: 'School Colors & Identity',
       body: 'Each tile is tinted with the school\'s actual colors, scraped from their Thrillshare site. When tapped, the tile fills with the school color. Small detail, big identity signal — parents see their school represented.',
-      research: 'Design decision: Reinforces that each school has its own identity within the district. Parents associate with their school, not "EUSD."'
+      research: 'Design decision: Reinforces that each school has its own identity within the district. Parents associate with their school, not "EUSD."',
+      action: function () {
+        var elemTab = document.querySelector('.school-type-tab');
+        if (elemTab && elemTab.getAttribute('aria-expanded') !== 'true') elemTab.click();
+      }
     },
     {
       target: null,
