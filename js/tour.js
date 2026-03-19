@@ -28,6 +28,16 @@
       research: 'New families don\'t know the difference between the district and their school. This gives them one clear path instead of 23 school websites and a district site.'
     },
     {
+      target: '#findByAddressBtn',
+      title: 'School Locator — Built In',
+      body: 'Don\'t know your school? The "Find by address" button opens the EUSD School Site Locator right here on the page — no navigation away. Parents enter their address and instantly see which school their child is assigned to.',
+      research: 'Research: A drop-down menu with links to all schools and a boundary tool are among the most requested features on district homepages. <strong>— Edlio, Morweb</strong>',
+      action: function () {
+        var btn = document.getElementById('findByAddressBtn');
+        if (btn && btn.getAttribute('aria-expanded') !== 'true') btn.click();
+      }
+    },
+    {
       target: '.school-type-tabs',
       title: 'Find Your School',
       body: 'Collapsed by type (Elementary, Intermediate, Middle, Specialty) to save space. Each school tile expands inline showing principal, phone, address, bell schedule, staff directory, and quick links — all without leaving the page.',
@@ -76,16 +86,6 @@
             if (staffBtn && staffBtn.getAttribute('aria-expanded') !== 'true') staffBtn.click();
           }, 600);
         }, 500);
-      }
-    },
-    {
-      target: '#findByAddressBtn',
-      title: 'School Locator — Built In',
-      body: 'Don\'t know your school? The "Find by address" button opens the EUSD School Site Locator right here on the page — no navigation away. Parents enter their address and instantly see which school their child is assigned to.',
-      research: 'Research: A drop-down menu with links to all schools and a boundary tool are among the most requested features on district homepages. <strong>— Edlio, Morweb</strong>',
-      action: function () {
-        var btn = document.getElementById('findByAddressBtn');
-        if (btn && btn.getAttribute('aria-expanded') !== 'true') btn.click();
       }
     },
     {
