@@ -104,13 +104,14 @@
       research: 'Research: Parents are overwhelmed by too many platforms and want a single, user-friendly solution. Only 2% prefer social media for school communication. <strong>— SchoolStatus National Survey, SchoolCEO</strong>'
     },
     {
-      target: null,
+      target: '#langToggle',
       title: 'Spanish Translation',
-      body: 'The "Español" button in the top bar provides one-tap translation via Google Translate, with notranslate protection on proper nouns (school names, PowerSchool, EUSD, etc.). Data structure is ready for hand-translated Spanish content later.',
+      body: 'One-tap translation via Google Translate with notranslate protection on proper nouns (school names, PowerSchool, EUSD, etc.). Data structure is ready for hand-translated Spanish content later.',
       research: 'Escondido\'s significant Spanish-speaking population makes bilingual support essential from day one — not a nice-to-have.',
       action: function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
+      },
+      tooltipPosition: 'below-fixed'
     },
     {
       target: '.contact-section',
@@ -210,7 +211,15 @@
     document.body.appendChild(tooltip);
 
     // Position tooltip — delay enough for scroll and actions to complete
-    setTimeout(function () { positionTooltip(targetEl); }, 500);
+    setTimeout(function () {
+      if (step.tooltipPosition === 'below-fixed') {
+        // Fixed position below top bar area
+        tooltip.style.top = '100px';
+        tooltip.style.left = Math.max(16, (window.innerWidth - tooltip.getBoundingClientRect().width) / 2) + 'px';
+      } else {
+        positionTooltip(targetEl);
+      }
+    }, 500);
 
     // Wire buttons
     var closeBtn = tooltip.querySelector('.tour-tooltip__btn--close');
