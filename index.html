@@ -42,6 +42,7 @@
   <div class="top-bar" role="banner">
     <a href="tel:760-432-2400" class="top-bar__phone">760.432.2400</a>
     <button class="top-bar__lang" id="langToggle" aria-label="Translate to Spanish">Español</button>
+    <span></span>
     <div id="google_translate_element" style="position:absolute;left:-9999px;opacity:0;pointer-events:none;"></div>
   </div>
 
@@ -74,7 +75,14 @@
   <!-- Zone 3: Search -->
   <main id="main-content">
     <section class="search-section" aria-labelledby="searchHeading">
-      <h2 id="searchHeading" class="search-section__heading">What can we help you find?</h2>
+      <div class="search-section__header">
+        <h2 id="searchHeading" class="search-section__heading">What can we help you find?</h2>
+        <button class="onramp-btn" id="newToEusdBtn" aria-expanded="false" aria-controls="newToEusdTray">
+          <span class="onramp-btn__icon">👋</span>
+          <span>New to <span class="notranslate">EUSD</span>?</span>
+        </button>
+      </div>
+      <div class="onramp-tray" id="newToEusdTray" aria-hidden="true"></div>
       <div class="search-section__bar">
         <label for="searchInput" class="visually-hidden">Search the Parent Portal</label>
         <input
@@ -86,28 +94,32 @@
         >
         <div class="search-section__results" id="searchResults" role="listbox" aria-label="Search results" hidden></div>
       </div>
-      <div class="search-section__chips" role="list" aria-label="Quick links">
-        <button class="chip" role="listitem" data-target="calendar">Calendar</button>
-        <button class="chip" role="listitem" data-target="lunch-menu">Lunch menu</button>
-        <button class="chip" role="listitem" data-target="grades">Grades</button>
-        <button class="chip" role="listitem" data-target="report-absence">Report absence</button>
-        <button class="chip" role="listitem" data-target="contact-teacher">Contact teacher</button>
-        <button class="chip" role="listitem" data-target="enroll">Enroll</button>
-        <button class="chip" role="listitem" data-target="rooms-app">Get the app</button>
+      <div class="search-section__popular">
+        <button class="popular-toggle" id="popularToggle" aria-expanded="false">Popular links ▾</button>
+        <div class="popular-chips" id="popularChips" hidden>
+          <button class="chip" data-target="calendar">Calendar</button>
+          <button class="chip" data-target="lunch-menu">Lunch menu</button>
+          <button class="chip" data-target="grades">Grades</button>
+          <button class="chip" data-target="report-absence">Report absence</button>
+          <button class="chip" data-target="contact-teacher">Contact teacher</button>
+          <button class="chip" data-target="enroll">Enroll</button>
+          <button class="chip" data-target="forms">Forms</button>
+          <button class="chip" data-target="rooms-app">Get the app</button>
+        </div>
       </div>
     </section>
 
     <!-- Zone 4: Find your school -->
     <section class="schools-section" aria-labelledby="schoolsHeading">
       <h2 id="schoolsHeading" class="section-heading">Find your school</h2>
-      <div id="schoolsContainer"></div>
-      <div class="schools-section__links">
-        <a href="https://www.schoolsitelocator.com/apps/escondidounion/accessibilityFocused.html" target="_blank" rel="noopener">
-          Find by address <span class="visually-hidden">(opens in new tab)</span>
-        </a>
-        <span class="schools-section__divider">•</span>
-        <a href="#new-parent">New to <span class="notranslate">EUSD</span>?</a>
+      <div class="schools-section__onramp">
+        <button class="onramp-btn onramp-btn--outline" id="findByAddressBtn" aria-expanded="false" aria-controls="findByAddressTray">
+          <span class="onramp-btn__icon">📍</span>
+          <span>Don't know your school? Find by address</span>
+        </button>
       </div>
+      <div class="onramp-tray" id="findByAddressTray" aria-hidden="true" style="padding:0 16px;"></div>
+      <div id="schoolsContainer"></div>
     </section>
 
     <!-- Zone 5: I need to... -->
@@ -158,6 +170,9 @@
     </nav>
     <p class="footer__updated" id="lastUpdated"></p>
   </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
   <!-- Google Translate (hidden, triggered by custom button) -->
   <script>

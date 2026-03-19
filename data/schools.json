@@ -5,7 +5,8 @@
     "shortName": "Bernardo",
     "type": "elementary",
     "phone": "760.432.2700",
-    "principal": "",
+    "principal": "Shannon Wrzeski",
+    "principalEmail": "swrzeski@eusd.org",
     "address": "1122 Mountain Heights Drive, Escondido, CA 92029",
     "bellSchedule": {
       "regularStart": "8:00 AM",
@@ -14,8 +15,9 @@
       "minimumEnd": "12:10 PM"
     },
     "siteUrl": "https://www.eusd.org/o/bernardo",
-    "sarcUrl": "",
-    "promoVideoUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680980107870/2024-2025",
+    "mapsUrl": "http://maps.google.com/maps/place?cid=5596851470548619589&q=Bernardo+School,+Escondido,+CA&hl=en&ved=0CBAQ-gswAA&sa=X&ei=JB56Tte0N6GyiQKwgqS2CQ",
+    "promoVideoUrl": "https://www.youtube.com/watch?v=iS05zD6wHOk",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
       "calendar": "",
@@ -23,7 +25,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#72050b"
   },
   {
     "id": "central",
@@ -31,7 +34,8 @@
     "shortName": "Central",
     "type": "elementary",
     "phone": "760.432.2431",
-    "principal": "",
+    "principal": "Sharill Cortez",
+    "principalEmail": "scortez@eusd.org",
     "address": "122 W 4th Avenue, Escondido, CA 92025",
     "bellSchedule": {
       "regularStart": "8:10 AM",
@@ -40,8 +44,9 @@
       "minimumEnd": "12:20 PM"
     },
     "siteUrl": "https://www.eusd.org/o/central",
-    "sarcUrl": "",
-    "promoVideoUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680986038178/2024-2025",
+    "mapsUrl": "http://maps.google.com/maps/place?cid=11451517241435886028&q=Central+School,+Escondido,+CA&hl=en&ved=0CBEQ-gswAA&sa=X&ei=YR56TuD4E6ewiQL3lujCDg",
+    "promoVideoUrl": "https://www.youtube.com/watch?v=eYdTWe6KWzw",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
       "calendar": "",
@@ -49,7 +54,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#006599"
   },
   {
     "id": "conway",
@@ -57,7 +63,8 @@
     "shortName": "Conway",
     "type": "elementary",
     "phone": "760.432.2435",
-    "principal": "",
+    "principal": "Krystle Miller",
+    "principalEmail": "kmiller@eusd.org",
     "address": "1325 Conway Drive, Escondido, CA 92026",
     "bellSchedule": {
       "regularStart": "8:00 AM",
@@ -66,8 +73,9 @@
       "minimumEnd": "12:10 PM"
     },
     "siteUrl": "https://www.eusd.org/o/conway",
-    "sarcUrl": "",
-    "promoVideoUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680986038186/2024-2025",
+    "mapsUrl": "https://www.google.com/maps/place/Conway+Elementary+School/@33.1464121,-117.0775353,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x38a6a68a81395ef6!8m2!3d33.1464121!4d-117.0753466?hl=en",
+    "promoVideoUrl": "https://www.youtube.com/watch?v=J0Rkh0lohr8",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
       "calendar": "",
@@ -75,7 +83,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#576c7d"
   },
   {
     "id": "farr-avenue",
@@ -83,7 +92,8 @@
     "shortName": "Farr Avenue",
     "type": "elementary",
     "phone": "760.735.3049",
-    "principal": "",
+    "principal": "Soo Yeohn de Santiago",
+    "principalEmail": "sdesantiago@eusd.org",
     "address": "933 Farr Avenue, Escondido, CA 92026",
     "bellSchedule": {
       "regularStart": "8:00 AM",
@@ -92,8 +102,9 @@
       "minimumEnd": "12:10 PM"
     },
     "siteUrl": "https://www.eusd.org/o/farravenue",
-    "sarcUrl": "",
-    "promoVideoUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680980102608/2024-2025",
+    "mapsUrl": "http://maps.google.com/maps/place?cid=12541626231562943226&q=Farr+School,+Escondido,+CA&hl=en&ved=0CBEQ-gswAA&sa=X&ei=qx56Tp2eF-eViQLUv_W5CQ",
+    "promoVideoUrl": "https://www.youtube.com/watch?v=XkJ5NAdswgo",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
       "calendar": "",
@@ -101,7 +112,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#1031A3"
   },
   {
     "id": "felicita",
@@ -109,7 +121,8 @@
     "shortName": "Felicita",
     "type": "elementary",
     "phone": "760.432.2444",
-    "principal": "",
+    "principal": "Stephanie Higginbotham",
+    "principalEmail": "shigginbotham@eusd.org",
     "address": "737 W. 13th Avenue, Escondido, CA 92025",
     "bellSchedule": {
       "regularStart": "8:00 AM",
@@ -118,8 +131,9 @@
       "minimumEnd": "12:10 PM"
     },
     "siteUrl": "https://www.eusd.org/o/felicita",
-    "sarcUrl": "",
-    "promoVideoUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680986038202/2024-2025",
+    "mapsUrl": "http://maps.google.com/maps/place?cid=6626655999223945217&q=Felicita+School,+Escondido,+CA&hl=en&ved=0CBAQ-gswAA&sa=X&ei=vR56TuH_JamZiALm6p2TDg",
+    "promoVideoUrl": "https://www.youtube.com/watch?v=ZMAZbUVzBEM",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
       "calendar": "",
@@ -127,7 +141,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#a6070b"
   },
   {
     "id": "glen-view",
@@ -135,7 +150,8 @@
     "shortName": "Glen View",
     "type": "elementary",
     "phone": "760.432.2448",
-    "principal": "",
+    "principal": "Julio Lopez",
+    "principalEmail": "jlopez@eusd.org",
     "address": "2201 E. Mission Avenue, Escondido, CA 92027",
     "bellSchedule": {
       "regularStart": "8:00 AM",
@@ -144,8 +160,9 @@
       "minimumEnd": "12:10 PM"
     },
     "siteUrl": "https://www.eusd.org/o/glenview",
-    "sarcUrl": "",
-    "promoVideoUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680986038939/2024-2025",
+    "mapsUrl": "http://maps.google.com/maps/place?cid=2933030939587473981&q=Glen+View+School,+Escondido,+CA&hl=en&ved=0CBAQ-gswAA&sa=X&ei=0h56TvadO6WgiAKfq-Uc",
+    "promoVideoUrl": "https://www.youtube.com/watch?v=gyVl16coaJQ",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
       "calendar": "",
@@ -153,7 +170,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#126635"
   },
   {
     "id": "juniper",
@@ -161,7 +179,8 @@
     "shortName": "Juniper",
     "type": "elementary",
     "phone": "760.432.2462",
-    "principal": "",
+    "principal": "Brooke Cottingham",
+    "principalEmail": "bcottingham@eusd.org",
     "address": "1809 S. Juniper Street, Escondido, CA 92025",
     "bellSchedule": {
       "regularStart": "8:00 AM",
@@ -170,8 +189,9 @@
       "minimumEnd": "12:10 PM"
     },
     "siteUrl": "https://www.eusd.org/o/juniper",
-    "sarcUrl": "",
-    "promoVideoUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680986038228/2024-2025",
+    "mapsUrl": "http://maps.google.com/maps/place?cid=12947881704199667407&q=Juniper+School,+Escondido,+CA&hl=en&ved=0CBAQ-gswAA&sa=X&ei=6x56TuieE-eRiQKkpNX_DQ",
+    "promoVideoUrl": "https://www.youtube.com/watch?v=Qeon1rOU3hU",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
       "calendar": "",
@@ -179,7 +199,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#1a5393"
   },
   {
     "id": "lr-green",
@@ -187,7 +208,8 @@
     "shortName": "L.R. Green",
     "type": "elementary",
     "phone": "760.432.2260",
-    "principal": "",
+    "principal": "Crystal Underhill",
+    "principalEmail": "cunderhill@eusd.org",
     "address": "3115 Las Palmas Avenue, Escondido, CA 92025",
     "bellSchedule": {
       "regularStart": "8:10 AM",
@@ -196,7 +218,8 @@
       "minimumEnd": "12:20 PM"
     },
     "siteUrl": "https://www.eusd.org/o/lrgreen",
-    "sarcUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680986107882/2024-2025",
+    "mapsUrl": "http://maps.google.com/maps/place?cid=12657086317223424334&q=L.+R.+Green+School,+Escondido,+CA&hl=en&ved=0CCcQ-gswAA&sa=X&ei=JB96TojzK-OSiQL0yI29Dw",
     "promoVideoUrl": "",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
@@ -205,7 +228,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#028849"
   },
   {
     "id": "lincoln",
@@ -213,7 +237,8 @@
     "shortName": "Lincoln",
     "type": "elementary",
     "phone": "760.432.2466",
-    "principal": "",
+    "principal": "Jose Hernandez",
+    "principalEmail": "jhernandez@eusd.org",
     "address": "1029 N. Broadway, Escondido, CA 92026",
     "bellSchedule": {
       "regularStart": "8:00 AM",
@@ -222,8 +247,9 @@
       "minimumEnd": "12:20 PM"
     },
     "siteUrl": "https://www.eusd.org/o/lincoln",
-    "sarcUrl": "",
-    "promoVideoUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680986038236/2024-2025",
+    "mapsUrl": "http://maps.google.com/maps/place?cid=11669059258147366202&q=Lincoln+School,+Escondido,+CA&hl=en&ved=0CA8Q-gswAA&sa=X&ei=AR96Tu3VBuKViAL6r-inDg",
+    "promoVideoUrl": "https://www.youtube.com/watch?v=CsvUTgZIgJg",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
       "calendar": "",
@@ -231,7 +257,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#021f73"
   },
   {
     "id": "miller",
@@ -239,7 +266,8 @@
     "shortName": "Miller",
     "type": "elementary",
     "phone": "760.432.2470",
-    "principal": "",
+    "principal": "Katelyn Sylvester",
+    "principalEmail": "ksylvester@eusd.org",
     "address": "1975 Miller Avenue, Escondido, CA 92025",
     "bellSchedule": {
       "regularStart": "8:00 AM",
@@ -248,8 +276,9 @@
       "minimumEnd": "12:10 PM"
     },
     "siteUrl": "https://www.eusd.org/o/miller",
-    "sarcUrl": "",
-    "promoVideoUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680986066997/2024-2025",
+    "mapsUrl": "http://maps.google.com/maps/place?cid=1161473932159391057&q=Miller+School,+Escondido,+CA&hl=en&ved=0CBAQ-gswAA&sa=X&ei=PB96Tp2cHOeOiAKa97iaCQ",
+    "promoVideoUrl": "https://www.youtube.com/watch?v=MVZfuJGtn3M",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
       "calendar": "",
@@ -257,7 +286,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#253263"
   },
   {
     "id": "north-broadway",
@@ -265,7 +295,8 @@
     "shortName": "North Broadway",
     "type": "elementary",
     "phone": "760.432.2479",
-    "principal": "",
+    "principal": "Megan Power",
+    "principalEmail": "mpower@eusd.org",
     "address": "2301 North Broadway, Escondido, CA 92026",
     "bellSchedule": {
       "regularStart": "8:00 AM",
@@ -274,8 +305,9 @@
       "minimumEnd": "12:10 PM"
     },
     "siteUrl": "https://www.eusd.org/o/northbroadway",
-    "sarcUrl": "",
-    "promoVideoUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680986102750/2024-2025",
+    "mapsUrl": "http://maps.google.com/maps/place?cid=2137773977480625901&q=N.+Broadway+School,+Escondido,+CA&hl=en&ved=0CBAQ-gswAA&sa=X&ei=Vx96Tr7eM6SSiQKBkJnACQ",
+    "promoVideoUrl": "https://www.youtube.com/watch?v=xWGaPj3HImU",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
       "calendar": "",
@@ -283,7 +315,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#891b17"
   },
   {
     "id": "oak-hill",
@@ -291,7 +324,8 @@
     "shortName": "Oak Hill",
     "type": "elementary",
     "phone": "760.432.2483",
-    "principal": "",
+    "principal": "Carmen Madrigal",
+    "principalEmail": "cmadrigal@eusd.org",
     "address": "1820 Oak Hill Drive, Escondido, CA 92027",
     "bellSchedule": {
       "regularStart": "8:00 AM",
@@ -300,8 +334,9 @@
       "minimumEnd": "12:10 PM"
     },
     "siteUrl": "https://www.eusd.org/o/oakhill",
-    "sarcUrl": "",
-    "promoVideoUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680986038244/2024-2025",
+    "mapsUrl": "http://maps.google.com/maps/place?cid=7327518282121433611&q=Oak+Hill+School,+Escondido,+CA&hl=en&ved=0CBEQ-gswAA&sa=X&ei=dR96Tp7VCqSSiQKBkJnACQ",
+    "promoVideoUrl": "https://www.youtube.com/watch?v=WNgmnanCIHU",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
       "calendar": "",
@@ -309,7 +344,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#0f5f84"
   },
   {
     "id": "orange-glen",
@@ -317,7 +353,8 @@
     "shortName": "Orange Glen",
     "type": "elementary",
     "phone": "760.432.2487",
-    "principal": "",
+    "principal": "Lisa Pitard",
+    "principalEmail": "lpitard@eusd.org",
     "address": "2861 E. Valley Parkway, Escondido, CA 92027",
     "bellSchedule": {
       "regularStart": "7:55 AM",
@@ -326,8 +363,9 @@
       "minimumEnd": "12:05 PM"
     },
     "siteUrl": "https://www.eusd.org/o/orangeglen",
-    "sarcUrl": "",
-    "promoVideoUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680986038947/2024-2025",
+    "mapsUrl": "http://maps.google.com/maps/place?cid=11855064070060468566&q=Orange+Glen+School,+Escondido,+CA&hl=en&ved=0CCQQ-gswAQ&sa=X&ei=kR96TubyL8GsiQLH1YWdCQ",
+    "promoVideoUrl": "https://www.youtube.com/watch?v=10jq3WCz4Tc",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
       "calendar": "",
@@ -335,7 +373,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#2c3d6d"
   },
   {
     "id": "pioneer",
@@ -343,7 +382,8 @@
     "shortName": "Pioneer",
     "type": "elementary",
     "phone": "760.432.2412",
-    "principal": "",
+    "principal": "Ellyse Jimenez",
+    "principalEmail": "ejimenez@eusd.org",
     "address": "980 N. Ash Street, Escondido, CA 92027",
     "bellSchedule": {
       "regularStart": "8:00 AM",
@@ -352,8 +392,9 @@
       "minimumEnd": "12:10 PM"
     },
     "siteUrl": "https://www.eusd.org/o/pioneer",
-    "sarcUrl": "",
-    "promoVideoUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680986110381/2024-2025",
+    "mapsUrl": "http://maps.google.com/maps/place?cid=15279805427766693833&q=Pioneer+School,+Escondido,+CA&hl=en&ved=0CBAQ-gswAA&sa=X&ei=tx96TqXfGKW0iQKxg9i-CQ",
+    "promoVideoUrl": "https://www.youtube.com/watch?v=acLOAIO769s",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
       "calendar": "",
@@ -361,7 +402,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#63038f"
   },
   {
     "id": "reidy-creek",
@@ -369,7 +411,8 @@
     "shortName": "Reidy Creek",
     "type": "elementary",
     "phone": "760.739.5800",
-    "principal": "",
+    "principal": "Megan Loh",
+    "principalEmail": "mloh@eusd.org",
     "address": "2869 North Broadway, Escondido, CA 92026",
     "bellSchedule": {
       "regularStart": "8:10 AM",
@@ -378,8 +421,9 @@
       "minimumEnd": "12:20 PM"
     },
     "siteUrl": "https://www.eusd.org/o/reidycreek",
-    "sarcUrl": "",
-    "promoVideoUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680980107862/2024-2025",
+    "mapsUrl": "http://maps.google.com/maps/place?cid=9943713550603565975&q=Reidy+Creek+School,+Escondido,+CA&hl=en&ved=0CBAQ-gswAA&sa=X&ei=YSJ6Tv_HFqKFiAKfu_31DQ",
+    "promoVideoUrl": "https://www.youtube.com/watch?v=93D0hIPPoNs",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
       "calendar": "",
@@ -387,7 +431,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#008531"
   },
   {
     "id": "rock-springs",
@@ -395,7 +440,8 @@
     "shortName": "Rock Springs",
     "type": "elementary",
     "phone": "760.432.2283",
-    "principal": "",
+    "principal": "Elizabeth Ramirez",
+    "principalEmail": "eramirez@eusd.org",
     "address": "1155 Deodar Road, Escondido, CA 92026",
     "bellSchedule": {
       "regularStart": "8:00 AM",
@@ -404,8 +450,9 @@
       "minimumEnd": "12:10 PM"
     },
     "siteUrl": "https://www.eusd.org/o/rocksprings",
-    "sarcUrl": "",
-    "promoVideoUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680986111769/2024-2025",
+    "mapsUrl": "http://maps.google.com/maps/place?cid=15966102559620984616&q=Rock+Springs+School,+Escondido,+CA&hl=en&ved=0CBAQ-gswAA&sa=X&ei=1SJ6Toq9I6mZiALm6p2TDg",
+    "promoVideoUrl": "https://www.youtube.com/watch?v=fJLGuNPlkbo",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
       "calendar": "",
@@ -413,7 +460,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#ec0404"
   },
   {
     "id": "rose",
@@ -421,7 +469,8 @@
     "shortName": "Rose",
     "type": "elementary",
     "phone": "760.432.2495",
-    "principal": "",
+    "principal": "Laura Ruggles",
+    "principalEmail": "lruggles@eusd.org",
     "address": "906 N. Rose Street, Escondido, CA 92027",
     "bellSchedule": {
       "regularStart": "8:00 AM",
@@ -430,8 +479,9 @@
       "minimumEnd": "12:10 PM"
     },
     "siteUrl": "https://www.eusd.org/o/rose",
-    "sarcUrl": "",
-    "promoVideoUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680986038251/2024-2025",
+    "mapsUrl": "http://maps.google.com/maps/place?ftid=0x80dbf345724252fd:0x470d85ae6e2d9c85&q=Rose+School,+Escondido,+CA&hl=en&ved=0CA4Q-gswAA&sa=X&ei=kCJ6ToibGcGjiQL56MWQDg",
+    "promoVideoUrl": "https://www.youtube.com/watch?v=aVJZCyI1cj4",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
       "calendar": "",
@@ -439,7 +489,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#21729e"
   },
   {
     "id": "quantum-academy",
@@ -447,7 +498,8 @@
     "shortName": "Quantum Academy",
     "type": "intermediate",
     "phone": "760.432.2220",
-    "principal": "",
+    "principal": "Jeremy Lyche",
+    "principalEmail": "jlyche@eusd.org",
     "address": "420 N. Falconer Rd, Escondido, CA 92027",
     "bellSchedule": {
       "regularStart": "8:15 AM",
@@ -456,8 +508,9 @@
       "minimumEnd": "12:25 PM"
     },
     "siteUrl": "https://www.eusd.org/o/quantum",
-    "sarcUrl": "",
-    "promoVideoUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680980131813/2024-2025",
+    "mapsUrl": "https://www.google.com/maps/place/420+Falconer+Rd,+Escondido,+CA+92027/@33.1435104,-117.0379501,16.81z/data=!4m5!3m4!1s0x80dbf320fddc86a1:0xce22a6b49ef3092!8m2!3d33.1436135!4d-117.035012?hl=en-US",
+    "promoVideoUrl": "https://www.youtube.com/watch?v=7NZFLHfurds",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
       "calendar": "",
@@ -465,7 +518,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#1031A3"
   },
   {
     "id": "bear-valley",
@@ -473,7 +527,8 @@
     "shortName": "Bear Valley",
     "type": "middle",
     "phone": "760.432.4060",
-    "principal": "",
+    "principal": "Jason Wrzeski",
+    "principalEmail": "jwrzeski@eusd.org",
     "address": "3003 Bear Valley Parkway, Escondido, CA 92025",
     "bellSchedule": {
       "regularStart": "8:19 AM",
@@ -482,8 +537,9 @@
       "minimumEnd": "12:08 PM"
     },
     "siteUrl": "https://www.eusd.org/o/bearvalley",
-    "sarcUrl": "",
-    "promoVideoUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680980102590/2024-2025",
+    "mapsUrl": "http://maps.google.com/maps/place?cid=12861013369291818266&q=Bear+Valley+Middle+School,+Escondido,+CA&hl=en&ved=0CBEQ-gswAA&sa=X&ei=giN6TrLVO4iciQKite26CQ",
+    "promoVideoUrl": "https://www.youtube.com/watch?v=z8GUG6GSR-0",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
       "calendar": "",
@@ -491,7 +547,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#091f5b"
   },
   {
     "id": "del-dios",
@@ -499,7 +556,8 @@
     "shortName": "Del Dios",
     "type": "middle",
     "phone": "760.432.2439",
-    "principal": "",
+    "principal": "Michael Reichle",
+    "principalEmail": "mreichle@eusd.org",
     "address": "1400 W. 9th Avenue, Escondido, CA 92029",
     "bellSchedule": {
       "regularStart": "8:00 AM",
@@ -508,8 +566,9 @@
       "minimumEnd": "12:09 PM"
     },
     "siteUrl": "https://www.eusd.org/o/deldios",
-    "sarcUrl": "",
-    "promoVideoUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680986038194/2024-2025",
+    "mapsUrl": "http://maps.google.com/maps/place?cid=2269285698095942101&q=Del+Dios+Middle+School,+Escondido,+CA&hl=en&ved=0CA8Q-gswAA&sa=X&ei=uCN6TrPbGamZiALm6p2TDg",
+    "promoVideoUrl": "https://www.youtube.com/watch?v=7_dloTC6lwQ",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
       "calendar": "",
@@ -517,7 +576,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#023a72"
   },
   {
     "id": "hidden-valley",
@@ -525,7 +585,8 @@
     "shortName": "Hidden Valley",
     "type": "middle",
     "phone": "760.432.2457",
-    "principal": "",
+    "principal": "Bryanna Norton",
+    "principalEmail": "bnorton@eusd.org",
     "address": "2700 Reed Road, Escondido, CA 92027",
     "bellSchedule": {
       "regularStart": "8:00 AM",
@@ -534,8 +595,9 @@
       "minimumEnd": "11:48 AM"
     },
     "siteUrl": "https://www.eusd.org/o/hiddenvalley",
-    "sarcUrl": "",
-    "promoVideoUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680986093215/2024-2025",
+    "mapsUrl": "http://maps.google.com/maps/place?cid=12581998958919892800&q=Hidden+Valley+Middle+School,+Escondido,+CA&hl=en&ved=0CBUQ-gswAA&sa=X&ei=3SN6TubnJ6OtiQLildGpCQ",
+    "promoVideoUrl": "https://www.youtube.com/watch?v=o4-waVjoXgI",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
       "calendar": "",
@@ -543,7 +605,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#023162"
   },
   {
     "id": "mission",
@@ -551,7 +614,8 @@
     "shortName": "Mission",
     "type": "middle",
     "phone": "760.432.2452",
-    "principal": "",
+    "principal": "Jason Hoff",
+    "principalEmail": "jhoff@eusd.org",
     "address": "939 E. Mission Avenue, Escondido, CA 92025",
     "bellSchedule": {
       "regularStart": "8:00 AM",
@@ -560,8 +624,9 @@
       "minimumEnd": "11:54 AM"
     },
     "siteUrl": "https://www.eusd.org/o/mission",
-    "sarcUrl": "",
-    "promoVideoUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680986038210/2024-2025",
+    "mapsUrl": "http://maps.google.com/maps/place?cid=11091744236187245843&q=Mission+Middle+School,+Escondido,+CA&hl=en&ved=0CBEQ-gswAA&sa=X&ei=yiN6TrHTFKOFiAL615wR",
+    "promoVideoUrl": "https://www.youtube.com/watch?v=ALYTDbDNWFc",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
       "calendar": "",
@@ -569,7 +634,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#670000"
   },
   {
     "id": "rincon",
@@ -577,7 +643,8 @@
     "shortName": "Rincon",
     "type": "middle",
     "phone": "760.432.2491",
-    "principal": "",
+    "principal": "Cristina Meglich",
+    "principalEmail": "cmeglich@eusd.org",
     "address": "925 Lehner Avenue, Escondido, CA 92026",
     "bellSchedule": {
       "regularStart": "8:00 AM",
@@ -586,8 +653,9 @@
       "minimumEnd": "11:48 AM"
     },
     "siteUrl": "https://www.eusd.org/o/rincon",
-    "sarcUrl": "",
-    "promoVideoUrl": "",
+    "sarcUrl": "https://sarconline.org/public/summary/37680986105944/2024-2025",
+    "mapsUrl": "http://maps.google.com/maps/place?cid=10816566850921036299&q=Rincon+Middle+School,+Lehner+Avenue,+Escondido,+CA&hl=en&ved=0CBEQ-gswAA&sa=X&ei=YiR6Tpz_JueViQLUv_W5CQ",
+    "promoVideoUrl": "https://www.youtube.com/watch?v=0Yjbhema3xo",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
       "calendar": "",
@@ -595,7 +663,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#213f57"
   },
   {
     "id": "home-education",
@@ -603,7 +672,8 @@
     "shortName": "Home Education",
     "type": "specialty",
     "phone": "760.432.2221",
-    "principal": "",
+    "principal": "Michael Reichle",
+    "principalEmail": "mreichle@eusd.org",
     "address": "1400 W. Ninth Ave., Escondido, CA 92029",
     "bellSchedule": {
       "regularStart": "",
@@ -613,6 +683,7 @@
     },
     "siteUrl": "https://www.eusd.org/o/hep",
     "sarcUrl": "",
+    "mapsUrl": "https://maps.app.goo.gl/9GVzXXMjjT4ZAmBU6",
     "promoVideoUrl": "",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
@@ -621,7 +692,8 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#1031a3"
   },
   {
     "id": "limitless-learning-academy",
@@ -629,7 +701,8 @@
     "shortName": "Limitless Learning Academy",
     "type": "specialty",
     "phone": "760.432.2388",
-    "principal": "",
+    "principal": "Michael Reichle",
+    "principalEmail": "mreichle@eusd.org",
     "address": "1400 W Ninth Ave, Escondido, CA 92029",
     "bellSchedule": {
       "regularStart": "8:00 AM",
@@ -638,7 +711,8 @@
       "minimumEnd": "12:00 PM"
     },
     "siteUrl": "https://www.eusd.org/o/lla",
-    "sarcUrl": "",
+    "sarcUrl": "https://sarconline.org/public/print/37680980141309/2023-2024",
+    "mapsUrl": "https://goo.gl/maps/N4914uqqErLG6GcP6",
     "promoVideoUrl": "",
     "trayLinks": {
       "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
@@ -647,6 +721,7 @@
       "staffDirectory": "",
       "reportAbsence": "https://www.eusd.org/page/attendance",
       "forms": ""
-    }
+    },
+    "color": "#1031A3"
   }
 ]

@@ -8,6 +8,8 @@
   let tasksData = [];
   let calendarData = {};
   let appsData = [];
+  let formsData = [];
+  let staffData = {};
   let configData = {};
   let fuseInstance = null;
 
@@ -20,17 +22,21 @@
 
   // ===== Data Loading =====
   async function loadData() {
-    const [schools, tasks, calendar, apps, config] = await Promise.all([
+    const [schools, tasks, calendar, apps, forms, staff, config] = await Promise.all([
       fetch('data/schools.json').then(r => r.json()),
       fetch('data/tasks.json').then(r => r.json()),
       fetch('data/calendar.json').then(r => r.json()),
       fetch('data/apps.json').then(r => r.json()),
+      fetch('data/forms.json').then(r => r.json()).catch(function () { return []; }),
+      fetch('data/staff.json').then(r => r.json()).catch(function () { return {}; }),
       fetch('data/config.json').then(r => r.json()),
     ]);
     schoolsData = schools;
     tasksData = tasks;
     calendarData = calendar;
     appsData = apps;
+    formsData = forms;
+    staffData = staff;
     configData = config;
   }
 
@@ -96,16 +102,18 @@
         trayEl.style.opacity = '1';
       });
 
-      // Scroll into view
+      // Scroll after tray animation completes
       setTimeout(function () {
-        trayEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      }, 100);
+        var rect = trayEl.getBoundingClientRect();
+        var offset = window.scrollY + rect.top - 80;
+        window.scrollTo({ top: offset, behavior: 'smooth' });
 
-      // Focus first link in tray
-      setTimeout(function () {
-        var firstLink = trayEl.querySelector('a, button');
-        if (firstLink) firstLink.focus();
-      }, 350);
+        // Focus first link in tray
+        setTimeout(function () {
+          var firstLink = trayEl.querySelector('a, button');
+          if (firstLink) firstLink.focus();
+        }, 300);
+      }, 420);
     }
 
     // Escape key handler on the tray itself
@@ -170,6 +178,10 @@
 
     showEvent(0);
 
+    textEl.addEventListener('click', function () {
+      navigateToResult('task', 'calendar');
+    });
+
     prevBtn.addEventListener('click', function () {
       currentIndex = (currentIndex - 1 + upcoming.length) % upcoming.length;
       showEvent(currentIndex);
@@ -187,10 +199,10 @@
   function renderSchools() {
     var container = document.getElementById('schoolsContainer');
     var groups = {
-      elementary: { label: 'Elementary schools', schools: [] },
-      intermediate: { label: 'Intermediate school', schools: [] },
-      middle: { label: 'Middle schools', schools: [] },
-      specialty: { label: 'Specialty', schools: [] },
+      elementary: { label: 'Elementary', shortLabel: 'Elementary', icon: '🏫', schools: [] },
+      intermediate: { label: 'Intermediate', shortLabel: 'Intermediate', icon: '🏫', schools: [] },
+      middle: { label: 'Middle', shortLabel: 'Middle', icon: '🏫', schools: [] },
+      specialty: { label: 'Specialty', shortLabel: 'Specialty', icon: '⭐', schools: [] },
     };
 
     schoolsData.forEach(function (s) {
@@ -198,18 +210,38 @@
       if (groups[type]) groups[type].schools.push(s);
     });
 
+    // Build category tabs row
+    var tabsRow = document.createElement('div');
+    tabsRow.className = 'school-type-tabs';
+
+    var activeType = null;
+    var groupEls = {};
+
     Object.keys(groups).forEach(function (type) {
       var group = groups[type];
       if (group.schools.length === 0) return;
 
+      // Category tab button
+      var tab = document.createElement('button');
+      tab.className = 'school-type-tab';
+      tab.setAttribute('aria-expanded', 'false');
+      tab.innerHTML = '<span class="school-type-tab__label">' + group.label + '</span>' +
+        '<span class="school-type-tab__count">' + group.schools.length + '</span>';
+      tab.dataset.type = type;
+      tabsRow.appendChild(tab);
+
+      // The expandable group (hidden by default)
       var groupEl = document.createElement('div');
-      groupEl.className = 'school-group';
-      groupEl.innerHTML = '<div class="school-group__label">' + group.label + '</div>';
+      groupEl.className = 'school-group school-group--collapsed';
+      groupEl.dataset.type = type;
 
       var grid = document.createElement('div');
       grid.className = 'school-grid';
 
       var trayMgr = createTrayManager(grid, 'school-tray');
+
+      // Store reference for tab click handler
+      groupEls[type] = { el: groupEl, tab: tab, grid: grid, trayMgr: trayMgr };
 
       group.schools.forEach(function (school) {
         var tile = document.createElement('button');
@@ -219,14 +251,61 @@
         tile.textContent = school.shortName;
         tile.dataset.schoolId = school.id;
 
+        // Apply school color gradient
+        if (school.color) {
+          tile._schoolColor = school.color;
+          tile.style.borderColor = school.color + '40';
+          tile.style.background = 'linear-gradient(135deg, ' + school.color + '14, ' + school.color + '06)';
+          tile.style.borderLeftWidth = '3px';
+          tile.style.borderLeftColor = school.color;
+        }
+
         tile.addEventListener('click', function () {
-          // Deactivate all tiles visually
+          // Reset ALL tiles to their gradient state
           grid.querySelectorAll('.school-tile').forEach(function (t) {
-            if (t !== tile) t.setAttribute('aria-expanded', 'false');
+            t.setAttribute('aria-expanded', 'false');
+            var c = t._schoolColor;
+            if (c) {
+              t.style.background = 'linear-gradient(135deg, ' + c + '14, ' + c + '06)';
+              t.style.borderColor = c + '40';
+              t.style.borderLeftWidth = '3px';
+              t.style.borderLeftColor = c;
+            } else {
+              t.style.background = '';
+              t.style.borderColor = '';
+            }
           });
 
           trayMgr.open(tile, buildSchoolTray(school), 'school-tray-' + school.id);
+
+          // If tray opened, apply school color as solid active background
+          if (tile.getAttribute('aria-expanded') === 'true') {
+            var activeColor = school.color || '#1031A3';
+            tile.style.background = activeColor;
+            tile.style.borderColor = activeColor;
+            tile.style.borderLeftWidth = '1px';
+          }
+
           trackEvent('school_tray_open', { school_name: school.name });
+
+          // Wire staff sub-tray toggle
+          var staffBtn = document.querySelector('[data-staff-target="staff-sub-' + school.id + '"]');
+          if (staffBtn) {
+            staffBtn.onclick = function () {
+              var targetId = staffBtn.dataset.staffTarget;
+              var existing = document.getElementById(targetId);
+              if (existing) {
+                existing.remove();
+                staffBtn.setAttribute('aria-expanded', 'false');
+              } else {
+                var subTray = document.createElement('div');
+                subTray.id = targetId;
+                subTray.innerHTML = getStaffSubTrayHtml(school.id);
+                staffBtn.closest('.school-tray__links').insertAdjacentElement('afterend', subTray);
+                staffBtn.setAttribute('aria-expanded', 'true');
+              }
+            };
+          }
         });
 
         tile.addEventListener('keydown', function (e) {
@@ -237,7 +316,36 @@
       });
 
       groupEl.appendChild(grid);
-      container.appendChild(groupEl);
+
+      // Tab click handler
+      tab.addEventListener('click', function () {
+        var isOpen = tab.getAttribute('aria-expanded') === 'true';
+
+        // Close all groups and deactivate all tabs
+        Object.keys(groupEls).forEach(function (t) {
+          groupEls[t].tab.setAttribute('aria-expanded', 'false');
+          groupEls[t].el.classList.add('school-group--collapsed');
+          groupEls[t].trayMgr.close(false);
+        });
+
+        if (!isOpen) {
+          tab.setAttribute('aria-expanded', 'true');
+          groupEl.classList.remove('school-group--collapsed');
+          activeType = type;
+
+          setTimeout(function () {
+            groupEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }, 100);
+        } else {
+          activeType = null;
+        }
+      });
+    });
+
+    // Insert tabs row, then all group containers
+    container.appendChild(tabsRow);
+    Object.keys(groups).forEach(function (type) {
+      if (groupEls[type]) container.appendChild(groupEls[type].el);
     });
   }
 
@@ -253,24 +361,83 @@
       extrasHtml += '<a href="' + school.promoVideoUrl + '" target="_blank" rel="noopener" class="school-tray__extra-link">Watch our video <span class="visually-hidden">(opens in new tab)</span></a>';
     }
 
+    var mapsUrl = school.address ? 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(school.address) : '';
+
+    var principalHtml = '';
+    if (school.principal) {
+      principalHtml = '<div class="school-tray__detail">👤 <strong><span class="notranslate">' + school.principal + '</span></strong>';
+      if (school.principalEmail) {
+        principalHtml += ' · <a href="mailto:' + school.principalEmail + '">' + school.principalEmail + '</a>';
+      }
+      principalHtml += '</div>';
+    }
+
+    var addressHtml = '';
+    if (school.address) {
+      addressHtml = '<div class="school-tray__detail">📍 ' + school.address;
+      if (mapsUrl) {
+        addressHtml += ' · <a href="' + mapsUrl + '" target="_blank" rel="noopener">Map <span class="visually-hidden">(opens in new tab)</span></a>';
+      }
+      addressHtml += '</div>';
+    }
+
     return '<div class="school-tray__inner">' +
       '<div class="school-tray__name notranslate">' + school.name + '</div>' +
       '<div class="school-tray__info">' +
-        (school.principal ? '<span>👤 <span class="notranslate">' + school.principal + '</span></span>' : '') +
-        '<span>📞 <a href="tel:' + (school.phone || '').replace(/\./g, '-') + '">' + (school.phone || '') + '</a></span>' +
-        '<span>🕐 ' + (bell.regularStart || '') + ' – ' + (bell.regularEnd || '') + '</span>' +
+        principalHtml +
+        addressHtml +
+        '<div class="school-tray__detail">📞 <a href="tel:' + (school.phone || '').replace(/\./g, '-') + '">' + (school.phone || '') + '</a></div>' +
+        '<div class="school-tray__detail">🕐 ' + (bell.regularStart || '') + ' – ' + (bell.regularEnd || '') + '</div>' +
+        (bell.thursdayEnd || bell.minimumEnd ?
+          '<div class="school-tray__bell-extras">' +
+            (bell.thursdayEnd ? '<span class="bell-tag bell-tag--thu">Thu dismissal: ' + bell.thursdayEnd + '</span>' : '') +
+            (bell.minimumEnd ? '<span class="bell-tag bell-tag--min">Min day: ' + bell.minimumEnd + '</span>' : '') +
+          '</div>' : '') +
       '</div>' +
       '<div class="school-tray__links">' +
         buildTrayLink('📊', 'Grades', links.grades) +
         buildTrayLink('📅', 'Calendar', links.calendar || school.siteUrl) +
         buildTrayLink('🍽️', 'Lunch menu', links.lunchMenu) +
-        buildTrayLink('👥', 'Staff', links.staffDirectory || school.siteUrl) +
+        buildStaffLink(school) +
         buildTrayLink('📞', 'Report absence', links.reportAbsence) +
         buildTrayLink('📄', 'Forms', links.forms || school.siteUrl) +
+        buildTrayLink('📰', 'Live Feed', school.siteUrl + '/live-feed') +
+        buildTrayLink('📢', 'News', school.siteUrl + '/news') +
+        buildTrayLink('👨‍👩‍👧', 'Parents', school.siteUrl + '/page/parents-and-families') +
+        buildTrayLink('🎒', 'Students', school.siteUrl + '/page/students') +
       '</div>' +
       (extrasHtml ? '<div class="school-tray__extras">' + extrasHtml + '</div>' : '') +
       '<a href="' + school.siteUrl + '" target="_blank" rel="noopener" class="school-tray__visit">Visit full <span class="notranslate">' + school.shortName + '</span> site → <span class="visually-hidden">(opens in new tab)</span></a>' +
     '</div>';
+  }
+
+  function buildStaffLink(school) {
+    var members = staffData[school.id] || [];
+    if (members.length === 0) {
+      return buildTrayLink('👥', 'Staff', school.siteUrl + '/staff');
+    }
+    var staffId = 'staff-sub-' + school.id;
+    var html = '<button class="school-tray__link staff-toggle" aria-expanded="false" data-staff-target="' + staffId + '">' +
+      '<span class="school-tray__link-icon">👥</span>Staff' +
+    '</button>';
+    return html;
+  }
+
+  function getStaffSubTrayHtml(schoolId) {
+    var members = staffData[schoolId] || [];
+    var siteUrl = '';
+    schoolsData.forEach(function (s) { if (s.id === schoolId) siteUrl = s.siteUrl; });
+
+    var html = '<div class="staff-subtray">';
+    members.forEach(function (m) {
+      html += '<div class="staff-member">' +
+        '<strong class="notranslate">' + m.name + '</strong>' +
+        '<span class="staff-member__role">' + m.role + '</span>' +
+      '</div>';
+    });
+    html += '<a href="' + siteUrl + '/staff" target="_blank" rel="noopener" class="task-tray__more" style="margin-top:8px">View all staff on school site → <span class="visually-hidden">(opens in new tab)</span></a>';
+    html += '</div>';
+    return html;
   }
 
   function buildTrayLink(icon, label, url) {
@@ -340,7 +507,15 @@
             if (t !== tile) t.setAttribute('aria-expanded', 'false');
           });
 
-          trayMgr.open(tile, buildTaskTray(task), 'task-tray-' + task.id);
+          var html = task.id === 'calendar' ? buildCalendarTray() :
+                     task.id === 'forms' ? buildFormsTray() : buildTaskTray(task);
+          trayMgr.open(tile, html, 'task-tray-' + task.id);
+
+          // Wire up calendar filters after tray is in the DOM
+          if (task.id === 'calendar') {
+            setTimeout(initCalendarFilters, 50);
+          }
+
           trackEvent('task_tray_open', { task_id: task.id });
         });
 
@@ -396,6 +571,194 @@
       linksHtml +
       moreHtml +
     '</div>';
+  }
+
+  // ===== Calendar =====
+  function buildCalendarTray() {
+    var years = calendarData.schoolYears || [];
+    var currentYear = configData.currentSchoolYear || (years[0] && years[0].year) || '';
+
+    // Year tabs
+    var yearTabsHtml = '<div class="calendar-year-tabs">';
+    years.forEach(function (y) {
+      var active = y.year === currentYear ? ' active' : '';
+      yearTabsHtml += '<button class="calendar-year-tab' + active + '" data-year="' + y.year + '">' + y.year + '</button>';
+    });
+    yearTabsHtml += '</div>';
+
+    // Filter toggles
+    var filters = [
+      { type: 'holiday', label: 'Holidays' },
+      { type: 'break', label: 'Breaks' },
+      { type: 'minimum-day', label: 'Early dismissal' },
+      { type: 'non-student-day', label: 'No school' },
+      { type: 'first-last-day', label: 'First/Last day' },
+    ];
+    var filtersHtml = '<div class="calendar-filters" role="group" aria-label="Filter calendar events">';
+    filters.forEach(function (f) {
+      filtersHtml += '<button class="calendar-filter active" data-filter="' + f.type + '" aria-pressed="true">' + f.label + '</button>';
+    });
+    filtersHtml += '</div>';
+
+    // Date list (rendered for current year initially)
+    var datesHtml = renderCalendarDates(currentYear, null);
+
+    // PDF links
+    var pdfHtml = '<div class="calendar-pdfs">';
+    years.forEach(function (y) {
+      if (y.pdfUrl) {
+        pdfHtml += '<a href="' + y.pdfUrl + '" target="_blank" rel="noopener" class="task-tray__pill">📄 ' + y.year + ' PDF</a> ';
+      }
+    });
+    pdfHtml += '</div>';
+
+    return '<div class="task-tray__inner">' +
+      '<div class="task-tray__title">School calendar</div>' +
+      yearTabsHtml +
+      filtersHtml +
+      '<div id="calendarDateList">' + datesHtml + '</div>' +
+      (pdfHtml.indexOf('href') !== -1 ? '<div class="task-tray__links" style="margin-top:12px">' + pdfHtml + '</div>' : '') +
+      '<a href="https://www.eusd.org/page/school-year-calendars" target="_blank" rel="noopener" class="task-tray__more">Full details on eusd.org → <span class="visually-hidden">(opens in new tab)</span></a>' +
+    '</div>';
+  }
+
+  function renderCalendarDates(yearStr, hiddenTypes) {
+    var years = calendarData.schoolYears || [];
+    var yearData = years.find(function (y) { return y.year === yearStr; });
+    if (!yearData) return '<p>No dates available.</p>';
+
+    var typeIcons = {
+      'holiday': '🏖️',
+      'break': '🌴',
+      'minimum-day': '⏰',
+      'non-student-day': '📋',
+      'first-last-day': '🎒',
+    };
+
+    var html = '<ul class="calendar-list">';
+    yearData.dates.forEach(function (d) {
+      var hidden = hiddenTypes && hiddenTypes.indexOf(d.type) !== -1;
+      var date = new Date(d.date + 'T00:00:00');
+      var opts = { month: 'short', day: 'numeric' };
+      var dateStr = date.toLocaleDateString('en-US', opts);
+      if (d.endDate) {
+        var end = new Date(d.endDate + 'T00:00:00');
+        dateStr += ' – ' + end.toLocaleDateString('en-US', opts);
+      }
+      var icon = typeIcons[d.type] || '📌';
+      html += '<li class="calendar-item' + (hidden ? ' calendar-item--hidden' : '') + '" data-type="' + d.type + '">' +
+        '<span>' + icon + ' ' + d.label + '</span>' +
+        '<span class="calendar-item__date">' + dateStr + '</span>' +
+      '</li>';
+    });
+    html += '</ul>';
+    return html;
+  }
+
+  function initCalendarFilters() {
+    var container = document.getElementById('calendarDateList');
+    if (!container) return;
+
+    var trayInner = container.closest('.task-tray__inner');
+    if (!trayInner) return;
+
+    // Year tabs
+    var yearTabs = trayInner.querySelectorAll('.calendar-year-tab');
+    yearTabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        yearTabs.forEach(function (t) { t.classList.remove('active'); });
+        tab.classList.add('active');
+        var hiddenTypes = getHiddenTypes(trayInner);
+        container.innerHTML = renderCalendarDates(tab.dataset.year, hiddenTypes);
+        trackEvent('calendar_filter', { filter_type: 'year_' + tab.dataset.year });
+      });
+    });
+
+    // Filter toggles
+    var filterBtns = trayInner.querySelectorAll('.calendar-filter');
+    filterBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        btn.classList.toggle('active');
+        btn.setAttribute('aria-pressed', btn.classList.contains('active'));
+        var activeYear = trayInner.querySelector('.calendar-year-tab.active');
+        var yearStr = activeYear ? activeYear.dataset.year : configData.currentSchoolYear;
+        var hiddenTypes = getHiddenTypes(trayInner);
+        container.innerHTML = renderCalendarDates(yearStr, hiddenTypes);
+        trackEvent('calendar_filter', { filter_type: btn.dataset.filter });
+      });
+    });
+  }
+
+  function getHiddenTypes(trayInner) {
+    var hidden = [];
+    trayInner.querySelectorAll('.calendar-filter').forEach(function (btn) {
+      if (!btn.classList.contains('active')) {
+        hidden.push(btn.dataset.filter);
+      }
+    });
+    return hidden;
+  }
+
+  // ===== Forms =====
+  function buildFormsTray() {
+    var visible = formsData.filter(function (f) {
+      return f.category !== 'hide' && f.title.indexOf('Page Not Found') === -1;
+    });
+
+    // Group by category
+    var grouped = {};
+    var uncategorized = [];
+    visible.forEach(function (f) {
+      if (f.category) {
+        if (!grouped[f.category]) grouped[f.category] = [];
+        grouped[f.category].push(f);
+      } else {
+        uncategorized.push(f);
+      }
+    });
+
+    var html = '<div class="task-tray__inner">' +
+      '<div class="task-tray__title">Forms &amp; documents</div>' +
+      '<div class="task-tray__content">' +
+      '<p>Documents and forms available from <span class="notranslate">EUSD</span>. ' +
+      '<em>(' + visible.length + ' items)</em></p>';
+
+    // Render categorized groups first
+    var catLabels = Object.keys(grouped).sort();
+    catLabels.forEach(function (cat) {
+      html += '<h4 style="margin-top:16px;text-transform:capitalize">' + cat + '</h4>';
+      html += '<ul class="forms-list">';
+      grouped[cat].forEach(function (f) {
+        var isPdf = f.url.endsWith('.pdf');
+        var icon = isPdf ? '📄' : '🔗';
+        var badge = isPdf ? ' <span class="forms-badge">PDF</span>' : '';
+        html += '<li class="forms-item"><a href="' + f.url + '" target="_blank" rel="noopener">' +
+          icon + ' ' + f.title + badge + '</a></li>';
+      });
+      html += '</ul>';
+    });
+
+    // Render uncategorized
+    if (uncategorized.length > 0) {
+      if (catLabels.length > 0) {
+        html += '<h4 style="margin-top:16px">Other</h4>';
+      }
+      html += '<ul class="forms-list">';
+      uncategorized.forEach(function (f) {
+        var isPdf = f.url.endsWith('.pdf');
+        var icon = isPdf ? '📄' : '🔗';
+        var badge = isPdf ? ' <span class="forms-badge">PDF</span>' : '';
+        html += '<li class="forms-item"><a href="' + f.url + '" target="_blank" rel="noopener">' +
+          icon + ' ' + f.title + badge + '</a></li>';
+      });
+      html += '</ul>';
+    }
+
+    html += '</div>' +
+      '<a href="https://www.eusd.org" target="_blank" rel="noopener" class="task-tray__more">Full details on eusd.org → <span class="visually-hidden">(opens in new tab)</span></a>' +
+      '</div>';
+
+    return html;
   }
 
   // ===== Apps =====
@@ -567,6 +930,7 @@
       trackEvent('search_query', { query_text: query });
     });
 
+    // Click on result
     resultsEl.addEventListener('click', function (e) {
       var result = e.target.closest('.search-result');
       if (!result) return;
@@ -575,6 +939,64 @@
       input.value = '';
     });
 
+    // Keyboard navigation in search
+    var activeIndex = -1;
+
+    input.addEventListener('keydown', function (e) {
+      var items = resultsEl.querySelectorAll('.search-result');
+      if (!items.length || resultsEl.hidden) return;
+
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        activeIndex = Math.min(activeIndex + 1, items.length - 1);
+        updateActiveResult(items);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        activeIndex = Math.max(activeIndex - 1, 0);
+        updateActiveResult(items);
+      } else if (e.key === 'Enter') {
+        e.preventDefault();
+        if (activeIndex >= 0 && items[activeIndex]) {
+          var item = items[activeIndex];
+          navigateToResult(item.dataset.type, item.dataset.id);
+          resultsEl.hidden = true;
+          input.value = '';
+          activeIndex = -1;
+        }
+      } else if (e.key === 'Escape') {
+        resultsEl.hidden = true;
+        activeIndex = -1;
+      } else if (e.key === 'Tab' && !e.shiftKey) {
+        if (activeIndex < 0 && items.length > 0) {
+          e.preventDefault();
+          activeIndex = 0;
+          updateActiveResult(items);
+        } else if (activeIndex >= 0 && activeIndex < items.length - 1) {
+          e.preventDefault();
+          activeIndex++;
+          updateActiveResult(items);
+        } else {
+          resultsEl.hidden = true;
+          activeIndex = -1;
+        }
+      }
+    });
+
+    // Reset active index when input changes
+    input.addEventListener('input', function () { activeIndex = -1; });
+
+    function updateActiveResult(items) {
+      items.forEach(function (item, i) {
+        if (i === activeIndex) {
+          item.classList.add('search-result--active');
+          item.scrollIntoView({ block: 'nearest' });
+        } else {
+          item.classList.remove('search-result--active');
+        }
+      });
+    }
+
+    // Enter on focused result
     resultsEl.addEventListener('keydown', function (e) {
       if (e.key === 'Enter') {
         var result = e.target.closest('.search-result');
@@ -589,6 +1011,7 @@
     document.addEventListener('click', function (e) {
       if (!e.target.closest('.search-section__bar')) {
         resultsEl.hidden = true;
+        activeIndex = -1;
       }
     });
   }
@@ -611,6 +1034,18 @@
 
   // ===== Chips =====
   function initChips() {
+    // Popular links toggle
+    var toggle = document.getElementById('popularToggle');
+    var chips = document.getElementById('popularChips');
+    if (toggle && chips) {
+      toggle.addEventListener('click', function () {
+        var isOpen = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!isOpen));
+        chips.hidden = isOpen;
+        toggle.textContent = isOpen ? 'Popular links ▾' : 'Popular links ▴';
+      });
+    }
+
     document.querySelectorAll('.chip').forEach(function (chip) {
       chip.addEventListener('click', function () {
         var target = chip.dataset.target;
@@ -644,6 +1079,113 @@
     });
   }
 
+  // ===== New to EUSD Onramp =====
+  function initNewToEusd() {
+    var btn = document.getElementById('newToEusdBtn');
+    var tray = document.getElementById('newToEusdTray');
+    if (!btn || !tray) return;
+
+    var html = '<div class="onramp-tray__inner">' +
+      '<h3>Welcome! Here\'s how to get started</h3>' +
+      '<div class="onramp-step">' +
+        '<span class="onramp-step__number">1</span>' +
+        '<div class="onramp-step__content"><strong>Find your school</strong><br>' +
+          'Use the <a href="https://www.schoolsitelocator.com/apps/escondidounion/accessibilityFocused.html" target="_blank" rel="noopener">School Site Locator</a> to find which school your child is assigned to based on your home address.</div>' +
+      '</div>' +
+      '<div class="onramp-step">' +
+        '<span class="onramp-step__number">2</span>' +
+        '<div class="onramp-step__content"><strong>Enroll your child</strong><br>' +
+          'Visit <a href="https://www.eusd.org/page/registration-enrollment" target="_blank" rel="noopener">Registration &amp; Enrollment</a> on eusd.org. You\'ll need: proof of residency, birth certificate, immunization records, and previous school records (if transferring).</div>' +
+      '</div>' +
+      '<div class="onramp-step">' +
+        '<span class="onramp-step__number">3</span>' +
+        '<div class="onramp-step__content"><strong>Get your <span class="notranslate">PowerSchool</span> account</strong><br>' +
+          'Once enrolled, your school office will give you login credentials for <span class="notranslate">PowerSchool</span> — this is where you check grades, attendance, and report cards.</div>' +
+      '</div>' +
+      '<div class="onramp-step">' +
+        '<span class="onramp-step__number">4</span>' +
+        '<div class="onramp-step__content"><strong>Download the <span class="notranslate">Rooms</span> app</strong><br>' +
+          'This is how <span class="notranslate">EUSD</span> sends you news, alerts, and push notifications. Get it on <a href="https://apps.apple.com/us/app/thrillshare/id1024147876" target="_blank" rel="noopener">App Store</a> or <a href="https://play.google.com/store/apps/details?id=com.apptegy.thrillshare" target="_blank" rel="noopener">Google Play</a>.</div>' +
+      '</div>' +
+      '<div class="onramp-step">' +
+        '<span class="onramp-step__number">5</span>' +
+        '<div class="onramp-step__content"><strong>Know the basics</strong><br>' +
+          'All <span class="notranslate">EUSD</span> students eat breakfast and lunch <strong>free</strong> — no application needed. Check your school\'s bell schedule on this page for start and end times.</div>' +
+      '</div>' +
+      '<div class="onramp-step">' +
+        '<span class="onramp-step__number">6</span>' +
+        '<div class="onramp-step__content"><strong>Explore programs</strong><br>' +
+          '<span class="notranslate">EUSD</span> offers dual language programs (at <span class="notranslate">Farr, Glen View, Lincoln, Pioneer</span> — 90/10 model), the <span class="notranslate">EXPLORE</span> after-school program, and more. Browse the sections below to learn about everything available.</div>' +
+      '</div>' +
+    '</div>';
+
+    tray.innerHTML = html;
+
+    btn.addEventListener('click', function () {
+      var isOpen = btn.getAttribute('aria-expanded') === 'true';
+      if (isOpen) {
+        btn.setAttribute('aria-expanded', 'false');
+        tray.classList.remove('open');
+        tray.setAttribute('aria-hidden', 'true');
+      } else {
+        btn.setAttribute('aria-expanded', 'true');
+        tray.classList.add('open');
+        tray.setAttribute('aria-hidden', 'false');
+        trackEvent('task_tray_open', { task_id: 'new-to-eusd-onramp' });
+      }
+    });
+  }
+
+  // ===== Find by Address =====
+  function initFindByAddress() {
+    var btn = document.getElementById('findByAddressBtn');
+    var tray = document.getElementById('findByAddressTray');
+    if (!btn || !tray) return;
+
+    var loaded = false;
+
+    btn.addEventListener('click', function () {
+      var isOpen = btn.getAttribute('aria-expanded') === 'true';
+      if (isOpen) {
+        btn.setAttribute('aria-expanded', 'false');
+        tray.classList.remove('open');
+        tray.setAttribute('aria-hidden', 'true');
+      } else {
+        if (!loaded) {
+          tray.innerHTML = '<div class="onramp-tray__inner" style="padding:0;overflow:hidden;">' +
+            '<iframe src="https://www.schoolsitelocator.com/apps/escondidounion/accessibilityFocused.html" ' +
+              'title="School Site Locator" ' +
+              'style="width:100%;height:500px;border:none;border-radius:0 0 10px 10px;" ' +
+              'loading="lazy"></iframe>' +
+          '</div>';
+          loaded = true;
+        }
+        btn.setAttribute('aria-expanded', 'true');
+        tray.classList.add('open');
+        tray.setAttribute('aria-hidden', 'false');
+        trackEvent('task_tray_open', { task_id: 'find-by-address' });
+      }
+    });
+  }
+
+  // ===== Back to Top =====
+  function initBackToTop() {
+    var btn = document.getElementById('backToTop');
+    if (!btn) return;
+
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 400) {
+        btn.classList.add('visible');
+      } else {
+        btn.classList.remove('visible');
+      }
+    }, { passive: true });
+
+    btn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
   // ===== Footer =====
   function initFooter() {
     var el = document.getElementById('lastUpdated');
@@ -666,6 +1208,9 @@
       initSearch();
       initChips();
       initOutboundTracking();
+      initNewToEusd();
+      initFindByAddress();
+      initBackToTop();
       initFooter();
     } catch (err) {
       console.error('Failed to initialize Parent Portal:', err);

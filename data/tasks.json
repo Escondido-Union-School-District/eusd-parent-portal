@@ -1,326 +1,521 @@
 [
   {
     "id": "grades",
-    "title": { "en": "Check grades & attendance" },
+    "title": {
+      "en": "Check grades & attendance"
+    },
     "icon": "📊",
     "iconBg": "#E6F1FB",
     "category": "daily",
-    "subtitle": { "en": "PowerSchool portal" },
-    "trayHtml": {
-      "en": "<p><span class=\"notranslate\">EUSD</span> uses <span class=\"notranslate\">PowerSchool</span> to share grades, attendance, and report cards with families.</p><h4>What you can see</h4><ul><li>Current grades and assignment scores</li><li>Attendance records (absences, tardies)</li><li>Report cards and progress reports</li><li>Teacher comments</li></ul><h4>How to log in</h4><ol><li>Go to <a href=\"https://www.eusd.org/o/eusd/page/powerschool-for-parents\" target=\"_blank\" rel=\"noopener\">the <span class=\"notranslate\">PowerSchool</span> parent page on eusd.org</a></li><li>Click the <span class=\"notranslate\">PowerSchool</span> login link</li><li>Enter your parent username and password</li></ol><p><strong>Don't have an account?</strong> Contact your child's school office — they'll create your parent account and give you login credentials.</p><p><strong>Forgot your password?</strong> Use the \"Forgot Password\" link on the login screen, or call your school office for a reset.</p><p><a href=\"https://www.eusd.org/o/eusd/page/powerschool-for-parents\" target=\"_blank\" rel=\"noopener\">Full details on eusd.org →</a></p>"
+    "subtitle": {
+      "en": "PowerSchool portal"
     },
-    "actionLabel": { "en": "Open PowerSchool →" },
+    "trayHtml": {
+      "en": "<p><span class=\"notranslate\">EUSD</span> uses <span class=\"notranslate\">PowerSchool</span> to share grades, attendance, and report cards with families.</p><h4>What you can see</h4><ul><li>Current grades and assignment scores</li><li>Attendance records (absences, tardies)</li><li>Report cards and progress reports</li><li>Teacher comments</li></ul><h4>How to log in</h4><ol><li>Go to <a href=\"https://www.eusd.org/o/eusd/page/powerschool-for-parents\" target=\"_blank\" rel=\"noopener\">the <span class=\"notranslate\">PowerSchool</span> parent page on eusd.org</a></li><li>Click the <span class=\"notranslate\">PowerSchool</span> login link</li><li>Enter your parent username and password</li></ol><p><strong>Don't have an account?</strong> Contact your child's school office — they'll create your parent account and give you login credentials.</p><p><strong>Forgot your password?</strong> Use the \"Forgot Password\" link on the login screen, or call your school office for a reset.</p>"
+    },
+    "actionLabel": {
+      "en": "Open PowerSchool →"
+    },
     "actionUrl": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
     "links": [
-      { "label": { "en": "Setup guide" }, "url": "#" },
-      { "label": { "en": "Forgot password?" }, "url": "#" }
+      {
+        "label": {
+          "en": "Setup guide"
+        },
+        "url": "#"
+      },
+      {
+        "label": {
+          "en": "Forgot password?"
+        },
+        "url": "#"
+      }
     ],
     "moreUrl": "https://www.eusd.org/o/eusd/page/powerschool-for-parents"
   },
   {
     "id": "calendar",
-    "title": { "en": "School calendar" },
+    "title": {
+      "en": "School calendar"
+    },
     "icon": "📅",
     "iconBg": "#FFF3E0",
     "category": "daily",
-    "subtitle": { "en": "Key dates & breaks" },
-    "trayHtml": {
-      "en": "<p>View all important dates for the <span class=\"notranslate\">EUSD</span> school year — holidays, breaks, minimum days, and more. The full interactive calendar is in the Calendar section below.</p><h4>Quick reference — 2025-2026</h4><ul><li><strong>First day of school:</strong> August 19, 2025</li><li><strong>Thanksgiving break:</strong> November 24–28, 2025</li><li><strong>Winter break:</strong> December 22, 2025 – January 5, 2026</li><li><strong>Spring break:</strong> April 2–13, 2026</li><li><strong>Last day of school:</strong> June 10, 2026 (minimum day)</li></ul><p>Download the printable calendar PDF or scroll down to the full calendar section for all dates and filter options.</p><p><a href=\"https://www.eusd.org/page/school-year-calendars\" target=\"_blank\" rel=\"noopener\">Full details on eusd.org →</a></p>"
+    "subtitle": {
+      "en": "Key dates & breaks"
     },
-    "actionLabel": { "en": "View full calendar ↓" },
+    "trayHtml": {
+      "en": "<p>View all important dates for the <span class=\"notranslate\">EUSD</span> school year — holidays, breaks, minimum days, and more. The full interactive calendar is in the Calendar section below.</p><h4>Quick reference — 2025-2026</h4><ul><li><strong>First day of school:</strong> August 19, 2025</li><li><strong>Thanksgiving break:</strong> November 24–28, 2025</li><li><strong>Winter break:</strong> December 22, 2025 – January 5, 2026</li><li><strong>Spring break:</strong> April 2–13, 2026</li><li><strong>Last day of school:</strong> June 10, 2026 (minimum day)</li></ul><p>Download the printable calendar PDF or scroll down to the full calendar section for all dates and filter options.</p>"
+    },
+    "actionLabel": {
+      "en": "View full calendar ↓"
+    },
     "actionUrl": "#calendar-section",
     "links": [
-      { "label": { "en": "Download calendar PDF" }, "url": "#" }
+      {
+        "label": {
+          "en": "Download calendar PDF"
+        },
+        "url": "#"
+      }
     ],
     "moreUrl": "https://www.eusd.org/page/school-year-calendars"
   },
   {
     "id": "lunch-menu",
-    "title": { "en": "Lunch menu" },
+    "title": {
+      "en": "Lunch menu"
+    },
     "icon": "🍽️",
     "iconBg": "#E8F5E9",
     "category": "daily",
-    "subtitle": { "en": "EZSchoolLunch menus" },
-    "trayHtml": {
-      "en": "<p><span class=\"notranslate\">EUSD</span> provides free breakfast and lunch to <strong>all students</strong> — no application or paperwork needed. The district participates in the <strong>Community Eligibility Provision (CEP)</strong>, so every child eats free regardless of family income.</p><h4>View menus</h4><p>Daily menus are posted on <span class=\"notranslate\">EZSchoolLunch</span>, where you can see what's being served, check nutrition info, and view allergen details.</p><h4>Allergens & dietary needs</h4><p>Menu items list common allergens. If your child has a specific food allergy or dietary restriction, contact your school's cafeteria manager or the Nutrition Services office.</p><p><a href=\"https://www.ezschoollunch.com/p/Escondido/home\" target=\"_blank\" rel=\"noopener\">Full details on eusd.org →</a></p>"
+    "subtitle": {
+      "en": "EZSchoolLunch menus"
     },
-    "actionLabel": { "en": "View menus →" },
+    "trayHtml": {
+      "en": "<p><span class=\"notranslate\">EUSD</span> provides free breakfast and lunch to <strong>all students</strong> — no application or paperwork needed. The district participates in the <strong>Community Eligibility Provision (CEP)</strong>, so every child eats free regardless of family income.</p><h4>View menus</h4><p>Daily menus are posted on <span class=\"notranslate\">EZSchoolLunch</span>, where you can see what's being served, check nutrition info, and view allergen details.</p><h4>Allergens & dietary needs</h4><p>Menu items list common allergens. If your child has a specific food allergy or dietary restriction, contact your school's cafeteria manager or the Nutrition Services office.</p>"
+    },
+    "actionLabel": {
+      "en": "View menus →"
+    },
     "actionUrl": "https://www.ezschoollunch.com/p/Escondido/home",
     "links": [
-      { "label": { "en": "Nutrition Services" }, "url": "https://www.eusd.org/page/nutrition-services" }
+      {
+        "label": {
+          "en": "Nutrition Services"
+        },
+        "url": "https://www.eusd.org/page/nutrition-services"
+      }
     ],
     "moreUrl": "https://www.eusd.org/page/nutrition-services"
   },
   {
     "id": "bell-schedules",
-    "title": { "en": "Bell schedules" },
+    "title": {
+      "en": "Bell schedules"
+    },
     "icon": "🔔",
     "iconBg": "#FFF8E1",
     "category": "daily",
-    "subtitle": { "en": "Start & end times" },
-    "trayHtml": {
-      "en": "<p>Bell schedules vary by school. Select your school in the \"Find your school\" section above to see its specific start and end times.</p><h4>General schedule</h4><ul><li><strong>Elementary schools:</strong> Most start between 7:45–8:30 AM and end between 2:15–3:00 PM</li><li><strong>Middle schools:</strong> Most start between 7:30–8:00 AM and end between 2:30–3:00 PM</li></ul><h4>Minimum days</h4><p>On minimum days, students are released early — usually around 12:15–12:45 PM for elementary and 12:30–1:00 PM for middle school. Check the school calendar for minimum day dates.</p><p>For your school's exact times, tap your school above or visit the bell schedules page.</p><p><a href=\"https://www.eusd.org/page/eusd-bell-schedules\" target=\"_blank\" rel=\"noopener\">Full details on eusd.org →</a></p>"
+    "subtitle": {
+      "en": "Start & end times"
     },
-    "actionLabel": { "en": "View all bell schedules →" },
+    "trayHtml": {
+      "en": "<p>Bell schedules vary by school. Select your school in the \"Find your school\" section above to see its specific start and end times.</p><h4>General schedule</h4><ul><li><strong>Elementary schools:</strong> Most start between 7:45–8:30 AM and end between 2:15–3:00 PM</li><li><strong>Middle schools:</strong> Most start between 7:30–8:00 AM and end between 2:30–3:00 PM</li></ul><h4>Minimum days</h4><p>On minimum days, students are released early — usually around 12:15–12:45 PM for elementary and 12:30–1:00 PM for middle school. Check the school calendar for minimum day dates.</p><p>For your school's exact times, tap your school above or visit the bell schedules page.</p>"
+    },
+    "actionLabel": {
+      "en": "View all bell schedules →"
+    },
     "actionUrl": "https://www.eusd.org/page/eusd-bell-schedules",
     "links": [],
     "moreUrl": "https://www.eusd.org/page/eusd-bell-schedules"
   },
   {
     "id": "report-absence",
-    "title": { "en": "Report an absence" },
+    "title": {
+      "en": "Report an absence"
+    },
     "icon": "📝",
     "iconBg": "#FCE4EC",
     "category": "daily",
-    "subtitle": { "en": "Notify the school" },
-    "trayHtml": {
-      "en": "<p>If your child will be absent or late, please notify the school as soon as possible — ideally before the school day starts.</p><h4>How to report an absence</h4><ol><li><strong>Call your school's attendance line</strong> — find the phone number by tapping your school in the \"Find your school\" section above</li><li><strong>Online:</strong> Visit the <span class=\"notranslate\">EUSD</span> attendance page for reporting options</li></ol><h4>What to include</h4><ul><li>Your child's full name and grade</li><li>Date(s) of absence</li><li>Reason for absence (illness, appointment, family emergency, etc.)</li><li>Your name and relationship to the student</li></ul><h4>Good to know</h4><ul><li>California law requires parents to clear absences within a specific timeframe</li><li>Uncleared absences are marked as unexcused (truant)</li><li>If your child will miss 3+ days, contact the school to arrange homework pickup</li></ul><p><a href=\"https://www.eusd.org/page/attendance\" target=\"_blank\" rel=\"noopener\">Full details on eusd.org →</a></p>"
+    "subtitle": {
+      "en": "Notify the school"
     },
-    "actionLabel": { "en": "Attendance info →" },
+    "trayHtml": {
+      "en": "<p>If your child will be absent or late, please notify the school as soon as possible — ideally before the school day starts.</p><h4>How to report an absence</h4><ol><li><strong>Call your school's attendance line</strong> — find the phone number by tapping your school in the \"Find your school\" section above</li><li><strong>Online:</strong> Visit the <span class=\"notranslate\">EUSD</span> attendance page for reporting options</li></ol><h4>What to include</h4><ul><li>Your child's full name and grade</li><li>Date(s) of absence</li><li>Reason for absence (illness, appointment, family emergency, etc.)</li><li>Your name and relationship to the student</li></ul><h4>Good to know</h4><ul><li>California law requires parents to clear absences within a specific timeframe</li><li>Uncleared absences are marked as unexcused (truant)</li><li>If your child will miss 3+ days, contact the school to arrange homework pickup</li></ul>"
+    },
+    "actionLabel": {
+      "en": "Attendance info →"
+    },
     "actionUrl": "https://www.eusd.org/page/attendance",
     "links": [],
     "moreUrl": "https://www.eusd.org/page/attendance"
   },
   {
     "id": "rooms-app",
-    "title": { "en": "Get the Rooms app" },
+    "title": {
+      "en": "Get the Rooms app"
+    },
     "icon": "📱",
     "iconBg": "#E8EAF6",
     "category": "connected",
-    "subtitle": { "en": "News & push notifications" },
-    "trayHtml": {
-      "en": "<p><span class=\"notranslate\">Rooms</span> (powered by <span class=\"notranslate\">Thrillshare</span>) is <span class=\"notranslate\">EUSD</span>'s official app for school news, district announcements, and push notifications. It's free and available for iPhone and Android.</p><h4>Why you need it</h4><ul><li>Get instant push notifications from your child's school</li><li>See news stories, photos, and event announcements</li><li>Receive emergency alerts and weather closures</li><li>Follow multiple schools if you have children at different sites</li></ul><h4>How to get started</h4><ol><li>Download the <span class=\"notranslate\">Rooms</span> app from the <a href=\"https://apps.apple.com/us/app/thrillshare/id1024147876\" target=\"_blank\" rel=\"noopener\">App Store</a> or <a href=\"https://play.google.com/store/apps/details?id=com.apptegy.thrillshare\" target=\"_blank\" rel=\"noopener\">Google Play</a></li><li>Search for \"<span class=\"notranslate\">Escondido Union School District</span>\"</li><li>Follow your child's school (and the district) to get notifications</li></ol><p>You can also access the web version at <a href=\"https://escondidousdca.id.thrillshare.com/\" target=\"_blank\" rel=\"noopener\"><span class=\"notranslate\">escondidousdca.id.thrillshare.com</span></a>.</p><p><a href=\"https://www.eusd.org/page/rooms\" target=\"_blank\" rel=\"noopener\">Full details on eusd.org →</a></p>"
+    "subtitle": {
+      "en": "News & push notifications"
     },
-    "actionLabel": { "en": "Download Rooms →" },
+    "trayHtml": {
+      "en": "<p><span class=\"notranslate\">Rooms</span> (powered by <span class=\"notranslate\">Thrillshare</span>) is <span class=\"notranslate\">EUSD</span>'s official app for school news, district announcements, and push notifications. It's free and available for iPhone and Android.</p><h4>Why you need it</h4><ul><li>Get instant push notifications from your child's school</li><li>See news stories, photos, and event announcements</li><li>Receive emergency alerts and weather closures</li><li>Follow multiple schools if you have children at different sites</li></ul><h4>How to get started</h4><ol><li>Download the <span class=\"notranslate\">Rooms</span> app from the <a href=\"https://apps.apple.com/us/app/thrillshare/id1024147876\" target=\"_blank\" rel=\"noopener\">App Store</a> or <a href=\"https://play.google.com/store/apps/details?id=com.apptegy.thrillshare\" target=\"_blank\" rel=\"noopener\">Google Play</a></li><li>Search for \"<span class=\"notranslate\">Escondido Union School District</span>\"</li><li>Follow your child's school (and the district) to get notifications</li></ol><p>You can also access the web version at <a href=\"https://escondidousdca.id.thrillshare.com/\" target=\"_blank\" rel=\"noopener\"><span class=\"notranslate\">escondidousdca.id.thrillshare.com</span></a>.</p>"
+    },
+    "actionLabel": {
+      "en": "Download Rooms →"
+    },
     "actionUrl": "https://apps.apple.com/us/app/thrillshare/id1024147876",
     "links": [
-      { "label": { "en": "App Store (iPhone)" }, "url": "https://apps.apple.com/us/app/thrillshare/id1024147876" },
-      { "label": { "en": "Google Play (Android)" }, "url": "https://play.google.com/store/apps/details?id=com.apptegy.thrillshare" },
-      { "label": { "en": "Web login" }, "url": "https://escondidousdca.id.thrillshare.com/" }
+      {
+        "label": {
+          "en": "App Store (iPhone)"
+        },
+        "url": "https://apps.apple.com/us/app/thrillshare/id1024147876"
+      },
+      {
+        "label": {
+          "en": "Google Play (Android)"
+        },
+        "url": "https://play.google.com/store/apps/details?id=com.apptegy.thrillshare"
+      },
+      {
+        "label": {
+          "en": "Web login"
+        },
+        "url": "https://escondidousdca.id.thrillshare.com/"
+      }
     ],
     "moreUrl": "https://www.eusd.org/page/rooms"
   },
   {
     "id": "contact-teacher",
-    "title": { "en": "Contact a teacher" },
+    "title": {
+      "en": "Contact a teacher"
+    },
     "icon": "✉️",
     "iconBg": "#E3F2FD",
     "category": "connected",
-    "subtitle": { "en": "Email or call" },
-    "trayHtml": {
-      "en": "<p>The best way to reach your child's teacher depends on your school. Here are your options:</p><h4>Option 1: School website staff directory</h4><p>Every school has a staff directory on its website. Find your school in the \"Find your school\" section above, then tap \"Staff directory\" in the school tray.</p><h4>Option 2: Email</h4><p>Most <span class=\"notranslate\">EUSD</span> teacher email addresses follow the format: <strong>firstname.lastname@eusd.org</strong>. If you know the teacher's name, try that pattern.</p><h4>Option 3: Call the school office</h4><p>The school office can connect you to a teacher or pass along a message. Find your school's phone number in the \"Find your school\" section above.</p><h4>Tips for a quick response</h4><ul><li>Include your child's full name, grade, and class period (for middle school)</li><li>Teachers typically respond within 1–2 school days</li><li>For urgent matters, call the school office directly</li></ul><p><a href=\"https://www.eusd.org/page/schools\" target=\"_blank\" rel=\"noopener\">Full details on eusd.org →</a></p>"
+    "subtitle": {
+      "en": "Email or call"
     },
-    "actionLabel": { "en": "Find your school ↑" },
+    "trayHtml": {
+      "en": "<p>The best way to reach your child's teacher depends on your school. Here are your options:</p><h4>Option 1: School website staff directory</h4><p>Every school has a staff directory on its website. Find your school in the \"Find your school\" section above, then tap \"Staff directory\" in the school tray.</p><h4>Option 2: Email</h4><p>Most <span class=\"notranslate\">EUSD</span> teacher email addresses follow the format: <strong>firstname.lastname@eusd.org</strong>. If you know the teacher's name, try that pattern.</p><h4>Option 3: Call the school office</h4><p>The school office can connect you to a teacher or pass along a message. Find your school's phone number in the \"Find your school\" section above.</p><h4>Tips for a quick response</h4><ul><li>Include your child's full name, grade, and class period (for middle school)</li><li>Teachers typically respond within 1–2 school days</li><li>For urgent matters, call the school office directly</li></ul>"
+    },
+    "actionLabel": {
+      "en": "Find your school ↑"
+    },
     "actionUrl": "#find-your-school",
     "links": [],
     "moreUrl": "https://www.eusd.org/page/schools"
   },
   {
     "id": "school-office",
-    "title": { "en": "School office contacts" },
+    "title": {
+      "en": "School office contacts"
+    },
     "icon": "📞",
     "iconBg": "#E0F7FA",
     "category": "connected",
-    "subtitle": { "en": "Phone & address" },
-    "trayHtml": {
-      "en": "<p>Need to reach a school office? Select your school in the \"Find your school\" section above to see its phone number, address, and principal.</p><h4><span class=\"notranslate\">EUSD</span> District Office</h4><ul><li><strong>Phone:</strong> <a href=\"tel:760-432-2400\">760.432.2400</a></li><li><strong>Address:</strong> 2310 Aldergrove Avenue, Escondido, CA 92029</li><li><strong>Hours:</strong> Monday–Friday, 7:30 AM – 4:30 PM</li></ul><h4>Common departments</h4><ul><li><strong>Enrollment:</strong> <a href=\"tel:760-432-2400\">760.432.2400</a></li><li><strong>Transportation:</strong> <a href=\"tel:760-432-2400\">760.432.2400</a></li><li><strong>Nutrition Services:</strong> <a href=\"tel:760-432-2400\">760.432.2400</a></li><li><strong>Special Education:</strong> <a href=\"tel:760-432-2400\">760.432.2400</a></li></ul><p><a href=\"https://www.eusd.org/page/schools\" target=\"_blank\" rel=\"noopener\">Full details on eusd.org →</a></p>"
+    "subtitle": {
+      "en": "Phone & address"
     },
-    "actionLabel": { "en": "Find your school ↑" },
+    "trayHtml": {
+      "en": "<p>Need to reach a school office? Select your school in the \"Find your school\" section above to see its phone number, address, and principal.</p><h4><span class=\"notranslate\">EUSD</span> District Office</h4><ul><li><strong>Phone:</strong> <a href=\"tel:760-432-2400\">760.432.2400</a></li><li><strong>Address:</strong> 2310 Aldergrove Avenue, Escondido, CA 92029</li><li><strong>Hours:</strong> Monday–Friday, 7:30 AM – 4:30 PM</li></ul><h4>Common departments</h4><ul><li><strong>Enrollment:</strong> <a href=\"tel:760-432-2400\">760.432.2400</a></li><li><strong>Transportation:</strong> <a href=\"tel:760-432-2400\">760.432.2400</a></li><li><strong>Nutrition Services:</strong> <a href=\"tel:760-432-2400\">760.432.2400</a></li><li><strong>Special Education:</strong> <a href=\"tel:760-432-2400\">760.432.2400</a></li></ul>"
+    },
+    "actionLabel": {
+      "en": "Find your school ↑"
+    },
     "actionUrl": "#find-your-school",
     "links": [
-      { "label": { "en": "District office" }, "url": "https://www.eusd.org/o/eusd" }
+      {
+        "label": {
+          "en": "District office"
+        },
+        "url": "https://www.eusd.org/o/eusd"
+      }
     ],
     "moreUrl": "https://www.eusd.org/page/schools"
   },
   {
     "id": "enroll",
-    "title": { "en": "Enroll my child" },
+    "title": {
+      "en": "Enroll my child"
+    },
     "icon": "🎒",
     "iconBg": "#E8F5E9",
     "category": "enrollment",
-    "subtitle": { "en": "New student registration" },
-    "trayHtml": {
-      "en": "<h4>Step 1: Find your school</h4><p>Use the <a href=\"https://www.schoolsitelocator.com/apps/escondidounion/accessibilityFocused.html\" target=\"_blank\" rel=\"noopener\"><span class=\"notranslate\">School Site Locator</span></a> to find which school your child is assigned to based on your home address.</p><h4>Step 2: Gather your documents</h4><p>You'll need:</p><ul><li><strong>Proof of age</strong> — birth certificate, passport, or baptismal record</li><li><strong>Proof of address</strong> — utility bill, lease/rental agreement, or mortgage statement (must be current)</li><li><strong>Immunization records</strong> — California requires up-to-date immunizations for school entry</li><li><strong>Previous school records</strong> (if transferring) — last report card or transcript</li></ul><h4>Step 3: Register online</h4><p>Complete the online registration on the <span class=\"notranslate\">EUSD</span> enrollment page. You'll then visit your assigned school to finalize enrollment.</p><h4>Key dates</h4><ul><li><strong>Kindergarten:</strong> Children must turn 5 by September 1 of the enrollment year</li><li><strong>Transitional Kindergarten (TK):</strong> Children who turn 5 between September 2 and the following June 2</li><li><strong>Open enrollment:</strong> Typically begins in January for the following school year</li></ul><p><a href=\"https://www.eusd.org/page/enrollment\" target=\"_blank\" rel=\"noopener\">Full details on eusd.org →</a></p>"
+    "subtitle": {
+      "en": "New student registration"
     },
-    "actionLabel": { "en": "Start enrollment →" },
+    "trayHtml": {
+      "en": "<h4>Step 1: Find your school</h4><p>Use the <a href=\"https://www.schoolsitelocator.com/apps/escondidounion/accessibilityFocused.html\" target=\"_blank\" rel=\"noopener\"><span class=\"notranslate\">School Site Locator</span></a> to find which school your child is assigned to based on your home address.</p><h4>Step 2: Gather your documents</h4><p>You'll need:</p><ul><li><strong>Proof of age</strong> — birth certificate, passport, or baptismal record</li><li><strong>Proof of address</strong> — utility bill, lease/rental agreement, or mortgage statement (must be current)</li><li><strong>Immunization records</strong> — California requires up-to-date immunizations for school entry</li><li><strong>Previous school records</strong> (if transferring) — last report card or transcript</li></ul><h4>Step 3: Register online</h4><p>Complete the online registration on the <span class=\"notranslate\">EUSD</span> enrollment page. You'll then visit your assigned school to finalize enrollment.</p><h4>Key dates</h4><ul><li><strong>Kindergarten:</strong> Children must turn 5 by September 1 of the enrollment year</li><li><strong>Transitional Kindergarten (TK):</strong> Children who turn 5 between September 2 and the following June 2</li><li><strong>Open enrollment:</strong> Typically begins in January for the following school year</li></ul>"
+    },
+    "actionLabel": {
+      "en": "Start enrollment →"
+    },
     "actionUrl": "https://www.eusd.org/page/enrollment",
     "links": [
-      { "label": { "en": "School Site Locator" }, "url": "https://www.schoolsitelocator.com/apps/escondidounion/accessibilityFocused.html" },
-      { "label": { "en": "Required documents" }, "url": "#" }
+      {
+        "label": {
+          "en": "School Site Locator"
+        },
+        "url": "https://www.schoolsitelocator.com/apps/escondidounion/accessibilityFocused.html"
+      },
+      {
+        "label": {
+          "en": "Required documents"
+        },
+        "url": "#"
+      }
     ],
     "moreUrl": "https://www.eusd.org/page/enrollment"
   },
   {
     "id": "forms",
-    "title": { "en": "Forms & documents" },
+    "title": {
+      "en": "Forms & documents"
+    },
     "icon": "📄",
     "iconBg": "#F3E5F5",
     "category": "enrollment",
-    "subtitle": { "en": "Downloadable forms" },
-    "trayHtml": {
-      "en": "<p>Find commonly needed <span class=\"notranslate\">EUSD</span> forms and documents. Many forms can be completed online; some require printing and returning to your school office.</p><h4>Common forms</h4><ul><li>Enrollment / registration packet</li><li>Emergency contact update</li><li>Media release / photo permission</li><li>Interdistrict transfer request</li><li>Intradistrict transfer request</li><li>Medication authorization</li><li>Independent study contract</li></ul><p>Contact your school office if you need a form that's not listed here, or if you need help completing any form.</p><p><a href=\"https://www.eusd.org/page/forms\" target=\"_blank\" rel=\"noopener\">Full details on eusd.org →</a></p>"
+    "subtitle": {
+      "en": "Downloadable forms"
     },
-    "actionLabel": { "en": "View forms →" },
+    "trayHtml": {
+      "en": "<p>Find commonly needed <span class=\"notranslate\">EUSD</span> forms and documents. Many forms can be completed online; some require printing and returning to your school office.</p><h4>Common forms</h4><ul><li>Enrollment / registration packet</li><li>Emergency contact update</li><li>Media release / photo permission</li><li>Interdistrict transfer request</li><li>Intradistrict transfer request</li><li>Medication authorization</li><li>Independent study contract</li></ul><p>Contact your school office if you need a form that's not listed here, or if you need help completing any form.</p>"
+    },
+    "actionLabel": {
+      "en": "View forms →"
+    },
     "actionUrl": "https://www.eusd.org/page/forms",
     "links": [],
     "moreUrl": "https://www.eusd.org/page/forms"
   },
   {
     "id": "transfer",
-    "title": { "en": "Transfer schools" },
+    "title": {
+      "en": "Transfer schools"
+    },
     "icon": "🔄",
     "iconBg": "#FFF3E0",
     "category": "enrollment",
-    "subtitle": { "en": "Change schools within EUSD" },
-    "trayHtml": {
-      "en": "<p>If you need to transfer your child to a different school within <span class=\"notranslate\">EUSD</span>, here's what you need to know:</p><h4>Intradistrict transfer (within EUSD)</h4><p>If you want your child to attend a different <span class=\"notranslate\">EUSD</span> school than the one assigned by your address:</p><ol><li>Complete an Intradistrict Transfer Request form (available at your current school office or online)</li><li>Submit to the district office</li><li>Transfers are approved based on available space at the requested school</li><li>Open enrollment window is typically in January–February for the following year</li></ol><h4>Interdistrict transfer (from/to another district)</h4><p>If you're moving into or out of <span class=\"notranslate\">EUSD</span>:</p><ol><li>Contact the enrollment office at <a href=\"tel:760-432-2400\">760.432.2400</a></li><li>Complete the Interdistrict Transfer form</li><li>Both districts must approve the transfer</li></ol><h4>Moving within EUSD boundaries</h4><p>If you're moving to a new address within <span class=\"notranslate\">EUSD</span>, use the <a href=\"https://www.schoolsitelocator.com/apps/escondidounion/accessibilityFocused.html\" target=\"_blank\" rel=\"noopener\"><span class=\"notranslate\">School Site Locator</span></a> to check if your new address is in a different school boundary. If so, contact your school office to discuss your options.</p><p><a href=\"https://www.eusd.org/page/enrollment\" target=\"_blank\" rel=\"noopener\">Full details on eusd.org →</a></p>"
+    "subtitle": {
+      "en": "Change schools within EUSD"
     },
-    "actionLabel": { "en": "Transfer info →" },
+    "trayHtml": {
+      "en": "<p>If you need to transfer your child to a different school within <span class=\"notranslate\">EUSD</span>, here's what you need to know:</p><h4>Intradistrict transfer (within EUSD)</h4><p>If you want your child to attend a different <span class=\"notranslate\">EUSD</span> school than the one assigned by your address:</p><ol><li>Complete an Intradistrict Transfer Request form (available at your current school office or online)</li><li>Submit to the district office</li><li>Transfers are approved based on available space at the requested school</li><li>Open enrollment window is typically in January–February for the following year</li></ol><h4>Interdistrict transfer (from/to another district)</h4><p>If you're moving into or out of <span class=\"notranslate\">EUSD</span>:</p><ol><li>Contact the enrollment office at <a href=\"tel:760-432-2400\">760.432.2400</a></li><li>Complete the Interdistrict Transfer form</li><li>Both districts must approve the transfer</li></ol><h4>Moving within EUSD boundaries</h4><p>If you're moving to a new address within <span class=\"notranslate\">EUSD</span>, use the <a href=\"https://www.schoolsitelocator.com/apps/escondidounion/accessibilityFocused.html\" target=\"_blank\" rel=\"noopener\"><span class=\"notranslate\">School Site Locator</span></a> to check if your new address is in a different school boundary. If so, contact your school office to discuss your options.</p>"
+    },
+    "actionLabel": {
+      "en": "Transfer info →"
+    },
     "actionUrl": "https://www.eusd.org/page/enrollment",
     "links": [
-      { "label": { "en": "School Site Locator" }, "url": "https://www.schoolsitelocator.com/apps/escondidounion/accessibilityFocused.html" }
+      {
+        "label": {
+          "en": "School Site Locator"
+        },
+        "url": "https://www.schoolsitelocator.com/apps/escondidounion/accessibilityFocused.html"
+      }
     ],
     "moreUrl": "https://www.eusd.org/page/enrollment"
   },
   {
     "id": "explore",
-    "title": { "en": "EXPLORE program" },
+    "title": {
+      "en": "EXPLORE program"
+    },
     "icon": "🌟",
     "iconBg": "#FFF9C4",
     "category": "explore",
-    "subtitle": { "en": "After-school & before-school" },
-    "trayHtml": {
-      "en": "<p><span class=\"notranslate\">EXPLORE</span> is <span class=\"notranslate\">EUSD</span>'s expanded learning program (formerly called <span class=\"notranslate\">ELOP</span>). It offers <strong>free before-school and after-school care</strong> for students at participating sites.</p><h4>What's included</h4><ul><li>Homework help and academic support</li><li>Enrichment activities (arts, STEM, sports, and more)</li><li>Before-school supervision (at participating schools)</li><li>After-school programs until 6:00 PM</li><li>Intersession and summer camps</li></ul><h4>Who can participate</h4><p>The program is open to <span class=\"notranslate\">EUSD</span> students. Priority is given to students who qualify for free or reduced-price meals, foster youth, English learners, and other priority groups. Availability varies by school site.</p><h4>How to sign up</h4><ol><li>Check with your school office to see if <span class=\"notranslate\">EXPLORE</span> is available at your school</li><li>Complete a registration form (available from your school or the Expanded Learning office)</li><li>Space may be limited — sign up early</li></ol><p><a href=\"https://www.eusd.org/page/expanded-learning\" target=\"_blank\" rel=\"noopener\">Full details on eusd.org →</a></p>"
+    "subtitle": {
+      "en": "After-school & before-school"
     },
-    "actionLabel": { "en": "EXPLORE info →" },
+    "trayHtml": {
+      "en": "<p><span class=\"notranslate\">EXPLORE</span> is <span class=\"notranslate\">EUSD</span>'s expanded learning program (formerly called <span class=\"notranslate\">ELOP</span>). It offers <strong>free before-school and after-school care</strong> for students at participating sites.</p><h4>What's included</h4><ul><li>Homework help and academic support</li><li>Enrichment activities (arts, STEM, sports, and more)</li><li>Before-school supervision (at participating schools)</li><li>After-school programs until 6:00 PM</li><li>Intersession and summer camps</li></ul><h4>Who can participate</h4><p>The program is open to <span class=\"notranslate\">EUSD</span> students. Priority is given to students who qualify for free or reduced-price meals, foster youth, English learners, and other priority groups. Availability varies by school site.</p><h4>How to sign up</h4><ol><li>Check with your school office to see if <span class=\"notranslate\">EXPLORE</span> is available at your school</li><li>Complete a registration form (available from your school or the Expanded Learning office)</li><li>Space may be limited — sign up early</li></ol>"
+    },
+    "actionLabel": {
+      "en": "EXPLORE info →"
+    },
     "actionUrl": "https://www.eusd.org/page/expanded-learning",
     "links": [],
     "moreUrl": "https://www.eusd.org/page/expanded-learning"
   },
   {
     "id": "learning-help",
-    "title": { "en": "Learning help" },
+    "title": {
+      "en": "Learning help"
+    },
     "icon": "📚",
     "iconBg": "#E3F2FD",
     "category": "support",
-    "subtitle": { "en": "Academic resources" },
-    "trayHtml": {
-      "en": "<p>If your child is struggling academically, there are several resources available through <span class=\"notranslate\">EUSD</span>.</p><h4>Start with the teacher</h4><p>Your child's teacher is the best first contact. They can tell you:</p><ul><li>Where your child stands relative to grade-level expectations</li><li>Specific areas that need improvement</li><li>What interventions or support the school is already providing</li></ul><h4>School-based support</h4><ul><li><strong>Intervention programs:</strong> Schools offer reading and math intervention for students performing below grade level</li><li><strong>English Learner (EL) support:</strong> Additional language support for students learning English</li><li><strong>Tutoring:</strong> Some schools and community partners offer after-school tutoring — ask your school office</li></ul><h4>If you're still concerned</h4><p>You can request a Student Study Team (SST) meeting. This brings together the teacher, administrator, and support staff to create a plan for your child.</p><p>If you suspect your child may have a learning disability, see the \"Special education\" section for information about evaluations and IEPs.</p><p><a href=\"https://www.eusd.org/page/educational-services\" target=\"_blank\" rel=\"noopener\">Full details on eusd.org →</a></p>"
+    "subtitle": {
+      "en": "Academic resources"
     },
-    "actionLabel": { "en": "Educational Services →" },
+    "trayHtml": {
+      "en": "<p>If your child is struggling academically, there are several resources available through <span class=\"notranslate\">EUSD</span>.</p><h4>Start with the teacher</h4><p>Your child's teacher is the best first contact. They can tell you:</p><ul><li>Where your child stands relative to grade-level expectations</li><li>Specific areas that need improvement</li><li>What interventions or support the school is already providing</li></ul><h4>School-based support</h4><ul><li><strong>Intervention programs:</strong> Schools offer reading and math intervention for students performing below grade level</li><li><strong>English Learner (EL) support:</strong> Additional language support for students learning English</li><li><strong>Tutoring:</strong> Some schools and community partners offer after-school tutoring — ask your school office</li></ul><h4>If you're still concerned</h4><p>You can request a Student Study Team (SST) meeting. This brings together the teacher, administrator, and support staff to create a plan for your child.</p><p>If you suspect your child may have a learning disability, see the \"Special education\" section for information about evaluations and IEPs.</p>"
+    },
+    "actionLabel": {
+      "en": "Educational Services →"
+    },
     "actionUrl": "https://www.eusd.org/page/educational-services",
     "links": [],
     "moreUrl": "https://www.eusd.org/page/educational-services"
   },
   {
     "id": "health-wellness",
-    "title": { "en": "Health & wellness" },
+    "title": {
+      "en": "Health & wellness"
+    },
     "icon": "💚",
     "iconBg": "#E8F5E9",
     "category": "support",
-    "subtitle": { "en": "Counseling & nutrition" },
-    "trayHtml": {
-      "en": "<p><span class=\"notranslate\">EUSD</span> supports the whole child — including physical health, mental health, and basic needs.</p><h4>School counseling</h4><p>Every school has access to a school counselor who can help with:</p><ul><li>Social and emotional concerns</li><li>Behavioral support</li><li>Grief, anxiety, or family changes</li><li>Conflict resolution and peer issues</li></ul><p>Ask your school office to connect you with the counselor.</p><h4>Nutrition</h4><p>All <span class=\"notranslate\">EUSD</span> students receive <strong>free breakfast and lunch</strong> every school day through the Community Eligibility Provision — no application needed.</p><h4><span class=\"notranslate\">Project SUCCESS</span></h4><p><span class=\"notranslate\">Project SUCCESS</span> provides extra support for students and families who are:</p><ul><li>Military-connected families</li><li>Foster youth</li><li>Experiencing homelessness or housing insecurity</li></ul><p>The program connects families with resources including school supplies, tutoring, counseling, and community services. Contact your school office or the <span class=\"notranslate\">EUSD</span> Student Services department to learn more.</p><p><a href=\"https://www.eusd.org/page/student-services\" target=\"_blank\" rel=\"noopener\">Full details on eusd.org →</a></p>"
+    "subtitle": {
+      "en": "Counseling & nutrition"
     },
-    "actionLabel": { "en": "Student Services →" },
+    "trayHtml": {
+      "en": "<p><span class=\"notranslate\">EUSD</span> supports the whole child — including physical health, mental health, and basic needs.</p><h4>School counseling</h4><p>Every school has access to a school counselor who can help with:</p><ul><li>Social and emotional concerns</li><li>Behavioral support</li><li>Grief, anxiety, or family changes</li><li>Conflict resolution and peer issues</li></ul><p>Ask your school office to connect you with the counselor.</p><h4>Nutrition</h4><p>All <span class=\"notranslate\">EUSD</span> students receive <strong>free breakfast and lunch</strong> every school day through the Community Eligibility Provision — no application needed.</p><h4><span class=\"notranslate\">Project SUCCESS</span></h4><p><span class=\"notranslate\">Project SUCCESS</span> provides extra support for students and families who are:</p><ul><li>Military-connected families</li><li>Foster youth</li><li>Experiencing homelessness or housing insecurity</li></ul><p>The program connects families with resources including school supplies, tutoring, counseling, and community services. Contact your school office or the <span class=\"notranslate\">EUSD</span> Student Services department to learn more.</p>"
+    },
+    "actionLabel": {
+      "en": "Student Services →"
+    },
     "actionUrl": "https://www.eusd.org/page/student-services",
     "links": [
-      { "label": { "en": "Nutrition Services" }, "url": "https://www.eusd.org/page/nutrition-services" }
+      {
+        "label": {
+          "en": "Nutrition Services"
+        },
+        "url": "https://www.eusd.org/page/nutrition-services"
+      }
     ],
     "moreUrl": "https://www.eusd.org/page/student-services"
   },
   {
     "id": "special-education",
-    "title": { "en": "Special education" },
+    "title": {
+      "en": "Special education"
+    },
     "icon": "🤝",
     "iconBg": "#FCE4EC",
     "category": "support",
-    "subtitle": { "en": "IEPs, 504 plans & support" },
-    "trayHtml": {
-      "en": "<p>If you believe your child may have a disability that affects their learning, <span class=\"notranslate\">EUSD</span> offers support through special education services.</p><h4>What are IEPs and 504 Plans?</h4><ul><li><strong>IEP (Individualized Education Program):</strong> A detailed plan for students with identified disabilities who need specialized instruction. Includes specific goals, services (speech therapy, occupational therapy, etc.), and accommodations.</li><li><strong>504 Plan:</strong> Provides accommodations for students with a disability that affects a major life activity (like learning) but who don't need specialized instruction. Examples: extra time on tests, preferential seating, breaks.</li></ul><h4>How to get started</h4><ol><li><strong>Talk to your child's teacher first</strong> — share your concerns and ask what they're observing in the classroom</li><li><strong>Request an evaluation</strong> — you can request in writing that the school assess your child for special education. The school has 15 days to respond with an assessment plan.</li><li><strong>Assessment:</strong> If you consent, the school team will evaluate your child (this takes up to 60 days)</li><li><strong>IEP meeting:</strong> If your child qualifies, a team (including you) will develop the IEP together</li></ol><h4>Your rights</h4><p>As a parent, you are an equal member of the IEP team. You have the right to participate in all meetings, review records, and disagree with decisions. The school must provide you with a copy of your parental rights.</p><p><a href=\"https://www.eusd.org/page/special-education\" target=\"_blank\" rel=\"noopener\">Full details on eusd.org →</a></p>"
+    "subtitle": {
+      "en": "IEPs, 504 plans & support"
     },
-    "actionLabel": { "en": "Special Education info →" },
+    "trayHtml": {
+      "en": "<p>If you believe your child may have a disability that affects their learning, <span class=\"notranslate\">EUSD</span> offers support through special education services.</p><h4>What are IEPs and 504 Plans?</h4><ul><li><strong>IEP (Individualized Education Program):</strong> A detailed plan for students with identified disabilities who need specialized instruction. Includes specific goals, services (speech therapy, occupational therapy, etc.), and accommodations.</li><li><strong>504 Plan:</strong> Provides accommodations for students with a disability that affects a major life activity (like learning) but who don't need specialized instruction. Examples: extra time on tests, preferential seating, breaks.</li></ul><h4>How to get started</h4><ol><li><strong>Talk to your child's teacher first</strong> — share your concerns and ask what they're observing in the classroom</li><li><strong>Request an evaluation</strong> — you can request in writing that the school assess your child for special education. The school has 15 days to respond with an assessment plan.</li><li><strong>Assessment:</strong> If you consent, the school team will evaluate your child (this takes up to 60 days)</li><li><strong>IEP meeting:</strong> If your child qualifies, a team (including you) will develop the IEP together</li></ol><h4>Your rights</h4><p>As a parent, you are an equal member of the IEP team. You have the right to participate in all meetings, review records, and disagree with decisions. The school must provide you with a copy of your parental rights.</p>"
+    },
+    "actionLabel": {
+      "en": "Special Education info →"
+    },
     "actionUrl": "https://www.eusd.org/page/special-education",
     "links": [],
     "moreUrl": "https://www.eusd.org/page/special-education"
   },
   {
     "id": "safety",
-    "title": { "en": "Safety concern" },
+    "title": {
+      "en": "Safety concern"
+    },
     "icon": "🛡️",
     "iconBg": "#FFF3E0",
     "category": "support",
-    "subtitle": { "en": "Say Something — anonymous tip" },
+    "subtitle": {
+      "en": "Say Something — anonymous tip"
+    },
     "trayHtml": {
       "en": "<p>If you or your child knows about a potential threat to safety — whether it involves a student, a school, or the community — you can report it anonymously.</p><h4><span class=\"notranslate\">Say Something</span> Anonymous Reporting</h4><p><span class=\"notranslate\">Say Something</span> is a program by <span class=\"notranslate\">Sandy Hook Promise</span> that lets anyone submit an anonymous tip about:</p><ul><li>Threats of violence (to self or others)</li><li>Bullying or cyberbullying</li><li>Someone who may be struggling or in crisis</li><li>Weapons or dangerous situations</li><li>Drug or alcohol concerns</li></ul><p>Tips are reviewed by trained crisis counselors 24/7 and forwarded to local authorities when needed.</p><h4>How to report</h4><ul><li><strong>Online:</strong> Visit the <span class=\"notranslate\">Say Something</span> website</li><li><strong>App:</strong> Download the <span class=\"notranslate\">Say Something</span> app</li><li><strong>Phone:</strong> Call or text the crisis line</li></ul><p><strong>In an emergency, always call 911 first.</strong></p><p><a href=\"https://www.sandyhookpromise.org/say-something-tips/\" target=\"_blank\" rel=\"noopener\">Full details on sandyhookpromise.org →</a></p>"
     },
-    "actionLabel": { "en": "Submit a tip →" },
+    "actionLabel": {
+      "en": "Submit a tip →"
+    },
     "actionUrl": "https://www.sandyhookpromise.org/say-something-tips/",
     "links": [],
     "moreUrl": "https://www.sandyhookpromise.org/say-something-tips/"
   },
   {
     "id": "uniform-complaint",
-    "title": { "en": "Have a concern?" },
+    "title": {
+      "en": "Have a concern?"
+    },
     "icon": "📋",
     "iconBg": "#E8EAF6",
     "category": "support",
-    "subtitle": { "en": "Uniform Complaint Procedure" },
-    "trayHtml": {
-      "en": "<p>If you have a concern about a district program, policy, or practice, <span class=\"notranslate\">EUSD</span> has a formal process for addressing complaints.</p><h4>What the Uniform Complaint Procedure covers</h4><ul><li>Discrimination or harassment (based on race, sex, disability, etc.)</li><li>Violations of state or federal education laws</li><li>Concerns about specific programs (special education, English learner programs, etc.)</li><li>Unsafe school conditions</li><li>Complaints about school fees or charges</li></ul><h4>How to file</h4><ol><li>Start by talking to your child's teacher or school principal — many concerns can be resolved informally</li><li>If the issue isn't resolved, submit a formal complaint in writing to the <span class=\"notranslate\">EUSD</span> district office</li><li>The district will investigate and respond within 60 days</li></ol><p>You can also file a complaint directly with the California Department of Education if you believe the district hasn't addressed your concern.</p><p><a href=\"https://www.eusd.org/page/uniform-complaint-procedure\" target=\"_blank\" rel=\"noopener\">Full details on eusd.org →</a></p>"
+    "subtitle": {
+      "en": "Uniform Complaint Procedure"
     },
-    "actionLabel": { "en": "Complaint procedure →" },
+    "trayHtml": {
+      "en": "<p>If you have a concern about a district program, policy, or practice, <span class=\"notranslate\">EUSD</span> has a formal process for addressing complaints.</p><h4>What the Uniform Complaint Procedure covers</h4><ul><li>Discrimination or harassment (based on race, sex, disability, etc.)</li><li>Violations of state or federal education laws</li><li>Concerns about specific programs (special education, English learner programs, etc.)</li><li>Unsafe school conditions</li><li>Complaints about school fees or charges</li></ul><h4>How to file</h4><ol><li>Start by talking to your child's teacher or school principal — many concerns can be resolved informally</li><li>If the issue isn't resolved, submit a formal complaint in writing to the <span class=\"notranslate\">EUSD</span> district office</li><li>The district will investigate and respond within 60 days</li></ol><p>You can also file a complaint directly with the California Department of Education if you believe the district hasn't addressed your concern.</p>"
+    },
+    "actionLabel": {
+      "en": "Complaint procedure →"
+    },
     "actionUrl": "https://www.eusd.org/page/uniform-complaint-procedure",
     "links": [],
     "moreUrl": "https://www.eusd.org/page/uniform-complaint-procedure"
   },
   {
     "id": "new-parent-faq",
-    "title": { "en": "New to EUSD?" },
+    "title": {
+      "en": "New to EUSD?"
+    },
     "icon": "👋",
     "iconBg": "#E8F5E9",
     "category": "new-parent",
-    "subtitle": { "en": "Everything you need to know" },
-    "trayHtml": {
-      "en": "<h4>Which school is my child assigned to?</h4><p>Your child's school is determined by your home address. Use the <a href=\"https://www.schoolsitelocator.com/apps/escondidounion/accessibilityFocused.html\" target=\"_blank\" rel=\"noopener\"><span class=\"notranslate\">School Site Locator</span></a> — enter your address and it will tell you exactly which elementary and middle school serve your neighborhood.</p><h4>How do I enroll?</h4><p>Visit <a href=\"https://www.eusd.org/page/enrollment\" target=\"_blank\" rel=\"noopener\">the enrollment page on eusd.org</a> to start the online registration process. After completing the online form, you'll visit your assigned school to finalize enrollment with your documents.</p><h4>What documents do I need?</h4><ul><li><strong>Proof of age:</strong> Birth certificate, passport, or baptismal record</li><li><strong>Proof of address:</strong> Current utility bill, lease agreement, or mortgage statement</li><li><strong>Immunization records:</strong> Up-to-date California immunizations</li><li><strong>Previous school records</strong> (if transferring from another school)</li></ul><h4>Is lunch free?</h4><p><strong>Yes!</strong> <span class=\"notranslate\">EUSD</span> participates in the <strong>Community Eligibility Provision (CEP)</strong>, which means <strong>every student gets free breakfast and lunch</strong> — no application, no paperwork, no income forms. Your child eats free every day, no matter what.</p><h4>What apps do I need?</h4><p>Download these two apps to stay connected:</p><ol><li><strong><span class=\"notranslate\">Rooms</span></strong> (by <span class=\"notranslate\">Thrillshare</span>) — for school news, announcements, and push notifications. Available on <a href=\"https://apps.apple.com/us/app/thrillshare/id1024147876\" target=\"_blank\" rel=\"noopener\">App Store</a> and <a href=\"https://play.google.com/store/apps/details?id=com.apptegy.thrillshare\" target=\"_blank\" rel=\"noopener\">Google Play</a>.</li><li><strong><span class=\"notranslate\">PowerSchool</span></strong> — for checking grades and attendance. Your school office will give you login credentials.</li></ol><h4>What's the school day look like?</h4><p>It depends on your school. Most elementary schools run from about 7:45–8:30 AM to 2:15–3:00 PM. Middle schools typically run 7:30–8:00 AM to 2:30–3:00 PM. Check the \"Bell schedules\" section or find your school above for exact times. On <strong>minimum days</strong>, students are dismissed early (usually around 12:15–1:00 PM).</p><h4>Does EUSD have a dual language program?</h4><p><strong>Yes!</strong> <span class=\"notranslate\">EUSD</span> offers a <strong>Dual Language Immersion program</strong> (Spanish/English) at four schools:</p><ul><li><span class=\"notranslate\">Farr Elementary</span></li><li><span class=\"notranslate\">Glen View Elementary</span></li><li><span class=\"notranslate\">Lincoln Elementary</span></li><li><span class=\"notranslate\">Pioneer Elementary</span></li></ul><p>The program uses a <strong>90/10 model</strong> — in kindergarten, 90% of instruction is in Spanish and 10% in English, gradually shifting to 50/50 by upper elementary. It's designed for both native Spanish speakers and English speakers who want to become bilingual. Contact one of these schools directly to learn more about enrollment.</p><p><a href=\"https://www.eusd.org/page/enrollment\" target=\"_blank\" rel=\"noopener\">Full details on eusd.org →</a></p>"
+    "subtitle": {
+      "en": "Everything you need to know"
     },
-    "actionLabel": { "en": "Start enrollment →" },
+    "trayHtml": {
+      "en": "<h4>Which school is my child assigned to?</h4><p>Your child's school is determined by your home address. Use the <a href=\"https://www.schoolsitelocator.com/apps/escondidounion/accessibilityFocused.html\" target=\"_blank\" rel=\"noopener\"><span class=\"notranslate\">School Site Locator</span></a> — enter your address and it will tell you exactly which elementary and middle school serve your neighborhood.</p><h4>How do I enroll?</h4><p>Visit <a href=\"https://www.eusd.org/page/enrollment\" target=\"_blank\" rel=\"noopener\">the enrollment page on eusd.org</a> to start the online registration process. After completing the online form, you'll visit your assigned school to finalize enrollment with your documents.</p><h4>What documents do I need?</h4><ul><li><strong>Proof of age:</strong> Birth certificate, passport, or baptismal record</li><li><strong>Proof of address:</strong> Current utility bill, lease agreement, or mortgage statement</li><li><strong>Immunization records:</strong> Up-to-date California immunizations</li><li><strong>Previous school records</strong> (if transferring from another school)</li></ul><h4>Is lunch free?</h4><p><strong>Yes!</strong> <span class=\"notranslate\">EUSD</span> participates in the <strong>Community Eligibility Provision (CEP)</strong>, which means <strong>every student gets free breakfast and lunch</strong> — no application, no paperwork, no income forms. Your child eats free every day, no matter what.</p><h4>What apps do I need?</h4><p>Download these two apps to stay connected:</p><ol><li><strong><span class=\"notranslate\">Rooms</span></strong> (by <span class=\"notranslate\">Thrillshare</span>) — for school news, announcements, and push notifications. Available on <a href=\"https://apps.apple.com/us/app/thrillshare/id1024147876\" target=\"_blank\" rel=\"noopener\">App Store</a> and <a href=\"https://play.google.com/store/apps/details?id=com.apptegy.thrillshare\" target=\"_blank\" rel=\"noopener\">Google Play</a>.</li><li><strong><span class=\"notranslate\">PowerSchool</span></strong> — for checking grades and attendance. Your school office will give you login credentials.</li></ol><h4>What's the school day look like?</h4><p>It depends on your school. Most elementary schools run from about 7:45–8:30 AM to 2:15–3:00 PM. Middle schools typically run 7:30–8:00 AM to 2:30–3:00 PM. Check the \"Bell schedules\" section or find your school above for exact times. On <strong>minimum days</strong>, students are dismissed early (usually around 12:15–1:00 PM).</p><h4>Does EUSD have a dual language program?</h4><p><strong>Yes!</strong> <span class=\"notranslate\">EUSD</span> offers a <strong>Dual Language Immersion program</strong> (Spanish/English) at four schools:</p><ul><li><span class=\"notranslate\">Farr Elementary</span></li><li><span class=\"notranslate\">Glen View Elementary</span></li><li><span class=\"notranslate\">Lincoln Elementary</span></li><li><span class=\"notranslate\">Pioneer Elementary</span></li></ul><p>The program uses a <strong>90/10 model</strong> — in kindergarten, 90% of instruction is in Spanish and 10% in English, gradually shifting to 50/50 by upper elementary. It's designed for both native Spanish speakers and English speakers who want to become bilingual. Contact one of these schools directly to learn more about enrollment.</p>"
+    },
+    "actionLabel": {
+      "en": "Start enrollment →"
+    },
     "actionUrl": "https://www.eusd.org/page/enrollment",
     "links": [
-      { "label": { "en": "School Site Locator" }, "url": "https://www.schoolsitelocator.com/apps/escondidounion/accessibilityFocused.html" },
-      { "label": { "en": "Enrollment page" }, "url": "https://www.eusd.org/page/enrollment" }
+      {
+        "label": {
+          "en": "School Site Locator"
+        },
+        "url": "https://www.schoolsitelocator.com/apps/escondidounion/accessibilityFocused.html"
+      },
+      {
+        "label": {
+          "en": "Enrollment page"
+        },
+        "url": "https://www.eusd.org/page/enrollment"
+      }
     ],
     "moreUrl": "https://www.eusd.org/page/enrollment"
   },
   {
     "id": "volunteer",
-    "title": { "en": "Volunteer" },
+    "title": {
+      "en": "Volunteer"
+    },
     "icon": "🙋",
     "iconBg": "#FFF9C4",
     "category": "involved",
-    "subtitle": { "en": "Help at your school" },
-    "trayHtml": {
-      "en": "<p>Want to get involved at your child's school? <span class=\"notranslate\">EUSD</span> welcomes parent volunteers!</p><h4>How to volunteer</h4><ol><li><strong>Contact your school office</strong> — let them know you're interested in volunteering</li><li><strong>Complete a volunteer application</strong> — all volunteers must be approved by the district. This includes a background check (fingerprinting through the Department of Justice).</li><li><strong>TB clearance</strong> — California requires a TB risk assessment for school volunteers</li></ol><h4>Ways to help</h4><ul><li>Classroom support (reading with students, helping with projects)</li><li>Library volunteer</li><li>Field trip chaperone</li><li>School events and fundraisers</li><li>PTA/PTO (Parent-Teacher Association/Organization)</li><li><span class=\"notranslate\">DELAC</span> / <span class=\"notranslate\">DAC</span> committees (District English Learner Advisory Committee / District Advisory Committee)</li></ul><p>Contact your school office to learn about current volunteer needs and how to get started.</p><p><a href=\"https://www.eusd.org/page/volunteers\" target=\"_blank\" rel=\"noopener\">Full details on eusd.org →</a></p>"
+    "subtitle": {
+      "en": "Help at your school"
     },
-    "actionLabel": { "en": "Volunteer info →" },
+    "trayHtml": {
+      "en": "<p>Want to get involved at your child's school? <span class=\"notranslate\">EUSD</span> welcomes parent volunteers!</p><h4>How to volunteer</h4><ol><li><strong>Contact your school office</strong> — let them know you're interested in volunteering</li><li><strong>Complete a volunteer application</strong> — all volunteers must be approved by the district. This includes a background check (fingerprinting through the Department of Justice).</li><li><strong>TB clearance</strong> — California requires a TB risk assessment for school volunteers</li></ol><h4>Ways to help</h4><ul><li>Classroom support (reading with students, helping with projects)</li><li>Library volunteer</li><li>Field trip chaperone</li><li>School events and fundraisers</li><li>PTA/PTO (Parent-Teacher Association/Organization)</li><li><span class=\"notranslate\">DELAC</span> / <span class=\"notranslate\">DAC</span> committees (District English Learner Advisory Committee / District Advisory Committee)</li></ul><p>Contact your school office to learn about current volunteer needs and how to get started.</p>"
+    },
+    "actionLabel": {
+      "en": "Volunteer info →"
+    },
     "actionUrl": "https://www.eusd.org/page/volunteers",
     "links": [],
     "moreUrl": "https://www.eusd.org/page/volunteers"
   },
   {
     "id": "board-lcap",
-    "title": { "en": "Board meetings & budget" },
+    "title": {
+      "en": "Board meetings & budget"
+    },
     "icon": "🏛️",
     "iconBg": "#E8EAF6",
     "category": "involved",
-    "subtitle": { "en": "LCAP & governance" },
-    "trayHtml": {
-      "en": "<p>The <span class=\"notranslate\">EUSD</span> Board of Education holds regular public meetings where important decisions about the district are made. All meetings are open to the public.</p><h4>Board meetings</h4><ul><li>Meetings are typically held on the 2nd and 4th Thursday of each month</li><li>Location: <span class=\"notranslate\">EUSD</span> District Office, 2310 Aldergrove Avenue, Escondido</li><li>Agendas are posted online at least 72 hours before each meeting</li><li>Parents can attend and make public comments during designated time</li></ul><h4>What is <span class=\"notranslate\">LCAP</span>?</h4><p>The <strong>Local Control and Accountability Plan (<span class=\"notranslate\">LCAP</span>)</strong> is the district's roadmap for how it will use funding to serve students. It outlines goals, actions, and spending priorities for a 3-year period.</p><p>The <span class=\"notranslate\">LCAP</span> process includes public input sessions where parents can share their priorities. This is your chance to influence how the district spends its budget.</p><h4>Get involved in governance</h4><ul><li><strong><span class=\"notranslate\">DAC</span></strong> (District Advisory Committee) — parent input on budget and programs</li><li><strong><span class=\"notranslate\">DELAC</span></strong> (District English Learner Advisory Committee) — focuses on English learner programs and services</li><li><strong>PTA/PTO</strong> at your school — local parent organizations</li></ul><p><a href=\"https://www.eusd.org/page/board-of-education\" target=\"_blank\" rel=\"noopener\">Full details on eusd.org →</a></p>"
+    "subtitle": {
+      "en": "LCAP & governance"
     },
-    "actionLabel": { "en": "Board info →" },
+    "trayHtml": {
+      "en": "<p>The <span class=\"notranslate\">EUSD</span> Board of Education holds regular public meetings where important decisions about the district are made. All meetings are open to the public.</p><h4>Board meetings</h4><ul><li>Meetings are typically held on the 2nd and 4th Thursday of each month</li><li>Location: <span class=\"notranslate\">EUSD</span> District Office, 2310 Aldergrove Avenue, Escondido</li><li>Agendas are posted online at least 72 hours before each meeting</li><li>Parents can attend and make public comments during designated time</li></ul><h4>What is <span class=\"notranslate\">LCAP</span>?</h4><p>The <strong>Local Control and Accountability Plan (<span class=\"notranslate\">LCAP</span>)</strong> is the district's roadmap for how it will use funding to serve students. It outlines goals, actions, and spending priorities for a 3-year period.</p><p>The <span class=\"notranslate\">LCAP</span> process includes public input sessions where parents can share their priorities. This is your chance to influence how the district spends its budget.</p><h4>Get involved in governance</h4><ul><li><strong><span class=\"notranslate\">DAC</span></strong> (District Advisory Committee) — parent input on budget and programs</li><li><strong><span class=\"notranslate\">DELAC</span></strong> (District English Learner Advisory Committee) — focuses on English learner programs and services</li><li><strong>PTA/PTO</strong> at your school — local parent organizations</li></ul>"
+    },
+    "actionLabel": {
+      "en": "Board info →"
+    },
     "actionUrl": "https://www.eusd.org/page/board-of-education",
     "links": [
-      { "label": { "en": "LCAP" }, "url": "https://www.eusd.org/page/lcap" }
+      {
+        "label": {
+          "en": "LCAP"
+        },
+        "url": "https://www.eusd.org/page/lcap"
+      }
     ],
     "moreUrl": "https://www.eusd.org/page/board-of-education"
   }
