@@ -38,17 +38,17 @@
   <!-- Skip navigation -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Zone 0: Top bar -->
-  <div class="top-bar" role="banner">
-    <span></span>
-    <button class="top-bar__lang" id="langToggle" aria-label="Translate to Spanish">Español</button>
-    <span></span>
-    <div id="google_translate_element" style="position:absolute;left:-9999px;opacity:0;pointer-events:none;"></div>
-  </div>
-
-  <!-- Zone 1: Header -->
-  <header class="header">
+  <!-- Header -->
+  <header class="header" role="banner">
     <div class="header__content">
+      <div class="header__text">
+        <h1 class="header__title notranslate">Parent Portal</h1>
+        <p class="header__subtitle">Your starting point for everything <span class="notranslate">EUSD</span></p>
+      </div>
+      <div class="header__center">
+        <a href="tel:760-432-2400" class="header__phone">760.432.2400</a>
+        <button class="header__lang" id="langToggle" aria-label="Translate to Spanish">Español</button>
+      </div>
       <img
         src="https://cmsv2-assets.apptegy.net/uploads/11435/logo/12888/Logo-NameAtRight-White.png"
         alt="Escondido Union School District logo"
@@ -56,12 +56,8 @@
         width="180"
         height="36"
       >
-      <div class="header__text">
-        <h1 class="header__title notranslate">Parent Portal</h1>
-        <p class="header__subtitle">Your starting point for everything <span class="notranslate">EUSD</span></p>
-      </div>
-      <a href="tel:760-432-2400" class="header__phone">760.432.2400</a>
     </div>
+    <div id="google_translate_element" style="position:absolute;left:-9999px;opacity:0;pointer-events:none;"></div>
   </header>
 
   <!-- Zone 2: Alert banner -->
