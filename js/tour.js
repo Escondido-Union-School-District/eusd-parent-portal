@@ -18,8 +18,7 @@
     {
       target: '#searchInput',
       title: 'Search Everything',
-      body: 'Powered by Fuse.js — indexes all schools, tasks, apps, and content. Fuzzy matching handles misspellings. Results scroll directly to the answer and open the tray. Arrow keys, Tab, and Enter all work.',
-      research: 'Research: The findability of information is one of the strongest predictors of overall parent satisfaction. <strong>— GreatSchools, 2025</strong>'
+      body: 'Powered by Fuse.js — indexes all schools, tasks, apps, and content. Fuzzy matching handles misspellings. Results scroll directly to the answer and open the tray. Arrow keys, Tab, and Enter all work.'
     },
     {
       target: '#newToEusdBtn',
@@ -40,14 +39,12 @@
     {
       target: '.school-type-tabs',
       title: 'Find Your School',
-      body: 'Collapsed by type (Elementary, Intermediate, Middle, Specialty) to save space. Each school tile expands inline showing principal, phone, address, bell schedule, staff directory, and quick links — all without leaving the page.',
-      research: 'Research: A school selector is among the most requested features on district homepages. Parents\' mental model starts at their school, not the district. <strong>— Edlio, Finalsite, CampusPress</strong>'
+      body: 'Collapsed by type (Elementary, Intermediate, Middle, Specialty) to save space. Each school tile expands inline showing principal, phone, address, bell schedule, staff directory, and quick links — all without leaving the page.'
     },
     {
       target: '.school-tile',
       title: 'School Colors & Identity',
       body: 'Each tile is tinted with the school\'s actual colors, scraped from their Thrillshare site. When tapped, the tile fills with the school color. Small detail, big identity signal — parents see their school represented.',
-      research: 'Design decision: Reinforces that each school has its own identity within the district. Parents associate with their school, not "EUSD."',
       action: function () {
         var elemTab = document.querySelector('.school-type-tab');
         if (elemTab && elemTab.getAttribute('aria-expanded') !== 'true') elemTab.click();
@@ -57,7 +54,6 @@
       target: null,
       title: 'School Tray — Everything in One Place',
       body: 'Tap a school and a tray expands inline with principal, phone, address, bell schedule (with Thursday and minimum day callouts), Google Maps link, SARC report card, promo video, and 10 quick-link tiles — Grades, Calendar, Lunch, Staff, Report Absence, Forms, Live Feed, News, Parents, Students. All without leaving the page.',
-      research: 'Research: Parents want to get to their school\'s information fast. This eliminates the need to navigate to 23 separate school websites. <strong>— SchoolWebmasters, Finalsite</strong>',
       action: function () {
         // Open Elementary tab if not already open
         var elemTab = document.querySelector('.school-type-tab');
@@ -117,7 +113,6 @@
       target: '#langToggle',
       title: 'Spanish Translation',
       body: 'One-tap translation via Google Translate with notranslate protection on proper nouns (school names, PowerSchool, EUSD, etc.). Data structure is ready for hand-translated Spanish content later.',
-      research: 'Escondido\'s significant Spanish-speaking population makes bilingual support essential from day one — not a nice-to-have.',
       action: function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       },
