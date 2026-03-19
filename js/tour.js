@@ -104,9 +104,9 @@
       research: 'Research: Parents are overwhelmed by too many platforms and want a single, user-friendly solution. Only 2% prefer social media for school communication. <strong>— SchoolStatus National Survey, SchoolCEO</strong>'
     },
     {
-      target: '#langToggle',
+      target: null,
       title: 'Spanish Translation',
-      body: 'One-tap translation via Google Translate with notranslate protection on proper nouns (school names, PowerSchool, EUSD, etc.). Data structure is ready for hand-translated Spanish content later.',
+      body: 'The "Español" button in the top bar provides one-tap translation via Google Translate, with notranslate protection on proper nouns (school names, PowerSchool, EUSD, etc.). Data structure is ready for hand-translated Spanish content later.',
       research: 'Escondido\'s significant Spanish-speaking population makes bilingual support essential from day one — not a nice-to-have.',
       action: function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
