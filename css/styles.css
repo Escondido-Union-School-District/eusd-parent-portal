@@ -141,10 +141,14 @@ body { top: 0 !important; }
   width: auto;
   opacity: 0.85;
   order: 3;
+  flex: 1;
+  object-fit: contain;
+  object-position: right;
 }
 
 .header__text {
   order: 1;
+  flex: 1;
 }
 
 .header__title {
