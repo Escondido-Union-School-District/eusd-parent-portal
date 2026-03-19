@@ -172,7 +172,11 @@
       if (targetEl) {
         targetEl.classList.add('tour-highlight');
         prevHighlight = targetEl;
-        targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        // Only scroll if element isn't already near the top of the viewport
+        var r = targetEl.getBoundingClientRect();
+        if (r.top < 0 || r.bottom > window.innerHeight) {
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
       }
     }
 
@@ -204,8 +208,8 @@
 
     document.body.appendChild(tooltip);
 
-    // Position tooltip
-    setTimeout(function () { positionTooltip(targetEl); }, 350);
+    // Position tooltip — delay enough for scroll and actions to complete
+    setTimeout(function () { positionTooltip(targetEl); }, 500);
 
     // Wire buttons
     var closeBtn = tooltip.querySelector('.tour-tooltip__btn--close');
@@ -244,6 +248,7 @@
 
     // Center horizontally
     var left = Math.max(margin, (viewW - ttRect.width) / 2);
+    tooltip.style.left = left + 'px';
 
     if (targetEl) {
       var rect = targetEl.getBoundingClientRect();
@@ -251,21 +256,26 @@
       var spaceAbove = rect.top;
 
       if (spaceBelow > ttRect.height + margin * 2) {
-        // Below target
         tooltip.style.top = (rect.bottom + margin) + 'px';
       } else if (spaceAbove > ttRect.height + margin * 2) {
-        // Above target
         tooltip.style.top = (rect.top - ttRect.height - margin) + 'px';
       } else {
-        // Center in viewport
+        // Not enough space above or below — put it in the center
         tooltip.style.top = Math.max(margin, (viewH - ttRect.height) / 2) + 'px';
       }
+
+      // Safety: ensure tooltip is never above the viewport
+      var finalTop = parseFloat(tooltip.style.top);
+      if (finalTop < margin) {
+        tooltip.style.top = margin + 'px';
+      }
+      // Ensure tooltip is never below the viewport
+      if (finalTop + ttRect.height > viewH - margin) {
+        tooltip.style.top = Math.max(margin, viewH - ttRect.height - margin) + 'px';
+      }
     } else {
-      // No target — center in viewport
       tooltip.style.top = Math.max(margin, (viewH - ttRect.height) / 2) + 'px';
     }
-
-    tooltip.style.left = left + 'px';
   }
 
   function endTour() {
