@@ -255,23 +255,14 @@
       var spaceBelow = viewH - rect.bottom;
       var spaceAbove = rect.top;
 
-      if (spaceBelow > ttRect.height + margin * 2) {
+      // Always try below first, then above, then center
+      if (spaceBelow > ttRect.height + margin) {
         tooltip.style.top = (rect.bottom + margin) + 'px';
-      } else if (spaceAbove > ttRect.height + margin * 2) {
+      } else if (spaceAbove > ttRect.height + margin) {
         tooltip.style.top = (rect.top - ttRect.height - margin) + 'px';
       } else {
-        // Not enough space above or below — put it in the center
-        tooltip.style.top = Math.max(margin, (viewH - ttRect.height) / 2) + 'px';
-      }
-
-      // Safety: ensure tooltip is never above the viewport
-      var finalTop = parseFloat(tooltip.style.top);
-      if (finalTop < margin) {
-        tooltip.style.top = margin + 'px';
-      }
-      // Ensure tooltip is never below the viewport
-      if (finalTop + ttRect.height > viewH - margin) {
-        tooltip.style.top = Math.max(margin, viewH - ttRect.height - margin) + 'px';
+        // Place below the target even if it means scrolling
+        tooltip.style.top = (rect.bottom + margin) + 'px';
       }
     } else {
       tooltip.style.top = Math.max(margin, (viewH - ttRect.height) / 2) + 'px';
