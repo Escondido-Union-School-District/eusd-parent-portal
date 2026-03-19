@@ -79,6 +79,16 @@
       }
     },
     {
+      target: '#findByAddressBtn',
+      title: 'School Locator — Built In',
+      body: 'Don\'t know your school? The "Find by address" button opens the EUSD School Site Locator right here on the page — no navigation away. Parents enter their address and instantly see which school their child is assigned to.',
+      research: 'Research: A drop-down menu with links to all schools and a boundary tool are among the most requested features on district homepages. <strong>— Edlio, Morweb</strong>',
+      action: function () {
+        var btn = document.getElementById('findByAddressBtn');
+        if (btn && btn.getAttribute('aria-expanded') !== 'true') btn.click();
+      }
+    },
+    {
       target: '#tasksHeading',
       title: '"I Need To..." Task Tiles',
       body: 'Organized by what parents are trying to DO — not by department or org chart. Each tray gives the 80% answer inline so parents rarely need to click through to eusd.org. Grouped: Daily Life, Stay Connected, Enrollment, Programs, Support, Get Involved.',
