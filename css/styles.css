@@ -74,26 +74,16 @@ body {
 
 /* ===== Top Bar ===== */
 .top-bar {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 6px 16px;
+  padding: 4px 16px;
   background: var(--eusd-dark);
   color: var(--white);
   font-size: 0.8125rem;
-  min-height: 44px;
 }
 
-.top-bar__phone {
-  color: var(--white);
-  text-decoration: none;
-  font-weight: 500;
-  min-height: 44px;
-  display: flex;
-  align-items: center;
-  justify-self: start;
-}
-.top-bar__phone:hover { text-decoration: underline; }
+/* top-bar phone moved to header */
 
 .top-bar__lang {
   background: rgba(255,255,255,0.12);
@@ -141,11 +131,23 @@ body { top: 0 !important; }
   padding: 0 20px;
 }
 
+.header__phone {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  order: 2;
+}
+.header__phone:hover { color: var(--white); text-decoration: underline; }
+
 .header__logo {
   height: 36px;
   width: auto;
   opacity: 0.85;
-  order: 2;
+  order: 3;
 }
 
 .header__text {
