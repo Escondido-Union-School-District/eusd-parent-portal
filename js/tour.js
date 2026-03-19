@@ -107,7 +107,10 @@
       target: '#langToggle',
       title: 'Spanish Translation',
       body: 'One-tap translation via Google Translate with notranslate protection on proper nouns (school names, PowerSchool, EUSD, etc.). Data structure is ready for hand-translated Spanish content later.',
-      research: 'Escondido\'s significant Spanish-speaking population makes bilingual support essential from day one — not a nice-to-have.'
+      research: 'Escondido\'s significant Spanish-speaking population makes bilingual support essential from day one — not a nice-to-have.',
+      action: function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     },
     {
       target: '.contact-section',
