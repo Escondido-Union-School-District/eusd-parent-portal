@@ -1,0 +1,70 @@
+{
+  "schoolYears": [
+    {
+      "year": "2025-2026",
+      "pdfUrl": "",
+      "boardApproved": "11/17/2022",
+      "dates": [
+        { "date": "2025-08-19", "label": "First Day of School", "type": "first-last-day" },
+        { "date": "2025-09-01", "label": "Labor Day", "type": "holiday" },
+        { "date": "2025-10-09", "endDate": "2025-10-10", "label": "Parent Conference Days", "type": "non-student-day" },
+        { "date": "2025-11-11", "label": "Veterans Day", "type": "holiday" },
+        { "date": "2025-11-21", "label": "Minimum Student Day", "type": "minimum-day" },
+        { "date": "2025-11-24", "endDate": "2025-11-28", "label": "Thanksgiving Recess", "type": "break" },
+        { "date": "2025-12-19", "label": "Minimum Student Day", "type": "minimum-day" },
+        { "date": "2025-12-22", "endDate": "2026-01-05", "label": "Winter Recess", "type": "break" },
+        { "date": "2026-01-06", "label": "Return from Winter Recess", "type": "first-last-day" },
+        { "date": "2026-01-19", "label": "Martin Luther King Jr. Day", "type": "holiday" },
+        { "date": "2026-02-13", "endDate": "2026-02-16", "label": "Presidents' Day Observed", "type": "holiday" },
+        { "date": "2026-04-01", "label": "Minimum Student Day", "type": "minimum-day" },
+        { "date": "2026-04-02", "endDate": "2026-04-13", "label": "Spring Break", "type": "break" },
+        { "date": "2026-05-25", "label": "Memorial Day", "type": "holiday" },
+        { "date": "2026-06-10", "label": "Last Day of School / Minimum Day", "type": "first-last-day" }
+      ]
+    },
+    {
+      "year": "2026-2027",
+      "pdfUrl": "",
+      "boardApproved": "11/06/2025",
+      "dates": [
+        { "date": "2026-08-18", "label": "First Day of School", "type": "first-last-day" },
+        { "date": "2026-09-07", "label": "Labor Day", "type": "holiday" },
+        { "date": "2026-10-08", "endDate": "2026-10-09", "label": "Parent Conference Days", "type": "non-student-day" },
+        { "date": "2026-11-11", "label": "Veterans Day", "type": "holiday" },
+        { "date": "2026-11-20", "label": "Minimum Student Day", "type": "minimum-day" },
+        { "date": "2026-11-23", "endDate": "2026-11-27", "label": "Thanksgiving Recess", "type": "break" },
+        { "date": "2026-12-18", "label": "Minimum Student Day", "type": "minimum-day" },
+        { "date": "2026-12-21", "endDate": "2027-01-04", "label": "Winter Recess", "type": "break" },
+        { "date": "2027-01-05", "label": "Return from Winter Recess", "type": "first-last-day" },
+        { "date": "2027-01-18", "label": "Martin Luther King Jr. Day", "type": "holiday" },
+        { "date": "2027-02-12", "endDate": "2027-02-15", "label": "Presidents' Day Observed", "type": "holiday" },
+        { "date": "2027-03-24", "label": "Minimum Student Day", "type": "minimum-day" },
+        { "date": "2027-03-25", "endDate": "2027-04-05", "label": "Spring Break", "type": "break" },
+        { "date": "2027-05-31", "label": "Memorial Day", "type": "holiday" },
+        { "date": "2027-06-09", "label": "Last Day of School / Minimum Day", "type": "first-last-day" }
+      ]
+    },
+    {
+      "year": "2027-2028",
+      "pdfUrl": "",
+      "boardApproved": "11/06/2025",
+      "dates": [
+        { "date": "2027-08-17", "label": "First Day of School", "type": "first-last-day" },
+        { "date": "2027-09-06", "label": "Labor Day", "type": "holiday" },
+        { "date": "2027-10-07", "endDate": "2027-10-08", "label": "Parent Conference Days", "type": "non-student-day" },
+        { "date": "2027-11-11", "label": "Veterans Day", "type": "holiday" },
+        { "date": "2027-11-18", "label": "Minimum Student Day", "type": "minimum-day" },
+        { "date": "2027-11-22", "endDate": "2027-11-26", "label": "Thanksgiving Recess", "type": "break" },
+        { "date": "2027-12-17", "label": "Minimum Student Day", "type": "minimum-day" },
+        { "date": "2027-12-21", "endDate": "2028-01-03", "label": "Winter Recess", "type": "break" },
+        { "date": "2028-01-04", "label": "Return from Winter Recess", "type": "first-last-day" },
+        { "date": "2028-01-17", "label": "Martin Luther King Jr. Day", "type": "holiday" },
+        { "date": "2028-02-18", "endDate": "2028-02-21", "label": "Presidents' Day Observed", "type": "holiday" },
+        { "date": "2028-04-07", "label": "Minimum Student Day", "type": "minimum-day" },
+        { "date": "2028-04-10", "endDate": "2028-04-19", "label": "Spring Break", "type": "break" },
+        { "date": "2028-05-29", "label": "Memorial Day", "type": "holiday" },
+        { "date": "2028-06-07", "label": "Last Day of School / Minimum Day", "type": "first-last-day" }
+      ]
+    }
+  ]
+}

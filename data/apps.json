@@ -1,0 +1,77 @@
+[
+  {
+    "id": "powerschool",
+    "name": { "en": "PowerSchool" },
+    "icon": "📊",
+    "iconBg": "#E6F1FB",
+    "description": { "en": "Check your child's grades, attendance, report cards, and teacher comments. PowerSchool is the district's student information system — it's where all academic records live." },
+    "accessHtml": {
+      "en": "<p>Log in through the <span class=\"notranslate\">EUSD</span> website. You'll need a parent account, which your child's school office creates for you.</p><h4>How to get access</h4><ol><li>Contact your child's school office and ask for a <span class=\"notranslate\">PowerSchool</span> parent account</li><li>They'll give you a username and temporary password</li><li>Go to the <a href=\"https://www.eusd.org/o/eusd/page/powerschool-for-parents\" target=\"_blank\" rel=\"noopener\"><span class=\"notranslate\">PowerSchool</span> parent page</a> and click the login link</li><li>Sign in and change your password</li></ol><h4>Tips</h4><ul><li>If you have multiple children in <span class=\"notranslate\">EUSD</span>, you can link all of them to one parent account — ask the school office</li><li>The mobile app is also available, but the web version works on any device</li></ul>"
+    },
+    "loginUrl": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "helpUrl": "#",
+    "hasHelpLink": true
+  },
+  {
+    "id": "rooms",
+    "name": { "en": "Rooms" },
+    "icon": "📱",
+    "iconBg": "#E8EAF6",
+    "description": { "en": "Stay up to date with school news, district announcements, and emergency alerts. Rooms (by Thrillshare) sends push notifications straight to your phone so you never miss important updates." },
+    "accessHtml": {
+      "en": "<p>Download the free <span class=\"notranslate\">Rooms</span> app or log in on the web.</p><h4>Get the app</h4><ol><li>Download <span class=\"notranslate\">Rooms</span> from the <a href=\"https://apps.apple.com/us/app/thrillshare/id1024147876\" target=\"_blank\" rel=\"noopener\">App Store (iPhone)</a> or <a href=\"https://play.google.com/store/apps/details?id=com.apptegy.thrillshare\" target=\"_blank\" rel=\"noopener\">Google Play (Android)</a></li><li>Open the app and search for \"<span class=\"notranslate\">Escondido Union School District</span>\"</li><li>Tap \"Follow\" on your child's school and the district</li><li>Allow push notifications when prompted — that's how you'll get alerts</li></ol><h4>Web access</h4><p>Don't want the app? You can also log in at <a href=\"https://escondidousdca.id.thrillshare.com/\" target=\"_blank\" rel=\"noopener\"><span class=\"notranslate\">escondidousdca.id.thrillshare.com</span></a> to see the same news and announcements in your browser.</p>"
+    },
+    "loginUrl": "https://escondidousdca.id.thrillshare.com/",
+    "appStoreUrl": "https://apps.apple.com/us/app/thrillshare/id1024147876",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.apptegy.thrillshare",
+    "helpUrl": "#",
+    "hasHelpLink": true
+  },
+  {
+    "id": "ezschoollunch",
+    "name": { "en": "EZSchoolLunch" },
+    "icon": "🍽️",
+    "iconBg": "#E8F5E9",
+    "description": { "en": "View daily breakfast and lunch menus for all EUSD schools. Check nutrition facts, see allergen info, and know what's being served before your child heads to school." },
+    "accessHtml": {
+      "en": "<p><span class=\"notranslate\">EZSchoolLunch</span> is a website — no app download or login required.</p><h4>How to view menus</h4><ol><li>Go to <a href=\"https://www.ezschoollunch.com/p/Escondido/home\" target=\"_blank\" rel=\"noopener\"><span class=\"notranslate\">ezschoollunch.com/p/Escondido/home</span></a></li><li>Select your child's school</li><li>Browse the daily and weekly menus</li></ol><h4>Good to know</h4><ul><li>All <span class=\"notranslate\">EUSD</span> students eat <strong>free breakfast and lunch</strong> every day — no application needed</li><li>Menus show allergen information for common allergens</li><li>If your child has a specific dietary need or allergy, contact your school's cafeteria manager</li></ul>"
+    },
+    "loginUrl": "https://www.ezschoollunch.com/p/Escondido/home",
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "helpUrl": "#",
+    "hasHelpLink": true
+  },
+  {
+    "id": "school-site-locator",
+    "name": { "en": "School Site Locator" },
+    "icon": "📍",
+    "iconBg": "#FFF3E0",
+    "description": { "en": "Find out which EUSD school your child is assigned to based on your home address. Just enter your street address and the tool shows your neighborhood elementary and middle school." },
+    "accessHtml": {
+      "en": "<p>The <span class=\"notranslate\">School Site Locator</span> is a free online tool — no login or app needed.</p><h4>How to use it</h4><ol><li>Go to the <a href=\"https://www.schoolsitelocator.com/apps/escondidounion/accessibilityFocused.html\" target=\"_blank\" rel=\"noopener\"><span class=\"notranslate\">School Site Locator</span></a></li><li>Enter your home address</li><li>The tool will show you which elementary school and middle school serve your address</li></ol><p>This is especially useful if you're new to <span class=\"notranslate\">Escondido</span> or moving to a new neighborhood within the district.</p>"
+    },
+    "loginUrl": "https://www.schoolsitelocator.com/apps/escondidounion/accessibilityFocused.html",
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "helpUrl": "",
+    "hasHelpLink": false
+  },
+  {
+    "id": "say-something",
+    "name": { "en": "Say Something" },
+    "icon": "🛡️",
+    "iconBg": "#FCE4EC",
+    "description": { "en": "Report a safety concern anonymously. Say Something (by Sandy Hook Promise) lets students, parents, and community members submit tips about potential threats, bullying, or someone in crisis — 24/7, completely anonymous." },
+    "accessHtml": {
+      "en": "<p><span class=\"notranslate\">Say Something</span> is a free anonymous reporting system run by <span class=\"notranslate\">Sandy Hook Promise</span>.</p><h4>How to submit a tip</h4><ol><li>Visit the <a href=\"https://www.sandyhookpromise.org/say-something-tips/\" target=\"_blank\" rel=\"noopener\"><span class=\"notranslate\">Say Something</span> website</a></li><li>You can also download the <span class=\"notranslate\">Say Something</span> app</li><li>Submit your tip — it's completely anonymous</li><li>Trained crisis counselors review every tip 24/7</li></ol><h4>When to use it</h4><ul><li>Threats of violence (to self or others)</li><li>Bullying or cyberbullying</li><li>Someone who seems to be in crisis</li><li>Weapons or dangerous situations</li></ul><p><strong>In an emergency, always call 911 first.</strong></p>"
+    },
+    "loginUrl": "https://www.sandyhookpromise.org/say-something-tips/",
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "helpUrl": "",
+    "hasHelpLink": false
+  }
+]

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EUSD Family Resource Center</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+--eusd:#1031A3;--eusd-dark:#111928;--eusd-light:#E8ECF7;--eusd-accent:#2A5BD7;
+--bg:#FFFFFF;--bg2:#F5F5F2;--bg3:#FAFAF8;
+--tx:#1A1A1A;--tx2:#6B6B6B;--tx3:#999;--bdr:#E5E5E0;--r:10px;
+}
+html{font-size:16px;-webkit-text-size-adjust:100%}
+body{font-family:'DM Sans',system-ui,sans-serif;color:var(--tx);background:var(--bg2);line-height:1.5}
+.page{max-width:480px;margin:0 auto;background:var(--bg);min-height:100vh;box-shadow:0 0 40px rgba(0,0,0,0.06)}
+a{color:var(--eusd-accent);text-decoration:none}
+
+.topbar{background:var(--eusd-dark);color:#fff;padding:8px 16px;display:flex;justify-content:space-between;align-items:center;font-size:12px}
+.topbar-phone{opacity:0.8}
+.lang{display:flex;gap:4px}
+.lang span{padding:3px 10px;border-radius:20px;font-size:11px;cursor:pointer}
+.lang .on{background:rgba(255,255,255,0.15)}
+.lang .off{opacity:0.5}
+
+.hdr{background:var(--eusd);color:#fff;padding:18px 16px 16px;display:flex;flex-direction:column;align-items:center;gap:6px}
+.hdr-brand{display:flex;align-items:center;gap:10px}
+.hdr-bell{width:36px;height:36px;flex-shrink:0}
+.hdr-name{font-size:15px;font-weight:500;letter-spacing:-0.2px;line-height:1.25}
+.hdr-name small{display:block;font-size:10px;font-weight:400;opacity:0.65;letter-spacing:0.3px;text-transform:uppercase;margin-top:1px}
+.hdr-divider{width:40px;height:1px;background:rgba(255,255,255,0.2);margin:4px 0 2px}
+.hdr-sub{font-size:14px;font-weight:500;letter-spacing:0.3px;opacity:0.95;text-align:center}
+.hdr-sub span{display:block;font-size:11px;font-weight:400;opacity:0.65;margin-top:2px;letter-spacing:0}
+
+.alert{background:#FEF3CD;color:#7A5D0B;padding:10px 16px;font-size:12px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #F0D58C}
+.alert-dot{width:7px;height:7px;background:#CFA430;border-radius:50%;flex-shrink:0}
+
+.search{padding:28px 16px 24px;text-align:center;background:linear-gradient(180deg,#F0F3FA 0%,var(--bg) 100%)}
+.search h2{font-size:19px;font-weight:500;margin-bottom:4px}
+.search>p{font-size:13px;color:var(--tx2);margin-bottom:14px}
+.sbar{display:flex;border:1.5px solid var(--bdr);border-radius:var(--r);overflow:hidden;background:var(--bg);margin-bottom:16px}
+.sbar:focus-within{border-color:var(--eusd)}
+.sbar input{flex:1;border:none;padding:12px 14px;font-size:14px;outline:none;background:transparent;font-family:inherit;color:var(--tx)}
+.sbar button{background:var(--eusd);color:#fff;border:none;padding:0 16px;font-size:13px;font-weight:500;cursor:pointer;font-family:inherit}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:6px}
+.chip{background:var(--bg2);border:1px solid var(--bdr);border-radius:20px;padding:6px 13px;font-size:12px;color:var(--tx2);cursor:pointer;white-space:nowrap;transition:all 0.15s}
+.chip:active{background:var(--eusd-light);color:var(--eusd);border-color:var(--eusd)}
+
+.sec{padding:20px 16px 0}
+.sec-h{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.sec-h h3{font-size:14px;font-weight:500;white-space:nowrap}
+.sec-line{flex:1;height:1px;background:var(--bdr)}
+
+/* School grid */
+.sch-label{font-size:10px;color:var(--tx3);text-transform:uppercase;letter-spacing:0.8px;font-weight:500;padding:10px 0 6px}
+.sch-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:4px}
+.sch{background:var(--bg2);border:1px solid var(--bdr);border-radius:8px;padding:9px 6px;font-size:11px;text-align:center;cursor:pointer;transition:all 0.15s;line-height:1.3;-webkit-tap-highlight-color:transparent;user-select:none}
+.sch:active,.sch.active{background:var(--eusd-light);border-color:var(--eusd);color:var(--eusd)}
+.sch.active{border-bottom-left-radius:0;border-bottom-right-radius:0}
+.sch-helpers{display:flex;gap:16px;padding:12px 0 8px;justify-content:center}
+.sch-helpers a{font-size:12px}
+
+/* Tray shared */
+.tray-wrap{grid-column:1/-1;overflow:hidden;transition:max-height 0.35s ease,opacity 0.25s ease;max-height:0;opacity:0}
+.tray-wrap.open{opacity:1}
+.tray{padding:14px;margin-bottom:4px}
+.tray-title{font-size:13px;font-weight:500;color:var(--eusd-dark);margin-bottom:8px;display:flex;justify-content:space-between;align-items:center}
+.tray-close{background:none;border:none;font-size:20px;color:var(--tx2);cursor:pointer;padding:0 4px;line-height:1;-webkit-tap-highlight-color:transparent}
+.tray-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.tray-item{background:var(--bg);border:1px solid var(--bdr);border-radius:8px;padding:10px;cursor:pointer;transition:all 0.12s;-webkit-tap-highlight-color:transparent}
+.tray-item:active{background:var(--eusd-light);border-color:var(--eusd)}
+.tray-icon{font-size:16px;margin-bottom:4px}
+.tray-item .t-label{font-size:11px;font-weight:500;color:var(--tx);line-height:1.3}
+.tray-item .t-sub{font-size:10px;color:var(--tx2);margin-top:1px;line-height:1.3}
+.tray-full{text-align:center;padding:10px 0 2px}
+.tray-full a{font-size:11px}
+
+/* School tray specific */
+.school-tray{background:var(--eusd-light);border:1px solid var(--eusd);border-top:none;border-radius:0 0 8px 8px}
+.school-tray .tray-info{font-size:12px;color:var(--tx2);margin-bottom:10px;line-height:1.6}
+.school-tray .tray-info strong{color:var(--tx);font-weight:500}
+
+/* Task tray specific */
+.task-tray{background:#F9F9F6;border:1px solid var(--bdr);border-radius:0 0 8px 8px;border-top:none}
+.task-tray .tray-body{font-size:12px;color:var(--tx2);line-height:1.6;margin-bottom:10px}
+.task-tray .tray-body p{margin-bottom:6px}
+.task-tray .tray-body strong{color:var(--tx);font-weight:500}
+.task-tray .tray-steps{margin:0 0 10px;padding:0 0 0 18px;font-size:12px;color:var(--tx2);line-height:1.7}
+.task-tray .tray-steps li{margin-bottom:2px}
+.task-tray .tray-action{display:inline-flex;align-items:center;gap:6px;background:var(--eusd);color:#fff;border-radius:8px;padding:9px 16px;font-size:12px;font-weight:500;margin-bottom:10px;cursor:pointer;-webkit-tap-highlight-color:transparent;border:none;font-family:inherit;text-decoration:none}
+.task-tray .tray-links{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:6px}
+.task-tray .tray-links a{font-size:11px;color:var(--eusd-accent);background:var(--bg);border:1px solid var(--bdr);padding:5px 10px;border-radius:6px}
+
+/* Task grid */
+.tasks{padding:0 16px 8px}
+.tg-label{font-size:10px;font-weight:500;color:var(--tx3);text-transform:uppercase;letter-spacing:0.8px;margin:16px 0 8px}
+.tg{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.task{background:var(--bg);border:1px solid var(--bdr);border-radius:8px;padding:10px;cursor:pointer;transition:all 0.15s;display:flex;align-items:flex-start;gap:10px;-webkit-tap-highlight-color:transparent;user-select:none}
+.task:active,.task.active{border-color:var(--eusd);background:#F6F8FE}
+.task.active{border-bottom-left-radius:0;border-bottom-right-radius:0}
+.ti{width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+.task .label{font-size:11px;font-weight:500;line-height:1.3}
+.task .sub{font-size:10px;color:var(--tx2);margin-top:2px;line-height:1.3}
+.ti-b{background:#E6F1FB}.ti-t{background:#E1F5EE}.ti-a{background:#FAEEDA}.ti-c{background:#FAECE7}.ti-p{background:#EEEDFE}.ti-k{background:#FBEAF0}
+
+.help{background:var(--bg2);padding:24px 16px;text-align:center;border-top:1px solid var(--bdr);margin-top:20px}
+.help h4{font-size:14px;font-weight:500;margin-bottom:4px}
+.help p{font-size:12px;color:var(--tx2);line-height:1.5}
+.help .phone{font-size:18px;font-weight:500;color:var(--eusd);margin:8px 0}
+.socials{display:flex;justify-content:center;gap:10px;margin-top:12px}
+.soc{width:30px;height:30px;border-radius:50%;background:var(--bdr);display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--tx2);font-weight:500}
+.bot{background:var(--eusd-dark);color:rgba(255,255,255,0.5);padding:10px 16px;font-size:10px;display:flex;justify-content:space-between}
+
+.mockup-badge{position:fixed;top:0;left:0;right:0;background:#E24B4A;color:#fff;text-align:center;font-size:11px;padding:4px;font-family:'DM Sans',sans-serif;font-weight:500;z-index:100;letter-spacing:0.3px}
+.page{margin-top:28px}
+</style>
+</head>
+<body>
+<div class="mockup-badge">MOCKUP v4b — SVG bell logo + expandable tiles</div>
+<div class="page">
+
+<div class="topbar">
+<span class="topbar-phone">760.432.2400</span>
+<div class="lang"><span class="on">English</span><span class="off">Español</span></div>
+</div>
+
+<div class="hdr">
+<div class="hdr-brand">
+<svg class="hdr-bell" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M50 8C48 8 46.2 9.2 45.4 11L44.6 12.8C34.4 15.6 27 25 27 36V56L20 68V72H80V68L73 56V36C73 25 65.6 15.6 55.4 12.8L54.6 11C53.8 9.2 52 8 50 8Z" fill="white" opacity="0.95"/>
+<path d="M42 76C42 80.4 45.6 84 50 84C54.4 84 58 80.4 58 76H42Z" fill="white" opacity="0.95"/>
+<circle cx="50" cy="36" r="3" fill="rgba(16,49,163,0.5)"/>
+</svg>
+<div class="hdr-name">Escondido Union<br>School District<small>Serving K–8 in Escondido, CA</small></div>
+</div>
+<div class="hdr-divider"></div>
+<div class="hdr-sub">Family Resource Center<span>Your starting point for everything EUSD</span></div>
+</div>
+
+<div class="alert"><div class="alert-dot"></div><span><b>Mar 28–31:</b> Spring break — no school. Classes resume April 1.</span></div>
+
+<div class="search">
+<h2>What can we help you find?</h2>
+<p>Search or pick a common request</p>
+<div class="sbar"><input type="text" placeholder="e.g. lunch menu, grades, enrollment…"><button>Go</button></div>
+<div class="chips">
+<div class="chip">Calendar</div><div class="chip">Lunch menu</div><div class="chip">Grades</div><div class="chip">Report absence</div><div class="chip">Contact teacher</div><div class="chip">Enroll</div><div class="chip">Get the app</div>
+</div>
+</div>
+
+<!-- SCHOOLS SECTION -->
+<div class="sec">
+<div class="sec-h"><h3>Find your school</h3><div class="sec-line"></div></div>
+<div class="sch-label">Elementary schools</div>
+<div class="sch-grid" id="elem-grid">
+<div class="sch" data-school="Bernardo">Bernardo</div>
+<div class="sch" data-school="Central">Central</div>
+<div class="sch" data-school="Conway">Conway</div>
+<div class="sch" data-school="Farr">Farr</div>
+<div class="sch" data-school="Felicita">Felicita</div>
+<div class="sch" data-school="Glen View">Glen View</div>
+<div class="sch" data-school="Juniper">Juniper</div>
+<div class="sch" data-school="L.R. Green">L.R. Green</div>
+<div class="sch" data-school="Lincoln">Lincoln</div>
+<div class="sch" data-school="Miller">Miller</div>
+<div class="sch" data-school="North Broadway">N. Broadway</div>
+<div class="sch" data-school="Oak Hill">Oak Hill</div>
+<div class="sch" data-school="Orange Glen">Orange Glen</div>
+<div class="sch" data-school="Pioneer">Pioneer</div>
+<div class="sch" data-school="Reidy Creek">Reidy Creek</div>
+<div class="sch" data-school="Rock Springs">Rock Springs</div>
+<div class="sch" data-school="Rose">Rose</div>
+</div>
+<div class="sch-label">Middle schools</div>
+<div class="sch-grid" id="mid-grid">
+<div class="sch" data-school="Bear Valley">Bear Valley</div>
+<div class="sch" data-school="Del Dios">Del Dios</div>
+<div class="sch" data-school="Hidden Valley">Hidden Valley</div>
+<div class="sch" data-school="Mission">Mission</div>
+<div class="sch" data-school="Rincon">Rincon</div>
+</div>
+<div class="sch-label">Specialty</div>
+<div class="sch-grid" id="spec-grid">
+<div class="sch" data-school="Heritage">Heritage K-8</div>
+</div>
+<div class="sch-helpers"><a href="#">Find by address</a><a href="#">New to EUSD?</a></div>
+</div>
+
+<!-- TASKS SECTION -->
+<div class="tasks">
+<div class="sec-h"><h3>I need to…</h3><div class="sec-line"></div></div>
+
+<div class="tg-label">Daily life</div>
+<div class="tg" id="tg-daily">
+<div class="task" data-task="grades"><div class="ti ti-b">📊</div><div><div class="label">Check grades</div><div class="sub">PowerSchool portal</div></div></div>
+<div class="task" data-task="calendar"><div class="ti ti-b">📅</div><div><div class="label">School calendar</div><div class="sub">Events & dates</div></div></div>
+<div class="task" data-task="lunch"><div class="ti ti-t">🍎</div><div><div class="label">Lunch menu</div><div class="sub">EZSchoolLunch</div></div></div>
+<div class="task" data-task="bells"><div class="ti ti-b">🔔</div><div><div class="label">Bell schedules</div><div class="sub">Start & end times</div></div></div>
+<div class="task" data-task="absence"><div class="ti ti-c">📞</div><div><div class="label">Report absence</div><div class="sub">Attendance info</div></div></div>
+</div>
+
+<div class="tg-label">Stay connected</div>
+<div class="tg" id="tg-connect">
+<div class="task" data-task="app"><div class="ti ti-p">📱</div><div><div class="label">Get the Rooms app</div><div class="sub">News & alerts</div></div></div>
+<div class="task" data-task="teacher"><div class="ti ti-p">✉️</div><div><div class="label">Contact a teacher</div><div class="sub">Staff directory</div></div></div>
+<div class="task" data-task="office"><div class="ti ti-p">🏫</div><div><div class="label">School office</div><div class="sub">Phone & email</div></div></div>
+</div>
+
+<div class="tg-label">Enrollment & forms</div>
+<div class="tg" id="tg-enroll">
+<div class="task" data-task="enroll"><div class="ti ti-a">✏️</div><div><div class="label">Enroll my child</div><div class="sub">Registration</div></div></div>
+<div class="task" data-task="forms"><div class="ti ti-a">📄</div><div><div class="label">Forms & docs</div><div class="sub">Downloads</div></div></div>
+</div>
+
+<div class="tg-label">Support</div>
+<div class="tg" id="tg-support">
+<div class="task" data-task="learning"><div class="ti ti-t">📖</div><div><div class="label">Learning help</div><div class="sub">Academic resources</div></div></div>
+<div class="task" data-task="afterschool"><div class="ti ti-t">⭐</div><div><div class="label">After-school</div><div class="sub">Before & after care</div></div></div>
+<div class="task" data-task="health"><div class="ti ti-t">❤️</div><div><div class="label">Health & wellness</div><div class="sub">Counseling & more</div></div></div>
+<div class="task" data-task="safety"><div class="ti ti-c">🛡️</div><div><div class="label">Safety concern</div><div class="sub">Anonymous report</div></div></div>
+</div>
+
+<div class="tg-label">Get involved</div>
+<div class="tg" id="tg-involve">
+<div class="task" data-task="volunteer"><div class="ti ti-k">🤝</div><div><div class="label">Volunteer</div><div class="sub">At your school</div></div></div>
+<div class="task" data-task="board"><div class="ti ti-k">🏛️</div><div><div class="label">Board & budget</div><div class="sub">LCAP & meetings</div></div></div>
+</div>
+</div>
+
+<div class="help">
+<h4>Still can't find it?</h4>
+<p>We're here to help.</p>
+<div class="phone">760.432.2400</div>
+<p>2310 Aldergrove Ave, Escondido, CA 92029</p>
+<div class="socials"><div class="soc">f</div><div class="soc">X</div><div class="soc">YT</div><div class="soc">IG</div></div>
+</div>
+
+<div class="bot"><span>© 2026 EUSD</span><span>Accessibility · Privacy</span></div>
+
+</div>
+
+<script>
+// ============ SCHOOL DATA ============
+const schoolData = {
+"Bernardo":{full:"Bernardo Elementary",ph:"760-432-2490",pr:"Dr. Sarah Chen",bell:"8:00 AM – 2:30 PM"},
+"Central":{full:"Central Elementary",ph:"760-432-2410",pr:"Maria Lopez",bell:"8:15 AM – 2:45 PM"},
+"Conway":{full:"Conway Elementary",ph:"760-432-2420",pr:"James Park",bell:"8:00 AM – 2:30 PM"},
+"Farr":{full:"Farr Elementary",ph:"760-432-2430",pr:"Linda Torres",bell:"8:15 AM – 2:45 PM"},
+"Felicita":{full:"Felicita Elementary",ph:"760-432-2440",pr:"David Kim",bell:"8:00 AM – 2:30 PM"},
+"Glen View":{full:"Glen View Elementary",ph:"760-432-2450",pr:"Rachel Adams",bell:"8:15 AM – 2:45 PM"},
+"Juniper":{full:"Juniper Elementary",ph:"760-432-2460",pr:"Tom Wright",bell:"7:45 AM – 2:15 PM"},
+"L.R. Green":{full:"L.R. Green Elementary",ph:"760-432-2470",pr:"Ana Rivera",bell:"8:00 AM – 2:30 PM"},
+"Lincoln":{full:"Lincoln Elementary",ph:"760-432-2480",pr:"Chris Nguyen",bell:"8:15 AM – 2:45 PM"},
+"Miller":{full:"Miller Elementary",ph:"760-432-2500",pr:"Karen Walsh",bell:"8:00 AM – 2:30 PM"},
+"North Broadway":{full:"North Broadway Elementary",ph:"760-432-2510",pr:"Jose Garcia",bell:"8:15 AM – 2:45 PM"},
+"Oak Hill":{full:"Oak Hill Elementary",ph:"760-432-2520",pr:"Emily Stone",bell:"8:00 AM – 2:30 PM"},
+"Orange Glen":{full:"Orange Glen Elementary",ph:"760-432-2530",pr:"Mike Johnson",bell:"8:15 AM – 2:45 PM"},
+"Pioneer":{full:"Pioneer Elementary",ph:"760-432-2540",pr:"Susan Lee",bell:"8:00 AM – 2:30 PM"},
+"Reidy Creek":{full:"Reidy Creek Elementary",ph:"760-432-2550",pr:"Dan Morales",bell:"7:45 AM – 2:15 PM"},
+"Rock Springs":{full:"Rock Springs Elementary",ph:"760-432-2560",pr:"Lisa Chang",bell:"8:15 AM – 2:45 PM"},
+"Rose":{full:"Rose Elementary",ph:"760-432-2570",pr:"Amy Foster",bell:"8:00 AM – 2:30 PM"},
+"Bear Valley":{full:"Bear Valley Middle",ph:"760-432-2610",pr:"Robert Diaz",bell:"7:50 AM – 2:47 PM"},
+"Del Dios":{full:"Del Dios Middle",ph:"760-432-2620",pr:"Nina Patel",bell:"7:50 AM – 2:47 PM"},
+"Hidden Valley":{full:"Hidden Valley Middle",ph:"760-432-2630",pr:"Kevin Tran",bell:"7:50 AM – 2:47 PM"},
+"Mission":{full:"Mission Middle",ph:"760-432-2640",pr:"Angela Cruz",bell:"8:00 AM – 2:57 PM"},
+"Rincon":{full:"Rincon Middle",ph:"760-432-2650",pr:"Steve Hall",bell:"7:50 AM – 2:47 PM"},
+"Heritage":{full:"Heritage K-8",ph:"760-432-2660",pr:"Diana Reyes",bell:"8:00 AM – 2:30 PM"}
+};
+
+// ============ TASK DATA ============
+const taskData = {
+"grades":{
+title:"Check grades & attendance",
+html:`<div class="tray-body">
+<p><strong>PowerSchool</strong> is where you check your child's grades, attendance, and teacher comments.</p>
+<p>You'll need your parent login — if you don't have one, contact your school office to set it up.</p>
+</div>
+<a href="https://www.eusd.org/o/eusd/page/powerschool-for-parents" class="tray-action">Open PowerSchool →</a>
+<div class="tray-links"><a href="#">Setup guide</a><a href="#">Forgot password?</a></div>`,
+more:"https://www.eusd.org/o/eusd/page/powerschool-for-parents"
+},
+"calendar":{
+title:"School calendar",
+html:`<div class="tray-body">
+<p>View district-wide dates including <strong>first/last day of school</strong>, holidays, breaks, minimum days, and parent conference dates.</p>
+<p>Individual schools may have additional events — check your school's page for details.</p>
+</div>
+<a href="https://www.eusd.org/page/calendar" class="tray-action">View full calendar →</a>
+<div class="tray-links"><a href="#">Download PDF calendar</a><a href="#">Add to phone</a></div>`,
+more:"https://www.eusd.org/page/calendar"
+},
+"lunch":{
+title:"Lunch menu",
+html:`<div class="tray-body">
+<p>EUSD menus are on <strong>EZSchoolLunch</strong>. View breakfast and lunch options by week, with nutrition info and allergen details.</p>
+<p>All EUSD students eat free through the Community Eligibility Provision — no application needed.</p>
+</div>
+<a href="https://www.ezschoollunch.com/p/Escondido/home" class="tray-action">View menus →</a>`,
+more:"https://www.ezschoollunch.com/p/Escondido/home"
+},
+"bells":{
+title:"Bell schedules",
+html:`<div class="tray-body">
+<p>Start and end times vary by school. Most elementary schools run <strong>8:00–2:30</strong> or <strong>8:15–2:45</strong>. Middle schools typically run <strong>7:50–2:47</strong>.</p>
+<p>Minimum day and early release schedules differ — check your school's page for specific times.</p>
+</div>
+<a href="https://www.eusd.org/page/bell-schedules" class="tray-action">All bell schedules →</a>`,
+more:"https://www.eusd.org/page/bell-schedules"
+},
+"absence":{
+title:"Report an absence",
+html:`<div class="tray-body">
+<p>To report your child absent, <strong>call your school's attendance line before 9:00 AM</strong> on the day of the absence.</p>
+<p>You'll need to provide your child's name, teacher, and reason for absence.</p>
+</div>
+<ol class="tray-steps">
+<li>Call your school office (see "Find your school" above)</li>
+<li>Give your child's name, grade, and teacher</li>
+<li>State the reason (illness, appointment, family, etc.)</li>
+</ol>
+<div class="tray-links"><a href="#">Attendance policies</a><a href="#">Excused vs. unexcused</a></div>`,
+more:"https://www.eusd.org/page/attendance"
+},
+"app":{
+title:"Get the Rooms app",
+html:`<div class="tray-body">
+<p><strong>Rooms</strong> (by Thrillshare) is how EUSD sends you news, alerts, and school updates. Get push notifications for closures, events, and announcements.</p>
+</div>
+<ol class="tray-steps">
+<li>Download "Rooms" from the App Store or Google Play</li>
+<li>Search for "Escondido Union School District"</li>
+<li>Follow your child's school for updates</li>
+<li>Turn on push notifications</li>
+</ol>
+<div class="tray-links"><a href="https://apps.apple.com/us/app/thrillshare/id1024147876">App Store</a><a href="https://play.google.com/store/apps/details?id=com.apptegy.thrillshare">Google Play</a><a href="https://escondidousdca.id.thrillshare.com/">Web login</a></div>`,
+more:"https://www.eusd.org/page/stay-connected-in-eusd"
+},
+"teacher":{
+title:"Contact a teacher",
+html:`<div class="tray-body">
+<p>The fastest way to reach a teacher is through <strong>PowerSchool</strong> — you can email them directly from the parent portal.</p>
+<p>You can also find teacher emails in your school's staff directory.</p>
+</div>
+<div class="tray-links"><a href="#">PowerSchool login</a><a href="#">Find staff directory</a></div>`,
+more:"https://www.eusd.org/o/eusd/page/powerschool-for-parents"
+},
+"office":{
+title:"Contact a school office",
+html:`<div class="tray-body">
+<p>Every school office is open during school hours. Tap your school above in <strong>"Find your school"</strong> to see the phone number, or call the district at <a href="tel:760-432-2400">760-432-2400</a>.</p>
+</div>`,
+more:"https://www.eusd.org/page/schools"
+},
+"enroll":{
+title:"Enroll my child",
+html:`<div class="tray-body">
+<p>New to EUSD? Welcome! Enrollment is open year-round. You can start the process online.</p>
+<p>You'll need: <strong>proof of address</strong>, <strong>birth certificate</strong>, <strong>immunization records</strong>, and <strong>previous school records</strong> (if transferring).</p>
+</div>
+<a href="https://www.eusd.org/page/registration-enrollment" class="tray-action">Start enrollment →</a>
+<div class="tray-links"><a href="#">Required documents</a><a href="#">Transitional K info</a><a href="#">Find your school</a></div>`,
+more:"https://www.eusd.org/page/registration-enrollment"
+},
+"forms":{
+title:"Forms & documents",
+html:`<div class="tray-body">
+<p>Find downloadable forms for enrollment, health, permission slips, and more on the district documents page.</p>
+</div>
+<a href="https://www.eusd.org/page/parents-and-families" class="tray-action">Browse forms →</a>`,
+more:"https://www.eusd.org/page/parents-and-families"
+},
+"learning":{
+title:"Learning help",
+html:`<div class="tray-body">
+<p>EUSD provides free academic resources for families including <strong>Lexia English</strong> for language learners, <strong>math support videos</strong>, and <strong>CA State Standards roadmaps</strong> by grade level.</p>
+</div>
+<div class="tray-links"><a href="#">Math resources</a><a href="#">English learner support</a><a href="#">Standards roadmaps</a></div>`,
+more:"https://www.eusd.org/page/academic-resources"
+},
+"afterschool":{
+title:"Before & after-school programs",
+html:`<div class="tray-body">
+<p>EUSD offers <strong>expanded learning programs</strong> at many school sites, providing safe, supervised care and enrichment before and after the school day.</p>
+</div>
+<a href="https://www.eusd.org/page/expanded-learning" class="tray-action">Program details →</a>`,
+more:"https://www.eusd.org/page/expanded-learning"
+},
+"health":{
+title:"Health & wellness",
+html:`<div class="tray-body">
+<p>Resources for student mental health, nutrition, counseling, and family wellness. Includes support for <strong>military families</strong>, <strong>foster youth</strong>, and families experiencing <strong>housing insecurity</strong> through Project SUCCESS.</p>
+</div>
+<div class="tray-links"><a href="#">Counseling resources</a><a href="#">Nutrition info</a><a href="#">Project SUCCESS</a></div>`,
+more:"https://www.eusd.org/page/health-wellness-resources"
+},
+"safety":{
+title:"Report a safety concern",
+html:`<div class="tray-body">
+<p>Use <strong>Say Something</strong> to anonymously report safety concerns — threats, bullying, harassment, or someone who may hurt themselves or others. Reports are reviewed by trained staff.</p>
+</div>
+<a href="https://www.sandyhookpromise.org/say-something-tips/" class="tray-action">Submit anonymous report →</a>`,
+more:"https://www.sandyhookpromise.org/say-something-tips/"
+},
+"volunteer":{
+title:"Volunteer at EUSD",
+html:`<div class="tray-body">
+<p>Help out in classrooms, at events, or through your school's PTA. All volunteers must complete a background check through the district.</p>
+</div>
+<a href="https://www.eusd.org/page/volunteer" class="tray-action">Get started →</a>`,
+more:"https://www.eusd.org/page/volunteer"
+},
+"board":{
+title:"Board meetings & budget",
+html:`<div class="tray-body">
+<p>EUSD Board of Education meetings are open to the public. The <strong>LCAP</strong> (Local Control Accountability Plan) outlines how the district spends its funding and sets priorities.</p>
+</div>
+<div class="tray-links"><a href="#">Board meeting schedule</a><a href="#">View the LCAP</a><a href="#">District budget</a></div>`,
+more:"https://www.eusd.org/page/board-of-education"
+}
+};
+
+// ============ ACTIVE TRAY STATE ============
+let activeSchoolTray = null;
+let activeTaskTray = null;
+
+function closeAll() { closeSchoolTray(); closeTaskTray(); }
+
+// ============ SCHOOL TRAY LOGIC ============
+function closeSchoolTray() {
+  if (!activeSchoolTray) return;
+  activeSchoolTray.trayEl.classList.remove('open');
+  activeSchoolTray.schEl.classList.remove('active');
+  const ref = activeSchoolTray;
+  setTimeout(() => { if (ref.trayEl.parentNode) ref.trayEl.remove(); }, 350);
+  activeSchoolTray = null;
+}
+
+function openSchoolTray(schEl, name) {
+  const d = schoolData[name];
+  if (!d) return;
+  if (activeSchoolTray && activeSchoolTray.schEl === schEl) { closeSchoolTray(); return; }
+  closeSchoolTray();
+
+  const grid = schEl.parentElement;
+  const tiles = Array.from(grid.children).filter(c => c.classList.contains('sch'));
+  const idx = tiles.indexOf(schEl);
+  const rowEnd = Math.min(Math.ceil((idx+1)/3)*3, tiles.length);
+  const insertAfter = tiles[rowEnd-1] || tiles[tiles.length-1];
+
+  const tray = document.createElement('div');
+  tray.className = 'tray-wrap';
+  tray.innerHTML = `<div class="tray school-tray">
+    <div class="tray-title"><span>${d.full}</span><button class="tray-close" aria-label="Close">×</button></div>
+    <div class="tray-info"><strong>${d.pr}</strong>, Principal<br>📞 <a href="tel:${d.ph}">${d.ph}</a> · 🕐 ${d.bell}</div>
+    <div class="tray-grid">
+      <div class="tray-item"><div class="tray-icon">📊</div><div class="t-label">Grades</div><div class="t-sub">PowerSchool</div></div>
+      <div class="tray-item"><div class="tray-icon">📅</div><div class="t-label">Calendar</div><div class="t-sub">School events</div></div>
+      <div class="tray-item"><div class="tray-icon">🍎</div><div class="t-label">Lunch menu</div><div class="t-sub">This week</div></div>
+      <div class="tray-item"><div class="tray-icon">👥</div><div class="t-label">Staff</div><div class="t-sub">Directory</div></div>
+      <div class="tray-item"><div class="tray-icon">📞</div><div class="t-label">Absence</div><div class="t-sub">Report</div></div>
+      <div class="tray-item"><div class="tray-icon">📄</div><div class="t-label">Forms</div><div class="t-sub">School docs</div></div>
+    </div>
+    <div class="tray-full"><a href="#">Visit full ${name} school site →</a></div>
+  </div>`;
+
+  insertAfter.insertAdjacentElement('afterend', tray);
+  schEl.classList.add('active');
+  tray.querySelector('.tray-close').addEventListener('click', (e) => { e.stopPropagation(); closeSchoolTray(); });
+  activeSchoolTray = { trayEl: tray, schEl: schEl };
+  requestAnimationFrame(() => { requestAnimationFrame(() => { tray.style.maxHeight = tray.scrollHeight + 'px'; tray.classList.add('open'); }); });
+  setTimeout(() => { tray.scrollIntoView({ behavior:'smooth', block:'nearest' }); }, 120);
+}
+
+document.querySelectorAll('.sch').forEach(el => {
+  el.addEventListener('click', () => openSchoolTray(el, el.dataset.school));
+});
+
+// ============ TASK TRAY LOGIC ============
+function closeTaskTray() {
+  if (!activeTaskTray) return;
+  activeTaskTray.trayEl.classList.remove('open');
+  activeTaskTray.taskEl.classList.remove('active');
+  const ref = activeTaskTray;
+  setTimeout(() => { if (ref.trayEl.parentNode) ref.trayEl.remove(); }, 350);
+  activeTaskTray = null;
+}
+
+function openTaskTray(taskEl, key) {
+  const d = taskData[key];
+  if (!d) return;
+  if (activeTaskTray && activeTaskTray.taskEl === taskEl) { closeTaskTray(); return; }
+  closeTaskTray();
+
+  const grid = taskEl.parentElement;
+  const tiles = Array.from(grid.children).filter(c => c.classList.contains('task'));
+  const idx = tiles.indexOf(taskEl);
+  const rowEnd = Math.min(Math.ceil((idx+1)/2)*2, tiles.length);
+  const insertAfter = tiles[rowEnd-1] || tiles[tiles.length-1];
+
+  const tray = document.createElement('div');
+  tray.className = 'tray-wrap';
+  tray.innerHTML = `<div class="tray task-tray">
+    <div class="tray-title"><span>${d.title}</span><button class="tray-close" aria-label="Close">×</button></div>
+    ${d.html}
+    <div class="tray-full"><a href="${d.more}">Full details on eusd.org →</a></div>
+  </div>`;
+
+  insertAfter.insertAdjacentElement('afterend', tray);
+  taskEl.classList.add('active');
+  tray.querySelector('.tray-close').addEventListener('click', (e) => { e.stopPropagation(); closeTaskTray(); });
+  activeTaskTray = { trayEl: tray, taskEl: taskEl };
+  requestAnimationFrame(() => { requestAnimationFrame(() => { tray.style.maxHeight = tray.scrollHeight + 'px'; tray.classList.add('open'); }); });
+  setTimeout(() => { tray.scrollIntoView({ behavior:'smooth', block:'nearest' }); }, 120);
+}
+
+document.querySelectorAll('.task').forEach(el => {
+  el.addEventListener('click', () => openTaskTray(el, el.dataset.task));
+});
+</script>
+</body>
+</html>

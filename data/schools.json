@@ -1,0 +1,652 @@
+[
+  {
+    "id": "bernardo",
+    "name": "Bernardo Elementary",
+    "shortName": "Bernardo",
+    "type": "elementary",
+    "phone": "760.432.2700",
+    "principal": "",
+    "address": "1122 Mountain Heights Drive, Escondido, CA 92029",
+    "bellSchedule": {
+      "regularStart": "8:00 AM",
+      "regularEnd": "2:30 PM",
+      "thursdayEnd": "12:15 PM",
+      "minimumEnd": "12:10 PM"
+    },
+    "siteUrl": "https://www.eusd.org/o/bernardo",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "central",
+    "name": "Central Elementary",
+    "shortName": "Central",
+    "type": "elementary",
+    "phone": "760.432.2431",
+    "principal": "",
+    "address": "122 W 4th Avenue, Escondido, CA 92025",
+    "bellSchedule": {
+      "regularStart": "8:10 AM",
+      "regularEnd": "2:40 PM",
+      "thursdayEnd": "12:25 PM",
+      "minimumEnd": "12:20 PM"
+    },
+    "siteUrl": "https://www.eusd.org/o/central",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "conway",
+    "name": "Conway Elementary",
+    "shortName": "Conway",
+    "type": "elementary",
+    "phone": "760.432.2435",
+    "principal": "",
+    "address": "1325 Conway Drive, Escondido, CA 92026",
+    "bellSchedule": {
+      "regularStart": "8:00 AM",
+      "regularEnd": "2:30 PM",
+      "thursdayEnd": "12:15 PM",
+      "minimumEnd": "12:10 PM"
+    },
+    "siteUrl": "https://www.eusd.org/o/conway",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "farr-avenue",
+    "name": "Farr Avenue Elementary",
+    "shortName": "Farr Avenue",
+    "type": "elementary",
+    "phone": "760.735.3049",
+    "principal": "",
+    "address": "933 Farr Avenue, Escondido, CA 92026",
+    "bellSchedule": {
+      "regularStart": "8:00 AM",
+      "regularEnd": "2:30 PM",
+      "thursdayEnd": "12:15 PM",
+      "minimumEnd": "12:10 PM"
+    },
+    "siteUrl": "https://www.eusd.org/o/farravenue",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "felicita",
+    "name": "Felicita Elementary",
+    "shortName": "Felicita",
+    "type": "elementary",
+    "phone": "760.432.2444",
+    "principal": "",
+    "address": "737 W. 13th Avenue, Escondido, CA 92025",
+    "bellSchedule": {
+      "regularStart": "8:00 AM",
+      "regularEnd": "2:30 PM",
+      "thursdayEnd": "12:15 PM",
+      "minimumEnd": "12:10 PM"
+    },
+    "siteUrl": "https://www.eusd.org/o/felicita",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "glen-view",
+    "name": "Glen View Elementary",
+    "shortName": "Glen View",
+    "type": "elementary",
+    "phone": "760.432.2448",
+    "principal": "",
+    "address": "2201 E. Mission Avenue, Escondido, CA 92027",
+    "bellSchedule": {
+      "regularStart": "8:00 AM",
+      "regularEnd": "2:30 PM",
+      "thursdayEnd": "12:15 PM",
+      "minimumEnd": "12:10 PM"
+    },
+    "siteUrl": "https://www.eusd.org/o/glenview",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "juniper",
+    "name": "Juniper Elementary",
+    "shortName": "Juniper",
+    "type": "elementary",
+    "phone": "760.432.2462",
+    "principal": "",
+    "address": "1809 S. Juniper Street, Escondido, CA 92025",
+    "bellSchedule": {
+      "regularStart": "8:00 AM",
+      "regularEnd": "2:30 PM",
+      "thursdayEnd": "12:15 PM",
+      "minimumEnd": "12:10 PM"
+    },
+    "siteUrl": "https://www.eusd.org/o/juniper",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "lr-green",
+    "name": "L.R. Green Elementary",
+    "shortName": "L.R. Green",
+    "type": "elementary",
+    "phone": "760.432.2260",
+    "principal": "",
+    "address": "3115 Las Palmas Avenue, Escondido, CA 92025",
+    "bellSchedule": {
+      "regularStart": "8:10 AM",
+      "regularEnd": "2:40 PM",
+      "thursdayEnd": "12:25 PM",
+      "minimumEnd": "12:20 PM"
+    },
+    "siteUrl": "https://www.eusd.org/o/lrgreen",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "lincoln",
+    "name": "Lincoln Elementary",
+    "shortName": "Lincoln",
+    "type": "elementary",
+    "phone": "760.432.2466",
+    "principal": "",
+    "address": "1029 N. Broadway, Escondido, CA 92026",
+    "bellSchedule": {
+      "regularStart": "8:00 AM",
+      "regularEnd": "2:30 PM",
+      "thursdayEnd": "12:15 PM",
+      "minimumEnd": "12:20 PM"
+    },
+    "siteUrl": "https://www.eusd.org/o/lincoln",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "miller",
+    "name": "Miller Elementary",
+    "shortName": "Miller",
+    "type": "elementary",
+    "phone": "760.432.2470",
+    "principal": "",
+    "address": "1975 Miller Avenue, Escondido, CA 92025",
+    "bellSchedule": {
+      "regularStart": "8:00 AM",
+      "regularEnd": "2:30 PM",
+      "thursdayEnd": "12:15 PM",
+      "minimumEnd": "12:10 PM"
+    },
+    "siteUrl": "https://www.eusd.org/o/miller",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "north-broadway",
+    "name": "North Broadway Elementary",
+    "shortName": "North Broadway",
+    "type": "elementary",
+    "phone": "760.432.2479",
+    "principal": "",
+    "address": "2301 North Broadway, Escondido, CA 92026",
+    "bellSchedule": {
+      "regularStart": "8:00 AM",
+      "regularEnd": "2:30 PM",
+      "thursdayEnd": "12:15 PM",
+      "minimumEnd": "12:10 PM"
+    },
+    "siteUrl": "https://www.eusd.org/o/northbroadway",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "oak-hill",
+    "name": "Oak Hill Elementary",
+    "shortName": "Oak Hill",
+    "type": "elementary",
+    "phone": "760.432.2483",
+    "principal": "",
+    "address": "1820 Oak Hill Drive, Escondido, CA 92027",
+    "bellSchedule": {
+      "regularStart": "8:00 AM",
+      "regularEnd": "2:30 PM",
+      "thursdayEnd": "12:15 PM",
+      "minimumEnd": "12:10 PM"
+    },
+    "siteUrl": "https://www.eusd.org/o/oakhill",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "orange-glen",
+    "name": "Orange Glen Elementary",
+    "shortName": "Orange Glen",
+    "type": "elementary",
+    "phone": "760.432.2487",
+    "principal": "",
+    "address": "2861 E. Valley Parkway, Escondido, CA 92027",
+    "bellSchedule": {
+      "regularStart": "7:55 AM",
+      "regularEnd": "2:25 PM",
+      "thursdayEnd": "12:10 PM",
+      "minimumEnd": "12:05 PM"
+    },
+    "siteUrl": "https://www.eusd.org/o/orangeglen",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "pioneer",
+    "name": "Pioneer Elementary",
+    "shortName": "Pioneer",
+    "type": "elementary",
+    "phone": "760.432.2412",
+    "principal": "",
+    "address": "980 N. Ash Street, Escondido, CA 92027",
+    "bellSchedule": {
+      "regularStart": "8:00 AM",
+      "regularEnd": "2:30 PM",
+      "thursdayEnd": "12:15 PM",
+      "minimumEnd": "12:10 PM"
+    },
+    "siteUrl": "https://www.eusd.org/o/pioneer",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "reidy-creek",
+    "name": "Reidy Creek Elementary",
+    "shortName": "Reidy Creek",
+    "type": "elementary",
+    "phone": "760.739.5800",
+    "principal": "",
+    "address": "2869 North Broadway, Escondido, CA 92026",
+    "bellSchedule": {
+      "regularStart": "8:10 AM",
+      "regularEnd": "2:40 PM",
+      "thursdayEnd": "12:25 PM",
+      "minimumEnd": "12:20 PM"
+    },
+    "siteUrl": "https://www.eusd.org/o/reidycreek",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "rock-springs",
+    "name": "Rock Springs Elementary",
+    "shortName": "Rock Springs",
+    "type": "elementary",
+    "phone": "760.432.2283",
+    "principal": "",
+    "address": "1155 Deodar Road, Escondido, CA 92026",
+    "bellSchedule": {
+      "regularStart": "8:00 AM",
+      "regularEnd": "2:30 PM",
+      "thursdayEnd": "12:15 PM",
+      "minimumEnd": "12:10 PM"
+    },
+    "siteUrl": "https://www.eusd.org/o/rocksprings",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "rose",
+    "name": "Rose Elementary",
+    "shortName": "Rose",
+    "type": "elementary",
+    "phone": "760.432.2495",
+    "principal": "",
+    "address": "906 N. Rose Street, Escondido, CA 92027",
+    "bellSchedule": {
+      "regularStart": "8:00 AM",
+      "regularEnd": "2:30 PM",
+      "thursdayEnd": "12:15 PM",
+      "minimumEnd": "12:10 PM"
+    },
+    "siteUrl": "https://www.eusd.org/o/rose",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "quantum-academy",
+    "name": "Quantum Academy",
+    "shortName": "Quantum Academy",
+    "type": "intermediate",
+    "phone": "760.432.2220",
+    "principal": "",
+    "address": "420 N. Falconer Rd, Escondido, CA 92027",
+    "bellSchedule": {
+      "regularStart": "8:15 AM",
+      "regularEnd": "2:45 PM",
+      "thursdayEnd": "12:30 PM",
+      "minimumEnd": "12:25 PM"
+    },
+    "siteUrl": "https://www.eusd.org/o/quantum",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "bear-valley",
+    "name": "Bear Valley Middle School",
+    "shortName": "Bear Valley",
+    "type": "middle",
+    "phone": "760.432.4060",
+    "principal": "",
+    "address": "3003 Bear Valley Parkway, Escondido, CA 92025",
+    "bellSchedule": {
+      "regularStart": "8:19 AM",
+      "regularEnd": "2:53 PM",
+      "thursdayEnd": "1:58 PM",
+      "minimumEnd": "12:08 PM"
+    },
+    "siteUrl": "https://www.eusd.org/o/bearvalley",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "del-dios",
+    "name": "Del Dios Academy",
+    "shortName": "Del Dios",
+    "type": "middle",
+    "phone": "760.432.2439",
+    "principal": "",
+    "address": "1400 W. 9th Avenue, Escondido, CA 92029",
+    "bellSchedule": {
+      "regularStart": "8:00 AM",
+      "regularEnd": "2:45 PM",
+      "thursdayEnd": "1:00 PM",
+      "minimumEnd": "12:09 PM"
+    },
+    "siteUrl": "https://www.eusd.org/o/deldios",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "hidden-valley",
+    "name": "Hidden Valley Middle School",
+    "shortName": "Hidden Valley",
+    "type": "middle",
+    "phone": "760.432.2457",
+    "principal": "",
+    "address": "2700 Reed Road, Escondido, CA 92027",
+    "bellSchedule": {
+      "regularStart": "8:00 AM",
+      "regularEnd": "2:38 PM",
+      "thursdayEnd": "1:40 PM",
+      "minimumEnd": "11:48 AM"
+    },
+    "siteUrl": "https://www.eusd.org/o/hiddenvalley",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "mission",
+    "name": "Mission Middle School",
+    "shortName": "Mission",
+    "type": "middle",
+    "phone": "760.432.2452",
+    "principal": "",
+    "address": "939 E. Mission Avenue, Escondido, CA 92025",
+    "bellSchedule": {
+      "regularStart": "8:00 AM",
+      "regularEnd": "2:45 PM",
+      "thursdayEnd": "1:00 PM",
+      "minimumEnd": "11:54 AM"
+    },
+    "siteUrl": "https://www.eusd.org/o/mission",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "rincon",
+    "name": "Rincon Middle School",
+    "shortName": "Rincon",
+    "type": "middle",
+    "phone": "760.432.2491",
+    "principal": "",
+    "address": "925 Lehner Avenue, Escondido, CA 92026",
+    "bellSchedule": {
+      "regularStart": "8:00 AM",
+      "regularEnd": "2:45 PM",
+      "thursdayEnd": "1:00 PM",
+      "minimumEnd": "11:48 AM"
+    },
+    "siteUrl": "https://www.eusd.org/o/rincon",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "home-education",
+    "name": "Home Education Program",
+    "shortName": "Home Education",
+    "type": "specialty",
+    "phone": "760.432.2221",
+    "principal": "",
+    "address": "1400 W. Ninth Ave., Escondido, CA 92029",
+    "bellSchedule": {
+      "regularStart": "",
+      "regularEnd": "",
+      "thursdayEnd": "",
+      "minimumEnd": ""
+    },
+    "siteUrl": "https://www.eusd.org/o/hep",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  },
+  {
+    "id": "limitless-learning-academy",
+    "name": "Limitless Learning Academy",
+    "shortName": "Limitless Learning Academy",
+    "type": "specialty",
+    "phone": "760.432.2388",
+    "principal": "",
+    "address": "1400 W Ninth Ave, Escondido, CA 92029",
+    "bellSchedule": {
+      "regularStart": "8:00 AM",
+      "regularEnd": "2:45 PM",
+      "thursdayEnd": "12:00 PM",
+      "minimumEnd": "12:00 PM"
+    },
+    "siteUrl": "https://www.eusd.org/o/lla",
+    "sarcUrl": "",
+    "promoVideoUrl": "",
+    "trayLinks": {
+      "grades": "https://www.eusd.org/o/eusd/page/powerschool-for-parents",
+      "calendar": "",
+      "lunchMenu": "https://www.ezschoollunch.com/p/Escondido/home",
+      "staffDirectory": "",
+      "reportAbsence": "https://www.eusd.org/page/attendance",
+      "forms": ""
+    }
+  }
+]

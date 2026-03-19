@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EUSD Parent Portal</title>
+  <meta name="description" content="Your starting point for everything Escondido Union School District. Find your school, check grades, lunch menus, calendars, and more.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="EUSD Parent Portal">
+  <meta property="og:description" content="Your starting point for everything Escondido Union School District. Find your school, check grades, lunch menus, calendars, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://cmsv2-assets.apptegy.net/uploads/11435/logo/12888/Logo-NameAtRight-White.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Apple mobile web app -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="EUSD Parent Portal">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..800;1,9..40,300..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+  <!-- Skip navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Zone 0: Top bar -->
+  <div class="top-bar" role="banner">
+    <a href="tel:760-432-2400" class="top-bar__phone">760.432.2400</a>
+    <button class="top-bar__lang" id="langToggle" aria-label="Translate to Spanish">Español</button>
+    <div id="google_translate_element" style="position:absolute;left:-9999px;opacity:0;pointer-events:none;"></div>
+  </div>
+
+  <!-- Zone 1: Header -->
+  <header class="header">
+    <div class="header__content">
+      <img
+        src="https://cmsv2-assets.apptegy.net/uploads/11435/logo/12888/Logo-NameAtRight-White.png"
+        alt="Escondido Union School District logo"
+        class="header__logo notranslate"
+        width="180"
+        height="36"
+      >
+      <div class="header__text">
+        <h1 class="header__title notranslate">Parent Portal</h1>
+        <p class="header__subtitle">Your starting point for everything <span class="notranslate">EUSD</span></p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Zone 2: Alert banner -->
+  <div class="alert-banner" id="alertBanner" role="status" aria-live="polite">
+    <div class="alert-banner__content">
+      <button class="alert-banner__prev" id="alertPrev" aria-label="Previous upcoming event">‹</button>
+      <span class="alert-banner__text" id="alertText"></span>
+      <button class="alert-banner__next" id="alertNext" aria-label="Next upcoming event">›</button>
+    </div>
+  </div>
+
+  <!-- Zone 3: Search -->
+  <main id="main-content">
+    <section class="search-section" aria-labelledby="searchHeading">
+      <h2 id="searchHeading" class="search-section__heading">What can we help you find?</h2>
+      <div class="search-section__bar">
+        <label for="searchInput" class="visually-hidden">Search the Parent Portal</label>
+        <input
+          type="search"
+          id="searchInput"
+          class="search-section__input"
+          placeholder="Search for schools, grades, lunch menus..."
+          autocomplete="off"
+        >
+        <div class="search-section__results" id="searchResults" role="listbox" aria-label="Search results" hidden></div>
+      </div>
+      <div class="search-section__chips" role="list" aria-label="Quick links">
+        <button class="chip" role="listitem" data-target="calendar">Calendar</button>
+        <button class="chip" role="listitem" data-target="lunch-menu">Lunch menu</button>
+        <button class="chip" role="listitem" data-target="grades">Grades</button>
+        <button class="chip" role="listitem" data-target="report-absence">Report absence</button>
+        <button class="chip" role="listitem" data-target="contact-teacher">Contact teacher</button>
+        <button class="chip" role="listitem" data-target="enroll">Enroll</button>
+        <button class="chip" role="listitem" data-target="rooms-app">Get the app</button>
+      </div>
+    </section>
+
+    <!-- Zone 4: Find your school -->
+    <section class="schools-section" aria-labelledby="schoolsHeading">
+      <h2 id="schoolsHeading" class="section-heading">Find your school</h2>
+      <div id="schoolsContainer"></div>
+      <div class="schools-section__links">
+        <a href="https://www.schoolsitelocator.com/apps/escondidounion/accessibilityFocused.html" target="_blank" rel="noopener">
+          Find by address <span class="visually-hidden">(opens in new tab)</span>
+        </a>
+        <span class="schools-section__divider">•</span>
+        <a href="#new-parent">New to <span class="notranslate">EUSD</span>?</a>
+      </div>
+    </section>
+
+    <!-- Zone 5: I need to... -->
+    <section class="tasks-section" aria-labelledby="tasksHeading">
+      <h2 id="tasksHeading" class="section-heading">I need to...</h2>
+      <div id="tasksContainer"></div>
+    </section>
+
+    <!-- Apps & Logins -->
+    <section class="apps-section" aria-labelledby="appsHeading">
+      <h2 id="appsHeading" class="section-heading">Apps &amp; Logins</h2>
+      <div id="appsContainer"></div>
+    </section>
+  </main>
+
+  <!-- Zone 6: Still can't find it? -->
+  <section class="contact-section" aria-labelledby="contactHeading">
+    <h2 id="contactHeading" class="section-heading">Still can't find it?</h2>
+    <a href="tel:760-432-2400" class="contact-section__phone">760.432.2400</a>
+    <p class="contact-section__address">
+      <span class="notranslate">Escondido Union School District</span><br>
+      2310 Aldergrove Avenue<br>
+      Escondido, CA 92029
+    </p>
+    <div class="contact-section__social" aria-label="Social media links">
+      <a href="https://www.facebook.com/EscondidoUSD" target="_blank" rel="noopener" aria-label="Facebook (opens in new tab)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      </a>
+      <a href="https://twitter.com/EUSD" target="_blank" rel="noopener" aria-label="X / Twitter (opens in new tab)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a href="https://www.youtube.com/c/EscondidoUnionSchoolDistrict" target="_blank" rel="noopener" aria-label="YouTube (opens in new tab)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/eusd_learns/" target="_blank" rel="noopener" aria-label="Instagram (opens in new tab)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Zone 7: Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 <span class="notranslate">Escondido Union School District</span></p>
+    <nav class="footer__links" aria-label="Footer links">
+      <a href="https://www.eusd.org/page/board-of-education-policies-website-accessibility-and-privacy">Accessibility</a>
+      <a href="https://www.eusd.org/page/board-of-education-policies-website-accessibility-and-privacy">Privacy</a>
+      <a href="https://www.eusd.org/page/board-of-education-policies">Policies</a>
+    </nav>
+    <p class="footer__updated" id="lastUpdated"></p>
+  </footer>
+
+  <!-- Google Translate (hidden, triggered by custom button) -->
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'es',
+        autoDisplay: false,
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+
+    document.getElementById('langToggle').addEventListener('click', function() {
+      var btn = this;
+      var isSpanish = btn.classList.contains('active');
+
+      if (isSpanish) {
+        // Revert to English
+        var frame = document.querySelector('.goog-te-banner-frame');
+        if (frame) {
+          var innerDoc = frame.contentDocument || frame.contentWindow.document;
+          var restore = innerDoc.querySelector('.goog-close-link');
+          if (restore) restore.click();
+        }
+        // Fallback: clear the cookie
+        document.cookie = 'googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC';
+        document.cookie = 'googtrans=; path=/; domain=.' + location.hostname + '; expires=Thu, 01 Jan 1970 00:00:00 UTC';
+        btn.classList.remove('active');
+        btn.textContent = 'Español';
+        btn.setAttribute('aria-label', 'Translate to Spanish');
+        location.reload();
+      } else {
+        // Translate to Spanish
+        var select = document.querySelector('#google_translate_element select');
+        if (select) {
+          select.value = 'es';
+          select.dispatchEvent(new Event('change'));
+          btn.classList.add('active');
+          btn.textContent = 'English';
+          btn.setAttribute('aria-label', 'Translate to English');
+        }
+      }
+    });
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!-- Fuse.js -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" defer></script>
+
+  <!-- App -->
+  <script src="js/app.js" defer></script>
+</body>
+</html>
