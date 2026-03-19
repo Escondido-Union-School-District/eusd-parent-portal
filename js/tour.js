@@ -117,7 +117,8 @@
       target: '.contact-section',
       title: 'Always a Way Out',
       body: 'Phone number, address, social media. "Still can\'t find it?" acknowledges that no page covers everything. The phone number is prominent and tappable. Sometimes the best UX is a human.',
-      research: 'Design principle: Every dead end should have an escape hatch. A visible phone number builds trust even if parents never call.'
+      research: 'Design principle: Every dead end should have an escape hatch. A visible phone number builds trust even if parents never call.',
+      tooltipPosition: 'above'
     },
     {
       target: null,
@@ -173,9 +174,13 @@
       if (targetEl) {
         targetEl.classList.add('tour-highlight');
         prevHighlight = targetEl;
-        // Scroll target to top of viewport so tooltip has room below
+        // Scroll target into view with room for tooltip
         var r = targetEl.getBoundingClientRect();
-        if (r.top < 0 || r.top > window.innerHeight * 0.3) {
+        if (step.tooltipPosition === 'above') {
+          // Scroll so target is in the lower half, leaving room for tooltip above
+          var scrollTop = window.scrollY + r.top - window.innerHeight * 0.55;
+          window.scrollTo({ top: Math.max(0, scrollTop), behavior: 'smooth' });
+        } else if (r.top < 0 || r.top > window.innerHeight * 0.3) {
           var scrollTop = window.scrollY + r.top - 20;
           window.scrollTo({ top: Math.max(0, scrollTop), behavior: 'smooth' });
         }
@@ -213,9 +218,15 @@
     // Position tooltip — delay enough for scroll and actions to complete
     setTimeout(function () {
       if (step.tooltipPosition === 'below-fixed') {
-        // Fixed position below top bar area
         tooltip.style.top = '100px';
         tooltip.style.left = Math.max(16, (window.innerWidth - tooltip.getBoundingClientRect().width) / 2) + 'px';
+      } else if (step.tooltipPosition === 'above' && targetEl) {
+        var rect = targetEl.getBoundingClientRect();
+        var ttH = tooltip.getBoundingClientRect().height;
+        tooltip.style.top = (rect.top - ttH - 16) + 'px';
+        tooltip.style.left = Math.max(16, (window.innerWidth - tooltip.getBoundingClientRect().width) / 2) + 'px';
+        // Ensure visible
+        if (parseFloat(tooltip.style.top) < 16) tooltip.style.top = '16px';
       } else {
         positionTooltip(targetEl);
       }
