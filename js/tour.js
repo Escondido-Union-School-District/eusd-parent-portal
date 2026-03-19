@@ -265,9 +265,52 @@
     currentStep = -1;
   }
 
-  // Init
-  var btn = document.getElementById('startTour');
-  if (btn) {
-    btn.addEventListener('click', startTour);
+  // ===== Welcome Modal =====
+  function getCookie(name) {
+    var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+    return match ? match[2] : null;
+  }
+
+  function setCookie(name, value, days) {
+    var d = new Date();
+    d.setTime(d.getTime() + days * 86400000);
+    document.cookie = name + '=' + value + ';expires=' + d.toUTCString() + ';path=/';
+  }
+
+  function showWelcome() {
+    var welcome = document.createElement('div');
+    welcome.className = 'tour-welcome';
+    welcome.innerHTML =
+      '<div class="tour-welcome__card">' +
+        '<div class="tour-welcome__icon">👋</div>' +
+        '<div class="tour-welcome__title">Welcome to the EUSD Parent Portal</div>' +
+        '<div class="tour-welcome__body">This is a new way for families to find everything they need from the district — all in one page. Take a quick guided tour to see how it works.</div>' +
+        '<button class="tour-welcome__start" id="tourStart">Take the tour</button>' +
+        '<button class="tour-welcome__skip" id="tourSkip">Skip for now</button>' +
+        '<label class="tour-welcome__noshow"><input type="checkbox" id="tourNoShow"> Don\'t show this again</label>' +
+      '</div>';
+
+    document.body.appendChild(welcome);
+
+    document.getElementById('tourStart').addEventListener('click', function () {
+      if (document.getElementById('tourNoShow').checked) {
+        setCookie('eusd_tour_done', '1', 365);
+      }
+      welcome.remove();
+      startTour();
+    });
+
+    document.getElementById('tourSkip').addEventListener('click', function () {
+      if (document.getElementById('tourNoShow').checked) {
+        setCookie('eusd_tour_done', '1', 365);
+      }
+      welcome.remove();
+    });
+  }
+
+  // Init — show welcome on first visit, or if no cookie
+  if (!getCookie('eusd_tour_done')) {
+    // Wait for page to fully render
+    setTimeout(showWelcome, 800);
   }
 })();
