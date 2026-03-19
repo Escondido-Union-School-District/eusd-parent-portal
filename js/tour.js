@@ -216,21 +216,23 @@
     document.body.appendChild(tooltip);
 
     // Position tooltip — delay enough for scroll and actions to complete
+    var posDelay = step.tooltipPosition === 'above' ? 800 : 500;
     setTimeout(function () {
       if (step.tooltipPosition === 'below-fixed') {
         tooltip.style.top = '100px';
         tooltip.style.left = Math.max(16, (window.innerWidth - tooltip.getBoundingClientRect().width) / 2) + 'px';
       } else if (step.tooltipPosition === 'above' && targetEl) {
-        var rect = targetEl.getBoundingClientRect();
+        // Recalculate rect after scroll
+        var rect2 = targetEl.getBoundingClientRect();
         var ttH = tooltip.getBoundingClientRect().height;
-        tooltip.style.top = (rect.top - ttH - 16) + 'px';
+        var topPos = rect2.top - ttH - 16;
+        if (topPos < 16) topPos = 16;
+        tooltip.style.top = topPos + 'px';
         tooltip.style.left = Math.max(16, (window.innerWidth - tooltip.getBoundingClientRect().width) / 2) + 'px';
-        // Ensure visible
-        if (parseFloat(tooltip.style.top) < 16) tooltip.style.top = '16px';
       } else {
         positionTooltip(targetEl);
       }
-    }, 500);
+    }, posDelay);
 
     // Wire buttons
     var closeBtn = tooltip.querySelector('.tour-tooltip__btn--close');
