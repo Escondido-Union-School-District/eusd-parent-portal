@@ -40,10 +40,52 @@
       research: 'Design decision: Reinforces that each school has its own identity within the district. Parents associate with their school, not "EUSD."'
     },
     {
+      target: null,
+      title: 'School Tray — Everything in One Place',
+      body: 'Tap a school and a tray expands inline with principal, phone, address, bell schedule (with Thursday and minimum day callouts), Google Maps link, SARC report card, promo video, and 10 quick-link tiles — Grades, Calendar, Lunch, Staff, Report Absence, Forms, Live Feed, News, Parents, Students. All without leaving the page.',
+      research: 'Research: Parents want to get to their school\'s information fast. This eliminates the need to navigate to 23 separate school websites. <strong>— SchoolWebmasters, Finalsite</strong>',
+      action: function () {
+        // Open Elementary tab if not already open
+        var elemTab = document.querySelector('.school-type-tab');
+        if (elemTab && elemTab.getAttribute('aria-expanded') !== 'true') elemTab.click();
+        // Click Bernardo after a moment
+        setTimeout(function () {
+          var tile = document.querySelector('[data-school-id="bernardo"]');
+          if (tile) tile.click();
+        }, 400);
+      }
+    },
+    {
+      target: null,
+      title: 'Staff Directory — Right Here',
+      body: 'The Staff button opens an inline sub-tray showing staff names and roles — scraped directly from the school\'s Thrillshare page. Parents can see who teaches what without leaving this page. A "View all staff" link goes to the full directory.',
+      research: 'Research: Faculty and staff directory is one of the most visited pages by both prospective and current families. <strong>— Gradelink Analytics Study</strong>',
+      action: function () {
+        // Click the staff toggle in the open Bernardo tray
+        setTimeout(function () {
+          var staffBtn = document.querySelector('.staff-toggle');
+          if (staffBtn) staffBtn.click();
+        }, 300);
+      }
+    },
+    {
       target: '#tasksHeading',
       title: '"I Need To..." Task Tiles',
       body: 'Organized by what parents are trying to DO — not by department or org chart. Each tray gives the 80% answer inline so parents rarely need to click through to eusd.org. Grouped: Daily Life, Stay Connected, Enrollment, Programs, Support, Get Involved.',
       research: 'Research: Parents think in tasks ("how do I report an absence?"), not in bureaucratic categories ("Student Services"). Organizing by intent, not structure, is the key UX insight. <strong>— K-12 web design research, SchoolStatus</strong>'
+    },
+    {
+      target: null,
+      title: 'Forms & Documents',
+      body: 'All parent-facing forms and documents scraped from eusd.org, categorized and searchable in one place — testing guides, health forms, enrollment docs, safety resources. PDFs are tagged. Categories can be updated by editing a simple JSON file.',
+      research: 'Design decision: Parents shouldn\'t have to hunt across 23 school sites and the district site to find a form. One inventory, always current.',
+      action: function () {
+        var tile = document.querySelector('[data-task-id="forms"]');
+        if (tile) {
+          tile.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          setTimeout(function () { tile.click(); }, 400);
+        }
+      }
     },
     {
       target: '#appsHeading',
@@ -104,6 +146,11 @@
     overlay.className = 'tour-overlay';
     overlay.addEventListener('click', endTour);
     document.body.appendChild(overlay);
+
+    // Run action if defined (opens trays, clicks buttons, etc.)
+    if (step.action) {
+      step.action();
+    }
 
     // Highlight target
     var targetEl = null;
