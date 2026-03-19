@@ -172,10 +172,11 @@
       if (targetEl) {
         targetEl.classList.add('tour-highlight');
         prevHighlight = targetEl;
-        // Only scroll if element isn't already near the top of the viewport
+        // Scroll target to top of viewport so tooltip has room below
         var r = targetEl.getBoundingClientRect();
-        if (r.top < 0 || r.bottom > window.innerHeight) {
-          targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        if (r.top < 0 || r.top > window.innerHeight * 0.3) {
+          var scrollTop = window.scrollY + r.top - 20;
+          window.scrollTo({ top: Math.max(0, scrollTop), behavior: 'smooth' });
         }
       }
     }
