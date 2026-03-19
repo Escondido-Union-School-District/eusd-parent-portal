@@ -138,7 +138,7 @@ body { top: 0 !important; }
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 40px;
 }
 
 .header__logo {
