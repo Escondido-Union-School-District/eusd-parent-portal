@@ -61,11 +61,17 @@
       body: 'The Staff button opens an inline sub-tray showing staff names and roles — scraped directly from the school\'s Thrillshare page. Parents can see who teaches what without leaving this page. A "View all staff" link goes to the full directory.',
       research: 'Research: Faculty and staff directory is one of the most visited pages by both prospective and current families. <strong>— Gradelink Analytics Study</strong>',
       action: function () {
-        // Click the staff toggle in the open Bernardo tray
+        // Make sure Bernardo tray is open, then click staff
+        var elemTab = document.querySelector('.school-type-tab');
+        if (elemTab && elemTab.getAttribute('aria-expanded') !== 'true') elemTab.click();
         setTimeout(function () {
-          var staffBtn = document.querySelector('.staff-toggle');
-          if (staffBtn) staffBtn.click();
-        }, 300);
+          var tile = document.querySelector('[data-school-id="bernardo"]');
+          if (tile && tile.getAttribute('aria-expanded') !== 'true') tile.click();
+          setTimeout(function () {
+            var staffBtn = document.querySelector('.staff-toggle');
+            if (staffBtn && staffBtn.getAttribute('aria-expanded') !== 'true') staffBtn.click();
+          }, 600);
+        }, 500);
       }
     },
     {
