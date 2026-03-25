@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EUSD Parent Portal — User Guide</title>
+<style>
+  @media print {
+    body { font-size: 11pt; }
+    .no-print { display: none; }
+    h1 { font-size: 18pt; }
+    h2 { font-size: 14pt; }
+    h3 { font-size: 12pt; }
+    a { color: #000; text-decoration: none; }
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 0 1.5em;
+    line-height: 1.6;
+    color: #222;
+  }
+  h1 {
+    border-bottom: 3px solid #1a56db;
+    padding-bottom: 0.3em;
+    color: #1a56db;
+  }
+  h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.2em;
+    margin-top: 1.5em;
+    color: #1a56db;
+  }
+  h3 { margin-top: 1.2em; }
+  code {
+    background: #f0f4f8;
+    padding: 0.15em 0.4em;
+    border-radius: 3px;
+    font-size: 0.95em;
+  }
+  pre {
+    background: #f0f4f8;
+    padding: 1em;
+    border-radius: 6px;
+    overflow-x: auto;
+    border-left: 4px solid #1a56db;
+  }
+  pre code {
+    background: none;
+    padding: 0;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 0.5em 0.75em;
+    text-align: left;
+  }
+  th {
+    background: #1a56db;
+    color: white;
+  }
+  .callout {
+    background: #fff8e1;
+    border-left: 4px solid #f9a825;
+    padding: 0.75em 1em;
+    margin: 1em 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .callout-info {
+    background: #e8f0fe;
+    border-left-color: #1a56db;
+  }
+  .step-num {
+    display: inline-block;
+    background: #1a56db;
+    color: white;
+    width: 1.8em;
+    height: 1.8em;
+    line-height: 1.8em;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-right: 0.4em;
+  }
+  .print-btn {
+    background: #1a56db;
+    color: white;
+    border: none;
+    padding: 0.6em 1.5em;
+    font-size: 1em;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 1em;
+  }
+  .print-btn:hover { background: #1342a8; }
+  ul, ol { margin: 0.5em 0; }
+  li { margin: 0.3em 0; }
+</style>
+</head>
+<body>
+
+<button class="print-btn no-print" onclick="window.print()">Print This Guide</button>
+
+<h1>EUSD Parent Portal</h1>
+<p><strong>User Guide</strong> &mdash; Escondido Union School District</p>
+
+<!-- ================================================================== -->
+<h2>What This Tool Does</h2>
+
+<p>The EUSD Parent Portal is a single-page website that gives parents quick access to school information, grades, calendars, lunch menus, enrollment, and more. It is a static site hosted on Netlify &mdash; there is no backend, no database, and no login required.</p>
+
+<p>All content is driven by JSON data files in the <code>data\</code> folder. To update the site, you edit those JSON files, commit the changes, and push to GitHub. Netlify automatically rebuilds and publishes the site.</p>
+
+<div class="callout callout-info">
+  <strong>Key concept:</strong> Everything is a JSON edit. You never need to touch the HTML or JavaScript to update school info, calendar dates, alert banners, or tray content. Just edit the right <code>.json</code> file and redeploy.
+</div>
+
+<table>
+  <tr><th>Data File</th><th>What It Controls</th><th>Update Frequency</th></tr>
+  <tr><td><code>config.json</code></td><td>Site-wide settings: current school year, urgent alert, last-updated date</td><td>As needed</td></tr>
+  <tr><td><code>schools.json</code></td><td>All 23 schools: names, contacts, principals, bell schedules, brand colors, links</td><td>Annually + as needed</td></tr>
+  <tr><td><code>tasks.json</code></td><td>"I need to..." section: each expandable task tile and its tray HTML</td><td>Seasonally</td></tr>
+  <tr><td><code>calendar.json</code></td><td>School year calendars with dates for 3 years</td><td>Annually</td></tr>
+  <tr><td><code>apps.json</code></td><td>Apps &amp; Logins: PowerSchool, Rooms, EZSchoolLunch, etc.</td><td>As needed</td></tr>
+  <tr><td><code>staff.json</code></td><td>Staff directories per school (scraped)</td><td>Annually</td></tr>
+  <tr><td><code>forms.json</code></td><td>Forms and PDFs found on eusd.org (crawled)</td><td>Seasonally</td></tr>
+</table>
+
+<table>
+  <tr><th>Script</th><th>What It Does</th><th>Output</th></tr>
+  <tr><td><code>scrape-schools.js</code></td><td>Scrapes school directory (names, phones, addresses)</td><td><code>data\schools.json</code></td></tr>
+  <tr><td><code>scrape-bells.js</code></td><td>Scrapes bell schedule page</td><td>Merges into <code>data\schools.json</code></td></tr>
+  <tr><td><code>scrape-school-details.js</code></td><td>Scrapes individual school pages for details</td><td>Merges into <code>data\schools.json</code></td></tr>
+  <tr><td><code>scrape-colors.js</code></td><td>Extracts brand colors from school pages</td><td>Merges into <code>data\schools.json</code></td></tr>
+  <tr><td><code>scrape-staff.js</code></td><td>Scrapes staff lists from all 23 schools</td><td><code>data\staff.json</code></td></tr>
+  <tr><td><code>crawl-forms.js</code></td><td>Spiders eusd.org for PDFs and forms (up to 500 pages)</td><td><code>data\forms.json</code></td></tr>
+</table>
+
+<!-- ================================================================== -->
+<h2>Prerequisites</h2>
+
+<h3>One-Time Setup (already done on your machine)</h3>
+<ol>
+  <li><strong>Git</strong> &mdash; to clone the repo, commit, and push changes</li>
+  <li><strong>A text editor</strong> &mdash; VS Code recommended (has built-in JSON validation)</li>
+  <li><strong>Node.js 18+</strong> &mdash; only needed if you want to run the data scraper scripts</li>
+  <li><strong>GitHub access</strong> &mdash; push access to the <code>eusd/parent-portal</code> repository</li>
+  <li><strong>Project folder:</strong> <code>C:\Users\mberning\projects\eusd\parent-portal</code></li>
+</ol>
+<p>For routine content updates (alerts, principals, calendar dates), you only need Git and a text editor.</p>
+
+<h3>If Setting Up on a New Machine</h3>
+<pre><code># 1. Clone the repository
+git clone https://github.com/eusd/parent-portal.git
+cd parent-portal
+
+# 2. Install scraper dependencies (optional — only for data scrapers)
+npm install
+npx playwright install chromium</code></pre>
+
+<!-- ================================================================== -->
+<h2>Step-by-Step: Local Preview</h2>
+
+<p>Because this is a static site that loads JSON files via <code>fetch()</code>, you need a local web server. You cannot open <code>index.html</code> directly by double-clicking it.</p>
+
+<h3><span class="step-num">1</span> Open a terminal in the project folder</h3>
+<pre><code>cd C:\Users\mberning\projects\eusd\parent-portal</code></pre>
+
+<h3><span class="step-num">2</span> Start a local server</h3>
+<pre><code># Python (built into most systems)
+python -m http.server 8000
+
+# Node.js
+npx serve .
+
+# VS Code: install "Live Server" extension, right-click index.html → Open with Live Server</code></pre>
+
+<h3><span class="step-num">3</span> Open the site in your browser</h3>
+<p>Navigate to <code>http://localhost:8000</code>. You should see the full Parent Portal with all data loaded.</p>
+
+<div class="callout">
+  <strong>Warning:</strong> You cannot open <code>index.html</code> directly as a file (double-click). The page loads JSON data via <code>fetch()</code>, which requires a web server.
+</div>
+
+<!-- ================================================================== -->
+<h2>Step-by-Step: Common Maintenance Tasks</h2>
+
+<h3><span class="step-num">1</span> Post an Urgent Alert</h3>
+<p>Urgent alerts override the calendar banner at the top of the page. Use them for emergency closures, weather events, or time-sensitive notices.</p>
+<p>Edit <code>data\config.json</code> and set the <code>urgentAlert</code> field:</p>
+<pre><code>{
+  "lastUpdated": "2026-03-25",
+  "urgentAlert": "All schools closed tomorrow due to severe weather",
+  "currentSchoolYear": "2025-2026"
+}</code></pre>
+<p>To deactivate, set <code>urgentAlert</code> back to <code>null</code>:</p>
+<pre><code>"urgentAlert": null</code></pre>
+<p>Commit, push, and Netlify will redeploy automatically. The banner reverts to showing the next calendar event.</p>
+
+<div class="callout">
+  <strong>Warning:</strong> Don't forget to clear the alert once the emergency is over. A stale alert erodes parent trust.
+</div>
+
+<h3><span class="step-num">2</span> Update a Principal Name</h3>
+<p>Edit <code>data\schools.json</code>. Find the school by its <code>id</code> and change the <code>principal</code> and optionally <code>principalEmail</code> fields:</p>
+<pre><code>{
+  "id": "bernardo",
+  "name": "Bernardo Elementary",
+  "principal": "New Principal Name",
+  "principalEmail": "newprincipal@eusd.org",
+  ...
+}</code></pre>
+<p>Update <code>lastUpdated</code> in <code>data\config.json</code>, commit, and push.</p>
+
+<h3><span class="step-num">3</span> Update Bell Schedules</h3>
+<p>Edit <code>data\schools.json</code>. Each school has a <code>bellSchedule</code> object:</p>
+<pre><code>"bellSchedule": {
+  "regularStart": "8:00 AM",
+  "regularEnd": "2:30 PM",
+  "thursdayEnd": "12:15 PM",
+  "minimumEnd": "12:10 PM"
+}</code></pre>
+<p>Update the times as needed. If a school doesn't have a Thursday early dismissal, omit <code>thursdayEnd</code>.</p>
+
+<h3><span class="step-num">4</span> Add or Edit Calendar Dates</h3>
+<p>Edit <code>data\calendar.json</code>. Each school year has a <code>dates</code> array. Add, remove, or edit entries:</p>
+<pre><code>{
+  "date": "2026-09-07",
+  "label": "Labor Day",
+  "type": "holiday"
+}</code></pre>
+<p>For multi-day events, add an <code>endDate</code>:</p>
+<pre><code>{
+  "date": "2025-11-24",
+  "endDate": "2025-11-28",
+  "label": "Thanksgiving Recess",
+  "type": "break"
+}</code></pre>
+
+<table>
+  <tr><th>Type</th><th>What It Means</th><th>Calendar Filter</th></tr>
+  <tr><td><code>holiday</code></td><td>Federal/state holiday, no school</td><td>Holidays</td></tr>
+  <tr><td><code>break</code></td><td>Multi-day recess (Thanksgiving, Winter, Spring)</td><td>Breaks</td></tr>
+  <tr><td><code>minimum-day</code></td><td>Early dismissal day</td><td>Early dismissal</td></tr>
+  <tr><td><code>non-student-day</code></td><td>No school for students (conferences, etc.)</td><td>No school</td></tr>
+  <tr><td><code>first-last-day</code></td><td>First or last day of school</td><td>First/Last day</td></tr>
+</table>
+
+<h3><span class="step-num">5</span> Start a New School Year</h3>
+<p>Perform these updates each year, typically in July-August before school starts:</p>
+<ol>
+  <li>Update <code>currentSchoolYear</code> in <code>data\config.json</code> (e.g., <code>"2026-2027"</code>)</li>
+  <li>Ensure the new year exists in <code>data\calendar.json</code> with all dates</li>
+  <li>Update principal names in <code>data\schools.json</code> if any changed</li>
+  <li>Update bell schedules if they changed</li>
+  <li>Update SARC URLs (<code>sarcUrl</code>) in <code>data\schools.json</code></li>
+  <li>Update copyright year in <code>index.html</code> footer (January)</li>
+  <li>Set <code>lastUpdated</code> in <code>data\config.json</code></li>
+</ol>
+
+<h3><span class="step-num">6</span> Edit a Task Tray's Content</h3>
+<p>Task tray content lives in <code>data\tasks.json</code>. Find the task by <code>id</code> and edit the <code>trayHtml.en</code> field. This is HTML content &mdash; use standard tags:</p>
+<pre><code>{
+  "id": "grades",
+  "title": { "en": "Check grades &amp; attendance" },
+  "trayHtml": { "en": "&lt;p&gt;Your updated content here...&lt;/p&gt;" },
+  ...
+}</code></pre>
+
+<div class="callout">
+  <strong>Warning:</strong> HTML inside JSON must have quotes escaped as <code>\"</code> and newlines removed. If the HTML is complex, write it in a separate <code>.html</code> file first, then paste it into the JSON as a single line with escaped quotes.
+</div>
+
+<h3><span class="step-num">7</span> Update App Info</h3>
+<p>Edit <code>data\apps.json</code>. Each app has these key fields:</p>
+<ul>
+  <li><code>name.en</code> &mdash; display name</li>
+  <li><code>description.en</code> &mdash; short description</li>
+  <li><code>accessHtml.en</code> &mdash; HTML instructions for how to access</li>
+  <li><code>loginUrl</code> &mdash; main login/access link</li>
+  <li><code>appStoreUrl</code> / <code>playStoreUrl</code> &mdash; mobile app links</li>
+  <li><code>helpUrl</code> &mdash; "Having trouble?" link (use <code>"#"</code> as placeholder)</li>
+</ul>
+
+<h3><span class="step-num">8</span> Refresh Staff Data</h3>
+<p>Staff data is scraped from each school's staff page on eusd.org. To refresh it:</p>
+<pre><code>node scripts\scrape-staff.js</code></pre>
+<p>This visits each school's <code>/staff</code> page, extracts names, roles, and emails, and writes the result to <code>data\staff.json</code>. Takes a few minutes to complete (23 schools).</p>
+
+<h3><span class="step-num">9</span> Refresh the Forms List</h3>
+<p>Forms and PDFs are crawled from eusd.org:</p>
+<pre><code>node scripts\crawl-forms.js</code></pre>
+<p>This spider crawls up to 500 pages on eusd.org, collecting PDF links and form pages. Output goes to <code>data\forms.json</code>. Takes several minutes.</p>
+
+<div class="callout callout-info">
+  <strong>Note:</strong> After editing <strong>any</strong> data file, always update the <code>lastUpdated</code> field in <code>data\config.json</code> to today's date (<code>YYYY-MM-DD</code> format). This is shown in the site footer.
+</div>
+
+<!-- ================================================================== -->
+<h2>Step-by-Step: Deploying Changes</h2>
+
+<p>The site is hosted on Netlify and deploys automatically when you push to the <code>main</code> branch on GitHub.</p>
+
+<h3><span class="step-num">1</span> Make your edits</h3>
+<p>Edit the relevant JSON file(s) in the <code>data\</code> folder.</p>
+
+<h3><span class="step-num">2</span> Preview locally</h3>
+<p>Start a local server and verify your changes look correct.</p>
+
+<h3><span class="step-num">3</span> Commit and push</h3>
+<pre><code>git add data\config.json data\schools.json
+git commit -m "Update principal name for Bernardo Elementary"
+git push</code></pre>
+
+<h3><span class="step-num">4</span> Verify the live site</h3>
+<p>Netlify typically deploys within 1-2 minutes. Visit the live site and confirm your changes appear.</p>
+
+<div class="callout callout-info">
+  <strong>Note:</strong> The CSS file is loaded with a version query string (e.g., <code>styles.css?v=20260319d</code>). If you make CSS changes and they don't appear on the live site, update the version string in <code>index.html</code> to bust the browser cache.
+</div>
+
+<!-- ================================================================== -->
+<h2>CLI Reference</h2>
+
+<p>The scraper scripts in the <code>scripts\</code> folder are run with Node.js. These use Playwright because EUSD uses Thrillshare, which renders content client-side &mdash; simple HTTP fetches don't work.</p>
+
+<pre><code># Install dependencies first (one time)
+npm install
+npx playwright install chromium
+
+# Then run any script
+node scripts\scrape-staff.js
+node scripts\crawl-forms.js
+node scripts\scrape-schools.js
+node scripts\scrape-bells.js</code></pre>
+
+<div class="callout">
+  <strong>Warning:</strong> Scrapers depend on the structure of eusd.org pages. If EUSD redesigns their site, scrapers may need updating. Check the console output for errors.
+</div>
+
+<!-- ================================================================== -->
+<h2>Folder Structure</h2>
+<pre><code>parent-portal\
+  index.html              &lt;-- The entire website (single page)
+  css\
+    styles.css            &lt;-- All styling
+  js\
+    app.js                &lt;-- App logic (trays, search, banner)
+  data\                   &lt;-- Content lives here
+    schools.json          &lt;-- 23 schools: names, phones, principals, bell times
+    tasks.json            &lt;-- "I need to..." section content
+    calendar.json         &lt;-- School year calendar dates (3 years)
+    apps.json             &lt;-- Apps &amp; Logins section
+    config.json           &lt;-- Site settings (alert, current year, last updated)
+    staff.json            &lt;-- Staff directories per school
+    forms.json            &lt;-- Forms/PDFs crawled from eusd.org
+  img\                    &lt;-- Logo only
+  scripts\                &lt;-- Playwright scrapers for data collection
+    scrape-schools.js
+    scrape-bells.js
+    scrape-staff.js
+    scrape-colors.js
+    scrape-school-details.js
+    crawl-forms.js
+  docs\
+    user-guide.html       &lt;-- This guide
+  netlify.toml            &lt;-- Netlify deploy config
+  MAINTENANCE.md          &lt;-- Detailed maintenance reference
+  CLAUDE.md               &lt;-- Build specifications
+</code></pre>
+
+<!-- ================================================================== -->
+<h2>Understanding the Output</h2>
+
+<p>The Parent Portal is a single-page application. All content is rendered client-side by <code>js\app.js</code> using data from the JSON files in <code>data\</code>.</p>
+
+<p>When a user visits the site, the browser fetches all JSON files and builds the page dynamically. The main sections are:</p>
+<ul>
+  <li><strong>Alert banner</strong> &mdash; shows the next calendar event, or an urgent alert if one is set in <code>config.json</code></li>
+  <li><strong>School selector</strong> &mdash; 23 school tiles with brand colors from <code>schools.json</code></li>
+  <li><strong>"I need to..." tasks</strong> &mdash; expandable tiles driven by <code>tasks.json</code></li>
+  <li><strong>Apps &amp; Logins</strong> &mdash; quick links from <code>apps.json</code></li>
+  <li><strong>Calendar</strong> &mdash; interactive calendar from <code>calendar.json</code></li>
+  <li><strong>Search</strong> &mdash; powered by Fuse.js, indexes all JSON data on page load</li>
+  <li><strong>Google Translate</strong> &mdash; embedded widget for multilingual access</li>
+</ul>
+
+<p>There is no build step, no compilation, and no server-side processing. Editing a JSON file and pushing to GitHub is all it takes to update the live site.</p>
+
+<!-- ================================================================== -->
+<h2>Troubleshooting</h2>
+
+<table>
+  <tr><th>Error</th><th>Cause</th><th>Fix</th></tr>
+  <tr>
+    <td>Site shows blank page or missing sections</td>
+    <td>A JSON syntax error is preventing data from loading</td>
+    <td>Open browser console (F12 &rarr; Console). Paste your JSON into jsonlint.com to find the exact error. Common mistakes: trailing commas, missing commas, unescaped quotes, single quotes instead of double quotes.</td>
+  </tr>
+  <tr>
+    <td>Alert banner not showing urgent alert</td>
+    <td><code>urgentAlert</code> is still <code>null</code> or changes haven't deployed</td>
+    <td>Verify <code>data\config.json</code> has <code>"urgentAlert": "Your message"</code>. Push to GitHub and wait 1-2 min. Hard-refresh with Ctrl+Shift+R.</td>
+  </tr>
+  <tr>
+    <td>Search isn't finding new content</td>
+    <td>Fuse.js builds its index on page load; browser has cached old data</td>
+    <td>Hard-refresh (Ctrl+Shift+R). Data files are cached for 1 hour (set in <code>netlify.toml</code>).</td>
+  </tr>
+  <tr>
+    <td>Scraper script fails or returns empty data</td>
+    <td>EUSD may have changed their page structure, or the site is down</td>
+    <td>Check eusd.org is accessible. Try running the script again. If page structure changed, selectors may need updating. Verify Playwright: <code>npx playwright install chromium</code>.</td>
+  </tr>
+  <tr>
+    <td>Page loads but looks wrong (no styles)</td>
+    <td>CSS cache issue &mdash; browser loading old stylesheet</td>
+    <td>Update the CSS cache-buster version in <code>index.html</code>. Find the <code>&lt;link&gt;</code> tag for <code>styles.css</code> and change the <code>?v=</code> value to today's date.</td>
+  </tr>
+  <tr>
+    <td>Google Translate not appearing</td>
+    <td>Widget loads from Google CDN; may be blocked by ad-blockers or network restrictions</td>
+    <td>Disable ad-blockers and try in an incognito window.</td>
+  </tr>
+  <tr>
+    <td>404 / "File not found" on the live site</td>
+    <td>This is a single-page site with no sub-routes</td>
+    <td>All links should point to <code>index.html</code> or external URLs. There are no sub-pages.</td>
+  </tr>
+  <tr>
+    <td>School colors look wrong</td>
+    <td>Each school has a <code>color</code> field in <code>schools.json</code> used for tile gradients</td>
+    <td>Edit the hex color value in the school's entry. Use a valid 6-digit hex code (e.g., <code>#72050b</code>).</td>
+  </tr>
+  <tr>
+    <td>Need to validate JSON before pushing</td>
+    <td>Want to catch errors early</td>
+    <td>VS Code highlights JSON errors automatically. Or run: <code>node -e "JSON.parse(require('fs').readFileSync('data\config.json','utf8'))"</code>. Or paste into jsonlint.com.</td>
+  </tr>
+</table>
+
+<!-- ================================================================== -->
+<h2>Quick Reference Card</h2>
+<div style="border: 2px solid #1a56db; padding: 1em; border-radius: 8px; background: #f8faff;">
+  <h3 style="margin-top: 0; color: #1a56db;">Daily Workflow</h3>
+  <ol>
+    <li>Edit the relevant JSON file in <code>data\</code></li>
+    <li>Update <code>lastUpdated</code> in <code>data\config.json</code></li>
+    <li>Preview locally with a web server</li>
+    <li>Commit and push to <code>main</code></li>
+    <li>Verify on the live site (deploys in 1-2 minutes)</li>
+  </ol>
+
+  <h3 style="margin-top: 1em; color: #1a56db;">Annual Checklist (July-August)</h3>
+  <ol>
+    <li>Set <code>currentSchoolYear</code> in <code>data\config.json</code></li>
+    <li>Add new school year calendar dates in <code>data\calendar.json</code></li>
+    <li>Add calendar PDF download URL for new year</li>
+    <li>Update principal names in <code>data\schools.json</code></li>
+    <li>Update bell schedules in <code>data\schools.json</code></li>
+    <li>Update SARC report URLs in <code>data\schools.json</code></li>
+    <li>Re-run staff scraper: <code>node scripts\scrape-staff.js</code></li>
+    <li>Re-run forms crawler: <code>node scripts\crawl-forms.js</code></li>
+    <li>Update enrollment info in <code>data\tasks.json</code></li>
+    <li>Update copyright year in <code>index.html</code> footer</li>
+    <li>Update <code>lastUpdated</code> in <code>data\config.json</code></li>
+    <li>Commit, push, verify live site</li>
+  </ol>
+</div>
+
+</body>
+</html>
