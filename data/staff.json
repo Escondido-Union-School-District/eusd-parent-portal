@@ -1,2427 +1,956 @@
 {
   "bernardo": [
     {
-      "name": "WHITNEY ALEXANDER",
+      "name": "Whitney Alexander",
       "role": "Teacher, Grades: K",
       "department": "Kindergarten"
     },
     {
-      "name": "PEGGY ANN BAKER",
+      "name": "Peggy Ann Baker",
       "role": "Band Teacher",
       "department": ""
     },
     {
-      "name": "JULIE BORECKY",
+      "name": "Julie Borecky",
       "role": "Teacher, Grades: TK",
       "department": "Transitional Kinder"
     },
     {
-      "name": "JESSICA BURDETTE",
+      "name": "Jessica Burdette",
       "role": "Teacher, Grades: TK",
       "department": "Transitional Kinder"
     },
     {
-      "name": "ADRIANA CARPIO",
+      "name": "Adriana Carpio",
       "role": "Family Liaison - Bilingual",
       "department": "School Office"
     },
     {
-      "name": "KIMBERLY CARTER",
+      "name": "Kimberly Carter",
       "role": "Teacher, Grades: TK",
       "department": "Transitional Kinder"
     },
     {
-      "name": "KAREN CHARLES",
+      "name": "Karen Charles",
       "role": "Teacher, Grades: 1",
       "department": "1st Grade"
     },
     {
-      "name": "GREGORY COOK",
+      "name": "Gregory Cook",
       "role": "Teacher, Grades: 3",
       "department": "3rd Grade"
     },
     {
-      "name": "MATTHEW DOWNIN",
+      "name": "Matthew Downin",
       "role": "Teacher, Grades: 3",
       "department": "3rd Grade"
     },
     {
-      "name": "MELISSA EAGLETON",
+      "name": "Melissa Eagleton",
       "role": "Special Education Teacher (SAI)",
       "department": "Special Academic Instruction (SAI)"
     },
     {
-      "name": "CARRIE ERDOS",
+      "name": "Carrie Erdos",
       "role": "Teacher, Grades: 2",
       "department": "2nd Grade"
     },
     {
-      "name": "CHRISTOPHER ERDOS",
+      "name": "Christopher Erdos",
       "role": "Teacher, Grades: 4/5",
       "department": "4th Grade"
     },
     {
-      "name": "PAUL ERICKSON",
+      "name": "Paul Erickson",
       "role": "Teacher, Grades: 4",
       "department": "4th Grade"
     },
     {
-      "name": "CRAIG FLORES",
+      "name": "Craig Flores",
       "role": "Teacher, Grades: 3",
       "department": "3rd Grade"
     },
     {
-      "name": "KARLY GILLETT",
+      "name": "Karly Gillett",
       "role": "Speech Pathologist",
       "department": "Separate Class (SC)"
     },
     {
-      "name": "KAREN GLAZE",
+      "name": "Karen Glaze",
       "role": "Teacher, Grades: 3",
       "department": "3rd Grade"
     },
     {
-      "name": "WENDY GONZALEZ",
+      "name": "Wendy Gonzalez",
       "role": "School Office Manager",
       "department": "School Office"
     },
     {
-      "name": "CRYSTAL HANEL",
+      "name": "Crystal Hanel",
       "role": "Teacher, Grades: 2",
       "department": "2nd Grade"
     },
     {
-      "name": "CHRISTINA HOOSHMAND-VERNON",
+      "name": "Christina Hooshmand-vernon",
       "role": "Special Education Teacher (SAI/SC) 2nd/3rd Grades",
       "department": "Special Academic Instruction (SAI)"
     },
     {
-      "name": "HEATHER KROEPEL",
+      "name": "Heather Kroepel",
       "role": "Teacher, Grades: 1",
       "department": "1st Grade"
     }
   ],
   "central": [
     {
-      "name": "SHARILL CORTEZ",
+      "name": "Sharill Cortez",
       "role": "Principal - Bilingual",
       "department": "School Office"
     },
     {
-      "name": "CENTRAL ELEMENTARY SCHOOL OFFICE",
-      "role": "Main Line",
-      "department": "School Office"
-    },
-    {
-      "name": "TERESA AINSWORTH",
+      "name": "Teresa Ainsworth",
       "role": "Nurse - LVN",
       "department": "School Office"
     },
     {
-      "name": "CINDY AGUSTIN",
+      "name": "Cindy Agustin",
       "role": "SAI",
       "department": "Special Academic Instruction (SAI)"
     },
     {
-      "name": "ROSALINDA AMADOR",
+      "name": "Rosalinda Amador",
       "role": "Teacher, Grades: K",
       "department": "Kindergarten"
     },
     {
-      "name": "MEGHAN ANDRADE",
+      "name": "Meghan Andrade",
       "role": "Special Education Preschool Teacher (SAI/SC/SH)",
       "department": "Preschool"
     },
     {
-      "name": "KATHRYN AYRES",
+      "name": "Kathryn Ayres",
       "role": "SLP",
       "department": ""
     },
     {
-      "name": "ANDREA BAUTISTA",
+      "name": "Andrea Bautista",
       "role": "TK - Special Education Teacher (SCSB)",
       "department": "Transitional Kinder"
     },
     {
-      "name": "NERISSA BRADLEY",
+      "name": "Nerissa Bradley",
       "role": "Special EducationTeacher",
       "department": "Special Academic Instruction (SAI)"
     },
     {
-      "name": "VERONICA CARRILLO",
+      "name": "Veronica Carrillo",
       "role": "Teacher, Grades: 1",
       "department": "1st Grade"
     },
     {
-      "name": "ALICE CORONADO",
+      "name": "Alice Coronado",
       "role": "Project SUCCESS - MSW, School Social Worker",
       "department": "760-432-2469"
     },
     {
-      "name": "MAYRA COTA",
+      "name": "Mayra Cota",
       "role": "Food Service Manager",
       "department": ""
     },
     {
-      "name": "JOSH CULLEN",
+      "name": "Josh Cullen",
       "role": "Teacher - PE",
       "department": "Separate Class (SC)"
     },
     {
-      "name": "SARA DUARTE",
+      "name": "Sara Duarte",
       "role": "Teacher, Grades: K",
       "department": "Kindergarten"
     },
     {
-      "name": "MARISOL FABIAN",
+      "name": "Marisol Fabian",
       "role": "Office Clerk - Bilingual",
       "department": "School Office"
     },
     {
-      "name": "MONICA GARCIA",
+      "name": "Monica Garcia",
       "role": "Preschool",
       "department": "Preschool"
     },
     {
-      "name": "ALMA GONZALEZ",
+      "name": "Alma Gonzalez",
       "role": "Preschool",
       "department": "Preschool"
     },
     {
-      "name": "JULIO GONZALEZ",
+      "name": "Julio Gonzalez",
       "role": "Teacher, Grades: 5",
       "department": "5th Grade"
     },
     {
-      "name": "LAURA GUAJARDO",
+      "name": "Laura Guajardo",
       "role": "Teacher, Grades: 4/5",
       "department": "5th Grade"
     },
     {
-      "name": "DANNIE HAMPSHIRE",
+      "name": "Dannie Hampshire",
       "role": "Community Schools & MTSS Site Specialist",
       "department": "School Office"
     }
   ],
   "conway": [
     {
-      "name": "KRYSTLE MILLER",
+      "name": "Krystle Miller",
       "role": "Principal",
       "department": "760-432-2435"
     },
     {
-      "name": "CONWAY ACADEMY OFFICE",
-      "role": "Main Line",
-      "department": "School Office"
-    },
-    {
-      "name": "CARLOS MARTINEZ",
+      "name": "Carlos Martinez",
       "role": "School Office Manager",
       "department": "School Office"
     },
     {
-      "name": "JUANA BAUTISTA",
+      "name": "Juana Bautista",
       "role": "School Clerk - Bilingual",
       "department": "School Office"
     },
     {
-      "name": "ANGIE HERNANDEZ",
+      "name": "Angie Hernandez",
       "role": "School Clerk - Bilingual",
       "department": "School Office"
     },
     {
-      "name": "JENNA ROHRSSEN",
+      "name": "Jenna Rohrssen",
       "role": "Librarian",
       "department": ""
     },
     {
-      "name": "XOCHITL MALDONADO",
+      "name": "Xochitl Maldonado",
       "role": "Family Liaison - Bilingual",
       "department": "School Office"
     },
     {
-      "name": "ROCIO HAUCK",
+      "name": "Rocio Hauck",
       "role": "Licensed Vocational Nurse",
       "department": "School Office"
     },
     {
-      "name": "CYNTHIA AUGUST",
+      "name": "Cynthia August",
       "role": "Teacher, Grades: TK",
       "department": "Transitional Kinder"
     },
     {
-      "name": "EDITH PEREZ",
+      "name": "Edith Perez",
       "role": "Teacher, Grades: TK",
       "department": "Transitional Kinder"
     },
     {
-      "name": "AMY HAWORTH",
+      "name": "Amy Haworth",
       "role": "Teacher, Grades: K",
       "department": "Kindergarten"
     },
     {
-      "name": "ALISSA PETRUCELLI",
+      "name": "Alissa Petrucelli",
       "role": "Teacher, Grades: K",
       "department": "Kindergarten"
     },
     {
-      "name": "MACKENZIE YABUT",
+      "name": "Mackenzie Yabut",
       "role": "Teacher, Grades: K",
       "department": "Kindergarten"
     },
     {
-      "name": "ERICA FARMER",
+      "name": "Erica Farmer",
       "role": "Teacher, Grades: 1",
       "department": "1st Grade"
     },
     {
-      "name": "BROOKE BRUMBACK",
+      "name": "Brooke Brumback",
       "role": "Teacher, Grades: 2",
       "department": "2nd Grade"
     },
     {
-      "name": "CHRISTINA DEVLIN",
+      "name": "Christina Devlin",
       "role": "Teacher, Grades: 2",
       "department": "2nd Grade"
     },
     {
-      "name": "NATALY VIDALES",
+      "name": "Nataly Vidales",
       "role": "Teacher, Grades: 2",
       "department": "2nd Grade"
     },
     {
-      "name": "KATHLEEN ANDAYA",
+      "name": "Kathleen Andaya",
       "role": "Teacher, Grades: 3",
       "department": "3rd Grade"
     },
     {
-      "name": "JULIEA MACKIE",
+      "name": "Juliea Mackie",
       "role": "Teacher, Grades: 3",
       "department": "3rd Grade"
     },
     {
-      "name": "KIARA SAUTIA",
+      "name": "Kiara Sautia",
       "role": "Teacher, Grades: 3",
       "department": "3rd Grade"
     }
   ],
   "farr-avenue": [
     {
-      "name": "FARR AVENUE ELEMENTARY SCHOOL OFFICE",
+      "name": "Farr Avenue Elementarystaff",
+      "role": "Search",
+      "department": "Use the search field above to filter by staff name."
+    },
+    {
+      "name": "Farr Avenue Elementary School Office",
       "role": "Main Line",
       "department": "School Office"
     },
     {
-      "name": "MS. DE SANTIAGO",
+      "name": "Ms. De Santiago",
       "role": "Principal",
       "department": "School Office"
     },
     {
-      "name": "MRS. REINDERS",
+      "name": "Mrs. Reinders",
       "role": "MTSS",
       "department": "School Office"
     },
     {
-      "name": "MS. BATALLA",
+      "name": "Ms. Batalla",
       "role": "School Office Manager - Bilingual",
       "department": "School Office"
     },
     {
-      "name": "MRS. CLAYTON",
+      "name": "Mrs. Clayton",
       "role": "Teacher, Grades: TK",
       "department": "Transitional Kinder"
     },
     {
-      "name": "MRS. OAKLEY",
+      "name": "Mrs. Oakley",
       "role": "Teacher (DLP), Grades: TK",
       "department": "Transitional Kinder"
     },
     {
-      "name": "MRS. DENT",
+      "name": "Mrs. Dent",
       "role": "Teacher (DLP), Grades: K",
       "department": "Kindergarten"
     },
     {
-      "name": "MRS. ROSALES",
+      "name": "Mrs. Rosales",
       "role": "Teacher (DLP), Grades: K",
       "department": "Kindergarten"
     },
     {
-      "name": "MS. ALLAN",
+      "name": "Ms. Allan",
       "role": "Teacher Grades: K",
       "department": "Kindergarten"
     },
     {
-      "name": "MRS. LOPEZ",
+      "name": "Mrs. Lopez",
       "role": "Teacher (DLP), Grades: 1",
       "department": "1st Grade"
     },
     {
-      "name": "MRS. RAMOS",
+      "name": "Mrs. Ramos",
       "role": "Teacher (DLP), Grades: 1",
       "department": "1st Grade"
     },
     {
-      "name": "MS. LA FARGUE",
+      "name": "Ms. La Fargue",
       "role": "Teacher, Grades: 1",
       "department": "1st Grade"
     },
     {
-      "name": "MRS. BAEHR",
+      "name": "Mrs. Baehr",
       "role": "Teacher, Grades: 2",
       "department": "2nd Grade"
     },
     {
-      "name": "MRS. RODRIGUEZ",
+      "name": "Mrs. Rodriguez",
       "role": "Teacher (DLP), Grades: 2",
       "department": "2nd Grade"
     },
     {
-      "name": "MS. LEAL TORRES",
+      "name": "Ms. Leal Torres",
       "role": "Teacher (DLP), Grades: 2",
       "department": "2nd Grade"
     },
     {
-      "name": "MS. SOTO",
+      "name": "Ms. Soto",
       "role": "Teacher (DLP), Grades: 3",
       "department": "3rd Grade"
     },
     {
-      "name": "MRS. SANDOVAL-DIAZ",
+      "name": "Mrs. Sandoval-diaz",
       "role": "Teacher (DLP), Grades: 3",
       "department": "3rd Grade"
     },
     {
-      "name": "MRS. MORALES",
+      "name": "Mrs. Morales",
       "role": "Teacher, Grades: 3",
       "department": "3rd Grade"
     },
     {
-      "name": "MS. TREJO",
+      "name": "Ms. Trejo",
       "role": "Teacher, Grades: 4",
       "department": "4th Grade"
     },
     {
-      "name": "MR. DOMINGUEZ-LOERA",
+      "name": "Mr. Dominguez-loera",
       "role": "Teacher (DLP), Grades: 4",
       "department": "4th Grade"
     }
   ],
   "felicita": [
     {
-      "name": "MYRIAM VIN",
+      "name": "Felicita Elementarystaff",
+      "role": "Search",
+      "department": "Use the search field above to filter by staff name."
+    },
+    {
+      "name": "Myriam Vin",
       "role": "4/5 ESN Teacher",
       "department": "4th Grade"
     },
     {
-      "name": "DINORAH GONZALEZ",
+      "name": "Dinorah Gonzalez",
       "role": "Reading Intervention",
       "department": "Intervention Teachers"
     },
     {
-      "name": "HEATHER HODGSON",
+      "name": "Heather Hodgson",
       "role": "Math TOSA",
       "department": "School Office"
     },
     {
-      "name": "INDIA RHINES",
+      "name": "India Rhines",
       "role": "Speech Pathologist",
       "department": ""
     },
     {
-      "name": "TERESA FELSMAN",
+      "name": "Teresa Felsman",
       "role": "Speech Pathologist",
       "department": ""
     },
     {
-      "name": "IVY LIMPIADO",
+      "name": "Ivy Limpiado",
       "role": "Student Services Assistant",
       "department": ""
     },
     {
-      "name": "ALVAN KANA",
+      "name": "Alvan Kana",
       "role": "School Psychologist",
       "department": ""
     },
     {
-      "name": "AMADA ROMO",
+      "name": "Amada Romo",
       "role": "Teacher, Grade 3",
       "department": "3rd Grade"
     },
     {
-      "name": "EMILY MCGUIRE",
+      "name": "Emily Mcguire",
       "role": "SAI Teacher",
       "department": "Special Academic Instruction (SAI)"
     },
     {
-      "name": "ELLA DEL FIORENTINO",
+      "name": "Ella Del Fiorentino",
       "role": "SAI Teacher",
       "department": "Special Academic Instruction (SAI)"
     },
     {
-      "name": "TOM BORER",
+      "name": "Tom Borer",
       "role": "Elective Wheel",
       "department": ""
     },
     {
-      "name": "LESLIE MIKKELSEN",
+      "name": "Leslie Mikkelsen",
       "role": "Elective Wheel",
       "department": ""
     },
     {
-      "name": "AMANDA ECHOLS",
+      "name": "Amanda Echols",
       "role": "Elective Wheel",
       "department": ""
     },
     {
-      "name": "LIAM KEEFE",
+      "name": "Liam Keefe",
       "role": "Elective Wheel",
       "department": ""
     },
     {
-      "name": "KASEY OSBORNE",
+      "name": "Kasey Osborne",
       "role": "PE Teacher",
       "department": ""
     },
     {
-      "name": "KEVIN BAEZA- CERVANTES",
+      "name": "Kevin Baeza- Cervantes",
       "role": "Math Intervention",
       "department": "Intervention Teachers"
     },
     {
-      "name": "LAUREN BEEGHLY",
+      "name": "Lauren Beeghly",
       "role": "Teacher, Grade 5",
       "department": "5th Grade"
     },
     {
-      "name": "MELISSA DELMONT",
+      "name": "Melissa Delmont",
       "role": "Teacher, Grade 5",
       "department": "5th Grade"
     },
     {
-      "name": "KIMBERLEE THIELMAN",
+      "name": "Kimberlee Thielman",
       "role": "ESN Teacher",
       "department": "Separate Class (SC)"
     },
     {
-      "name": "FELICITA ELEMENTARY SCHOOL OFFICE",
+      "name": "Felicita Elementary School Office",
       "role": "Main Line",
       "department": "School Office"
     }
   ],
   "glen-view": [
     {
-      "name": "GLEN VIEW ELEMENTARY SCHOOL OFFICE",
+      "name": "Glen View Elementarystaff",
+      "role": "Search",
+      "department": "Use the search field above to filter by staff name."
+    },
+    {
+      "name": "Glen View Elementary School Office",
       "role": "Main Line",
       "department": "School Office"
     },
     {
-      "name": "JULIO LOPEZ",
+      "name": "Julio Lopez",
       "role": "Principal",
       "department": "School Office"
     },
     {
-      "name": "RUTH ANAYA",
+      "name": "Ruth Anaya",
       "role": "School Office Manager",
       "department": "School Office"
     },
     {
-      "name": "LUCY PALAFOX",
+      "name": "Lucy Palafox",
       "role": "School Clerk",
       "department": "School Office"
     },
     {
-      "name": "KAREN ROBLEDO",
+      "name": "Karen Robledo",
       "role": "School Clerk",
       "department": "School Office"
     },
     {
-      "name": "ZEAH LUCERO",
+      "name": "Zeah Lucero",
       "role": "Nurse",
       "department": "School Office"
     },
     {
-      "name": "SARAI RAMIREZ",
+      "name": "Sarai Ramirez",
       "role": "Family Liaison",
       "department": ""
     },
     {
-      "name": "TERESA LUCERO",
+      "name": "Teresa Lucero",
       "role": "Community Schools & MTSS Site Specialist",
       "department": ""
     },
     {
-      "name": "INGRID WEISHEITINGER",
+      "name": "Ingrid Weisheitinger",
       "role": "Impact Teacher",
       "department": "Impact Teachers"
     },
     {
-      "name": "MARY ALICE PERKINS",
+      "name": "Mary Alice Perkins",
       "role": "Teacher, Grade 1",
       "department": ""
     },
     {
-      "name": "MELISSA EVERARD",
+      "name": "Melissa Everard",
       "role": "School Counselor",
       "department": ""
     },
     {
-      "name": "TANIA FARIS",
+      "name": "Tania Faris",
       "role": "School Psychologist",
       "department": ""
     },
     {
-      "name": "ANGEL AVILES",
+      "name": "Angel Aviles",
       "role": "School Custodian",
       "department": ""
     },
     {
-      "name": "JESSICA MORALES",
+      "name": "Jessica Morales",
       "role": "PreSchool",
       "department": "Preschool"
     },
     {
-      "name": "BLANCA ALCANTAR",
+      "name": "Blanca Alcantar",
       "role": "PreSchool",
       "department": "Preschool"
     },
     {
-      "name": "CHRISTOPHER KAMINSKI",
+      "name": "Christopher Kaminski",
       "role": "Teacher, Grade: TK",
       "department": ""
     },
     {
-      "name": "VIOLETA RIOS",
+      "name": "Violeta Rios",
       "role": "Teacher, Grade: K",
       "department": ""
     },
     {
-      "name": "DIANA KIM",
+      "name": "Diana Kim",
       "role": "Teacher (DLP), Grade: K",
       "department": "Kindergarten"
     },
     {
-      "name": "ANA MATA",
+      "name": "Ana Mata",
       "role": "Teacher, Grade: K DLP",
       "department": "Kindergarten"
     },
     {
-      "name": "KARLA GARDUNO",
+      "name": "Karla Garduno",
       "role": "Teacher (DLP), Grade: TK",
-      "department": ""
+      "department": "1"
     }
   ],
   "juniper": [
     {
-      "name": "JUNIPER ELEMENTARY SCHOOL OFFICE",
+      "name": "Juniper Elementarystaff",
+      "role": "Search",
+      "department": "Use the search field above to filter by staff name."
+    },
+    {
+      "name": "Juniper Elementary School Office",
       "role": "Main Line",
       "department": "School Office"
     },
     {
-      "name": "BROOKE COTTINGHAM",
+      "name": "Brooke Cottingham",
       "role": "Principal",
       "department": "School Office"
     },
     {
-      "name": "ERIN CRAVEN",
+      "name": "Erin Craven",
       "role": "Teacher, Grades: 1",
       "department": "1st Grade"
     },
     {
-      "name": "KAREN REYNOLDS",
+      "name": "Karen Reynolds",
       "role": "Teacher, Grades: 1",
       "department": "1st Grade"
     },
     {
-      "name": "KELLY VEGA",
+      "name": "Kelly Vega",
       "role": "Teacher, Grades: 1",
       "department": "1st Grade"
     },
     {
-      "name": "LISA BARRETT",
+      "name": "Lisa Barrett",
       "role": "Teacher, Grades: 2",
       "department": "2nd Grade"
     },
     {
-      "name": "ASHLEY LONG",
+      "name": "Ashley Long",
       "role": "Teacher, Grades: 2",
       "department": "2nd Grade"
     },
     {
-      "name": "MICHELE SHEEHAN",
+      "name": "Michele Sheehan",
       "role": "Teacher, Grades: 2",
       "department": "2nd Grade"
     },
     {
-      "name": "BROOKE TEIXEIRA",
+      "name": "Brooke Teixeira",
       "role": "Teacher, Grades: 2",
       "department": "2nd Grade"
     },
     {
-      "name": "ISAAC MARTINEZ",
+      "name": "Isaac Martinez",
       "role": "Teacher, Grades: 2/3",
       "department": "2nd Grade"
     },
     {
-      "name": "NICOLE CAMEJO",
+      "name": "Nicole Camejo",
       "role": "Teacher, Grades: 3",
       "department": "3rd Grade"
     },
     {
-      "name": "HELEN KIRKBRIDE",
+      "name": "Helen Kirkbride",
       "role": "Teacher, Grades: 3",
       "department": "3rd Grade"
     },
     {
-      "name": "JILL PEREZ",
+      "name": "Jill Perez",
       "role": "Teacher, Grades: 3",
       "department": "3rd Grade"
     },
     {
-      "name": "KATHRYN ROSENKRANZ",
+      "name": "Kathryn Rosenkranz",
       "role": "Teacher, Grades: 3",
       "department": "3rd Grade"
     },
     {
-      "name": "MICHELLE SCHALL",
+      "name": "Michelle Schall",
       "role": "Teacher, Grades: 4",
       "department": "4th Grade"
     },
     {
-      "name": "TED KIRKBRIDE",
+      "name": "Ted Kirkbride",
       "role": "Teacher, Grade 4",
       "department": "4th Grade"
     },
     {
-      "name": "KARLA WINKLER",
+      "name": "Karla Winkler",
       "role": "Teacher, Grades: 4/5",
       "department": "4th Grade"
     },
     {
-      "name": "SUZANNE CATALANOTTO",
+      "name": "Suzanne Catalanotto",
       "role": "Teacher, Grades: 5",
       "department": "5th Grade"
     },
     {
-      "name": "DEBORAH SEEVER",
+      "name": "Deborah Seever",
       "role": "Teacher, Grades: 5",
       "department": "5th Grade"
     },
     {
-      "name": "NICOLE BRACKMAN",
+      "name": "Nicole Brackman",
       "role": "Teacher, Grades: TK",
       "department": "Transitional Kinder"
     }
   ],
   "lr-green": [
     {
-      "name": "L. R. GREEN ELEMENTARY SCHOOL OFFICE",
+      "name": "L. R. Green Elementarystaff",
+      "role": "Search",
+      "department": "Use the search field above to filter by staff name."
+    },
+    {
+      "name": "L. R. Green Elementary School Office",
       "role": "Main Line",
       "department": "School Office"
     },
     {
-      "name": "CINDY HAMMOND",
+      "name": "Cindy Hammond",
       "role": "Speech Pathologist",
       "department": ""
     },
     {
-      "name": "ANNA BOWERMAN",
+      "name": "Anna Bowerman",
       "role": "Speech Pathologist",
       "department": ""
     },
     {
-      "name": "JAMES SMITH",
+      "name": "James Smith",
       "role": "Teacher, PE",
       "department": ""
     },
     {
-      "name": "MELISSA THIELKER",
+      "name": "Melissa Thielker",
       "role": "Teacher, Grade: 1",
       "department": "1st Grade"
     },
     {
-      "name": "NACHOLE KEEDY",
+      "name": "Nachole Keedy",
       "role": "Special Education Teacher (SAI)",
       "department": "Special Academic Instruction (SAI)"
     },
     {
-      "name": "KRISTINE HOUSKEN",
+      "name": "Kristine Housken",
       "role": "Teacher, Grade: 1",
       "department": "1st Grade"
     },
     {
-      "name": "ASHLEY WIRTH",
+      "name": "Ashley Wirth",
       "role": "Teacher, Grade: 1",
       "department": "1st Grade"
     },
     {
-      "name": "KRISTINA DEGREEF",
+      "name": "Kristina Degreef",
       "role": "School Library Technician",
       "department": "School Office"
     },
     {
-      "name": "NATHAN KING",
+      "name": "Nathan King",
       "role": "Custodian",
       "department": "School Office"
     },
     {
-      "name": "FRANCIS GARLEJO",
+      "name": "Francis Garlejo",
       "role": "Special Education Teacher (SCSB)",
       "department": "Structured Comm. /Social Behavioral (SCSB)"
     },
     {
-      "name": "NADINE ALSPACH",
+      "name": "Nadine Alspach",
       "role": "Licensed Vocational Nurse",
       "department": "School Office"
     },
     {
-      "name": "KATRINA BELL",
+      "name": "Katrina Bell",
       "role": "DHH Teacher",
       "department": "Deaf / Hard of Hearing (DHH)"
     },
     {
-      "name": "KARI BISHOP",
+      "name": "Kari Bishop",
       "role": "Teacher, Grades: 2",
       "department": "2nd Grade"
     },
     {
-      "name": "MARIA BRANDL",
+      "name": "Maria Brandl",
       "role": "Special Education Teacher (SCSB)",
       "department": "Structured Comm. /Social Behavioral (SCSB)"
     },
     {
-      "name": "NOELLE CLARK HILL",
+      "name": "Noelle Clark Hill",
       "role": "Teacher, Grades: 2",
       "department": "2nd Grade"
     },
     {
-      "name": "JONATHAN CUYUCH",
+      "name": "Jonathan Cuyuch",
       "role": "Paraeducator",
       "department": "Structured Comm. /Social Behavioral (SCSB)"
     },
     {
-      "name": "MICHAEL DANNENHOLD",
+      "name": "Michael Dannenhold",
       "role": "Adaptive P.E. Teacher",
       "department": "Adaptive Physical Education (APE)"
     },
     {
-      "name": "TATIANA DEARINGER",
+      "name": "Tatiana Dearinger",
       "role": "Teacher, Grades: 5",
       "department": "5th Grade"
     },
     {
-      "name": "CRYSTAL UNDERHILL",
+      "name": "Crystal Underhill",
       "role": "Principal",
       "department": "760-432-2260"
     }
   ],
   "lincoln": [
     {
-      "name": "FRANK TABAREZ",
+      "name": "Lincoln Elementarystaff",
+      "role": "Search",
+      "department": "Use the search field above to filter by staff name."
+    },
+    {
+      "name": "Frank Tabarez",
       "role": "Teacher, PE",
       "department": ""
     },
     {
-      "name": "BRENDA ALCALA",
+      "name": "Brenda Alcala",
       "role": "Teacher (DLP), Grades: 1",
       "department": "1st Grade"
     },
     {
-      "name": "DIANA ATEK",
+      "name": "Diana Atek",
       "role": "School Clerk - Bilingual",
       "department": "School Office"
     },
     {
-      "name": "ASA BARBANI",
+      "name": "Asa Barbani",
       "role": "Teacher, Grades: 3",
       "department": "3rd Grade"
     },
     {
-      "name": "RITA BATALLA",
+      "name": "Rita Batalla",
       "role": "School Office Manager - Bilingual",
       "department": "School Office"
     },
     {
-      "name": "ARACELI BAUTISTA-MEZA",
+      "name": "Araceli Bautista-meza",
       "role": "Teacher (DLP), Grades: K",
       "department": "Kindergarten"
     },
     {
-      "name": "ANAJANCY BENITEZ",
+      "name": "Anajancy Benitez",
       "role": "Special Education, SCSB, ParaEducator",
       "department": "Structured Comm. /Social Behavioral (SCSB)"
     },
     {
-      "name": "KATRIN BICHLER",
+      "name": "Katrin Bichler",
       "role": "Special Education Teacher (SAI)",
       "department": "Special Academic Instruction (SAI)"
     },
     {
-      "name": "KIMBERLY BLACKWELL",
+      "name": "Kimberly Blackwell",
       "role": "Special Education VI Dept",
       "department": "Visually Impaired (VI)"
     },
     {
-      "name": "JASMINA BOULOS",
+      "name": "Jasmina Boulos",
       "role": "Teacher, Grades: 4",
       "department": "4th Grade"
     },
     {
-      "name": "FERNANDO BUSTOS-JARAMILLO",
+      "name": "Fernando Bustos-jaramillo",
       "role": "Custodian",
       "department": "School Office"
     },
     {
-      "name": "LUIS CARRILLO",
+      "name": "Luis Carrillo",
       "role": "Teacher, PE",
       "department": "School Office"
     },
     {
-      "name": "ANDRES CARRILLO",
+      "name": "Andres Carrillo",
       "role": "Teacher, Grades: 3",
       "department": "3rd Grade"
     },
     {
-      "name": "LAURA CASTRO",
+      "name": "Laura Castro",
       "role": "Special Education Teacher (SAI/SC/SCSB)",
       "department": "Structured Comm. /Social Behavioral (SCSB)"
     },
     {
-      "name": "BEATRIZ CATALAN",
+      "name": "Beatriz Catalan",
       "role": "Teacher (DLP), Grades: 5",
       "department": "5th Grade"
     },
     {
-      "name": "MARTHA CHAVEZ OCHOA",
+      "name": "Martha Chavez Ochoa",
       "role": "Noontime Supervisor",
       "department": ""
     },
     {
-      "name": "SANDY CLEMENTE",
+      "name": "Sandy Clemente",
       "role": "Family Liaison - Bilingual",
       "department": "School Office"
     },
     {
-      "name": "NELY CRUZADO VILCHEZ",
+      "name": "Nely Cruzado Vilchez",
       "role": "Noontime Supervisor",
       "department": ""
     },
     {
-      "name": "KIMBERLY DICK",
+      "name": "Kimberly Dick",
       "role": "Licensed Vocational Nurse",
       "department": "School Office"
     },
     {
-      "name": "JULIE EADE",
+      "name": "Julie Eade",
       "role": "Special Education, SCSB, ParaEducator",
       "department": "Structured Comm. /Social Behavioral (SCSB)"
     }
   ],
-  "miller": [
-    {
-      "name": "VERONICA CASANOVA",
-      "role": "Family Liaison",
-      "department": "760 432 2400 ext 19827"
-    },
-    {
-      "name": "MISTY RENTERIA",
-      "role": "Behavior InterventionTechnician",
-      "department": "Social Emotional Academic Support (SEAS)"
-    },
-    {
-      "name": "EMILY SPROWELL",
-      "role": "Teacher Grades 2-5",
-      "department": "Social Emotional Academic Support (SEAS)"
-    },
-    {
-      "name": "ADILENNE TELLO",
-      "role": "Teacher Grades 4-5",
-      "department": "Separate Class (SC)"
-    },
-    {
-      "name": "KATRIN BICHLER",
-      "role": "Teacher Grades K-1",
-      "department": "Separate Class (SC)"
-    },
-    {
-      "name": "MICHAEL MILITANTE",
-      "role": "Teacher Grades 3-5",
-      "department": "Social Emotional Academic Support (SEAS)"
-    },
-    {
-      "name": "OSICKI ADRIANA",
-      "role": "Teacher, Grade 5",
-      "department": "5th Grade"
-    },
-    {
-      "name": "PAWLIKOWSKI ANDREA",
-      "role": "Teacher, Grade K",
-      "department": ""
-    },
-    {
-      "name": "MOLLY ROWE",
-      "role": "Teacher, Grades K",
-      "department": ""
-    },
-    {
-      "name": "KATELYN SYLVESTER",
-      "role": "Principal",
-      "department": ""
-    },
-    {
-      "name": "MILLER ELEMENTARY SCHOOL OFFICE",
-      "role": "Main Line",
-      "department": "School Office"
-    },
-    {
-      "name": "CYNTHIA BOUNDS",
-      "role": "School Office Manager - Bilingual",
-      "department": "School Office"
-    },
-    {
-      "name": "KAREN HAGEMAN",
-      "role": "School Clerk",
-      "department": "School Office"
-    },
-    {
-      "name": "JOSEPHINE CABALBAG",
-      "role": "Licensed Vocational Nurse",
-      "department": "School Office"
-    },
-    {
-      "name": "TANYA HUNSINGER",
-      "role": "School Library Technician",
-      "department": "School Office"
-    },
-    {
-      "name": "LESETH HERNANDEZ",
-      "role": "Nutrition Services Site Manager",
-      "department": ""
-    },
-    {
-      "name": "ALA NAAMAN",
-      "role": "School Social Worker",
-      "department": ""
-    },
-    {
-      "name": "DIANA URBINA SANDOVAL",
-      "role": "School Social Worker (SEAS)",
-      "department": ""
-    },
-    {
-      "name": "TREVOR JORDAN",
-      "role": "Speech Pathologist",
-      "department": ""
-    },
-    {
-      "name": "HILARIE RYDBECK",
-      "role": "Teacher, Grade 3",
-      "department": "3rd Grade"
-    }
-  ],
-  "north-broadway": [
-    {
-      "name": "MEGAN POWER",
-      "role": "Principal",
-      "department": ""
-    },
-    {
-      "name": "LAUREN ROMANO",
-      "role": "Teacher Grade 1",
-      "department": "1st Grade"
-    },
-    {
-      "name": "NICOLE KONCUR",
-      "role": "Teacher, Grade: 4/5",
-      "department": "4th Grade"
-    },
-    {
-      "name": "SCOTT SOUCY",
-      "role": "Teacher, Grade: 2",
-      "department": "2nd Grade"
-    },
-    {
-      "name": "KYLE ALBINI",
-      "role": "Special Education Teacher (SAI)",
-      "department": "Special Academic Instruction (SAI)"
-    },
-    {
-      "name": "JENNIFER BYERS",
-      "role": "Teacher, Kinder",
-      "department": "Kindergarten"
-    },
-    {
-      "name": "LUISA MARTINEZ",
-      "role": "Bronco Cafe Manager",
-      "department": ""
-    },
-    {
-      "name": "REVES CHILDRESS",
-      "role": "Teacher, Grades: 3",
-      "department": "3rd Grade"
-    },
-    {
-      "name": "CARRIE COFFIN",
-      "role": "Teacher, Grades: 5",
-      "department": "5th Grade"
-    },
-    {
-      "name": "ANGELA FITCH",
-      "role": "Teacher, Grades: 5",
-      "department": "5th Grade"
-    },
-    {
-      "name": "ERIN FREITAS",
-      "role": "Teacher, Grades: TK",
-      "department": "Transitional Kinder"
-    },
-    {
-      "name": "SELENA GARCIA",
-      "role": "Health Tech",
-      "department": "School Office"
-    },
-    {
-      "name": "DEBRA GONSALES",
-      "role": "Teacher, TK",
-      "department": "Transitional Kinder"
-    },
-    {
-      "name": "MONIQUE GRAUER",
-      "role": "Teacher, Grade 1",
-      "department": "1st Grade"
-    },
-    {
-      "name": "SIMONE HALEFTIRAS",
-      "role": "Social Worker",
-      "department": ""
-    },
-    {
-      "name": "KIM JACKSON",
-      "role": "School Clerk",
-      "department": "School Office"
-    },
-    {
-      "name": "SANDRA JONES",
-      "role": "Teacher, Grades: 1",
-      "department": "1st Grade"
-    },
-    {
-      "name": "GRETA KOWALESKI",
-      "role": "School Psychologist",
-      "department": ""
-    },
-    {
-      "name": "JENNIFER LENT",
-      "role": "Teacher, Grades: K",
-      "department": "Kindergarten"
-    },
-    {
-      "name": "CLAIRE LEWIS",
-      "role": "Speech",
-      "department": ""
-    }
-  ],
-  "oak-hill": [
-    {
-      "name": "DONNA FORREST",
-      "role": "Teacher, Grades: 1",
-      "department": "1st Grade"
-    },
-    {
-      "name": "MARY HANDY",
-      "role": "Teacher, Grades: 1",
-      "department": "1st Grade"
-    },
-    {
-      "name": "WADE LEMASTER",
-      "role": "Teacher, Grades: 1",
-      "department": "1st Grade"
-    },
-    {
-      "name": "KRISTEN WOS",
-      "role": "Teacher, Grades: 1",
-      "department": "1st Grade"
-    },
-    {
-      "name": "SUZANNE BRUNN",
-      "role": "Teacher, Grades: 2",
-      "department": "2nd Grade"
-    },
-    {
-      "name": "JANET GRIFFIN",
-      "role": "Teacher, Grades: 2",
-      "department": "2nd Grade"
-    },
-    {
-      "name": "OLGA MARTINEZ-DOMINGUEZ",
-      "role": "Teacher, Grades: 2",
-      "department": "2nd Grade"
-    },
-    {
-      "name": "MELODY MEGAN",
-      "role": "Teacher, Grades: 2",
-      "department": "2nd Grade"
-    },
-    {
-      "name": "KATHLEEN GROSS",
-      "role": "Teacher, Grades: 3",
-      "department": "3rd Grade"
-    },
-    {
-      "name": "HEIDI ISOM",
-      "role": "Teacher, Grades: 3",
-      "department": "3rd Grade"
-    },
-    {
-      "name": "LIDIA KAPLAN",
-      "role": "Teacher, Grades: 3",
-      "department": "3rd Grade"
-    },
-    {
-      "name": "SAMANTHA SPELTS",
-      "role": "Teacher, Grades: 3",
-      "department": "3rd Grade"
-    },
-    {
-      "name": "ERIC BELGUM",
-      "role": "Teacher, Grades: 4",
-      "department": "4th Grade"
-    },
-    {
-      "name": "CLAUDIA RAMIREZ",
-      "role": "Teacher, Grades: 4",
-      "department": "4th Grade"
-    },
-    {
-      "name": "KIARA SAUTIA",
-      "role": "Teacher, Grades: 4",
-      "department": "4th Grade"
-    },
-    {
-      "name": "AUSTIN WOOD",
-      "role": "Teacher, Grades: 4",
-      "department": "4th Grade"
-    },
-    {
-      "name": "TRACY AUSTIN",
-      "role": "Teacher, Grades: 5",
-      "department": "5th Grade"
-    },
-    {
-      "name": "KRISTEN MOSS",
-      "role": "Teacher, Grades: 5",
-      "department": "5th Grade"
-    },
-    {
-      "name": "MATTHEW SPELTS",
-      "role": "Teacher, Grades: 5",
-      "department": "5th Grade"
-    },
-    {
-      "name": "LAURA TARR",
-      "role": "Teacher, Grades: 5",
-      "department": "5th Grade"
-    }
-  ],
-  "orange-glen": [
-    {
-      "name": "ORANGE GLEN ELEMENTARY SCHOOL OFFICE",
-      "role": "Main Line",
-      "department": "760-432-2487"
-    },
-    {
-      "name": "LISA PITARD",
-      "role": "Principal",
-      "department": ""
-    },
-    {
-      "name": "ERICKA TAYLOR",
-      "role": "Office Manager",
-      "department": ""
-    },
-    {
-      "name": "BLANCA ALVAREZ",
-      "role": "Attendance Clerk",
-      "department": ""
-    },
-    {
-      "name": "JENNY ARELLANO",
-      "role": "Records Clerk",
-      "department": ""
-    },
-    {
-      "name": "JENNIFER OPDYCKE",
-      "role": "Family Liaison",
-      "department": ""
-    },
-    {
-      "name": "ANDREA SIMA",
-      "role": "Community Schools Specialist",
-      "department": ""
-    },
-    {
-      "name": "HAYLEY TOTAH",
-      "role": "School Social Worker",
-      "department": ""
-    },
-    {
-      "name": "KRISTINA MORRIS",
-      "role": "School Psychologist",
-      "department": ""
-    },
-    {
-      "name": "DONNA HARRIS",
-      "role": "Nutrition Manager",
-      "department": ""
-    },
-    {
-      "name": "ROSA LOPEZ",
-      "role": "Teacher, Grades: TK",
-      "department": ""
-    },
-    {
-      "name": "SARAH CASSIDY-KANOA",
-      "role": "Special Education Teacher, Grades: TK",
-      "department": ""
-    },
-    {
-      "name": "ANGELA MADIGAN",
-      "role": "Special Education Teacher, Grades: TK-2",
-      "department": ""
-    },
-    {
-      "name": "MARTHA ALVARADO",
-      "role": "Teacher, Grades: K",
-      "department": ""
-    },
-    {
-      "name": "TIMBERLY DOMENE",
-      "role": "Teacher, Grades: K",
-      "department": ""
-    },
-    {
-      "name": "ANDREA WISCHSTADT",
-      "role": "Teacher, Grades: K",
-      "department": ""
-    },
-    {
-      "name": "RACHEL JONES",
-      "role": "Special Education Teacher, Grades: K - 1",
-      "department": ""
-    },
-    {
-      "name": "BRANDY MORA",
-      "role": "Teacher, Grades: 1",
-      "department": ""
-    },
-    {
-      "name": "KATHRYN PETERS",
-      "role": "Teacher, Grades: 1",
-      "department": ""
-    },
-    {
-      "name": "SIERRA PONCE",
-      "role": "Teacher, Grades: 1",
-      "department": ""
-    }
-  ],
-  "pioneer": [
-    {
-      "name": "PIONEER ELEMENTARY SCHOOL OFFICE",
-      "role": "Main Line",
-      "department": "School Office"
-    },
-    {
-      "name": "ELLYSE JIMENEZ",
-      "role": "Principal",
-      "department": "School Office"
-    },
-    {
-      "name": "AMY COPELAND",
-      "role": "MTSS - Integrated Student Support",
-      "department": "School Office"
-    },
-    {
-      "name": "JUDY DAY",
-      "role": "School Social Worker",
-      "department": "School Office"
-    },
-    {
-      "name": "WENDY MARTINEZ",
-      "role": "School Clerk- Bilingual Attendance",
-      "department": "School Office"
-    },
-    {
-      "name": "KARINA SERNA",
-      "role": "School Clerk - Bilingual Attendance",
-      "department": "School Office"
-    },
-    {
-      "name": "JESSICA TORRES",
-      "role": "School Office Manager - Bilingual",
-      "department": "School Office"
-    },
-    {
-      "name": "CARMEN MENDOZA-FUENTES",
-      "role": "Family Liaison - Bilingual",
-      "department": "School Office"
-    },
-    {
-      "name": "KARINA TAMPA",
-      "role": "Speech Pathologist",
-      "department": ""
-    },
-    {
-      "name": "RIHANA HUGGLER",
-      "role": "Special Education Teacher",
-      "department": "Special Academic Instruction (SAI)"
-    },
-    {
-      "name": "MARTA AVILES",
-      "role": "Preschool Teacher",
-      "department": "Preschool"
-    },
-    {
-      "name": "JOHANNA RIVERA",
-      "role": "Teacher (DLP), Grades: TK",
-      "department": "Transitional Kinder"
-    },
-    {
-      "name": "MEREDITH HAMMOND",
-      "role": "Teacher, Grades: TK",
-      "department": "Transitional Kinder"
-    },
-    {
-      "name": "MAYRA MENDOZA MENDOZA",
-      "role": "Teacher (DLP), Grades: K",
-      "department": "Kindergarten"
-    },
-    {
-      "name": "MAYRA SALAZAR-VILLEGAS",
-      "role": "Teacher (DLP), Grades: K",
-      "department": "Kindergarten"
-    },
-    {
-      "name": "SHARILYN DANIELS",
-      "role": "Teacher, Grades: K",
-      "department": "Kindergarten"
-    },
-    {
-      "name": "CORINA MARTINEZ",
-      "role": "Teacher, Grades: K",
-      "department": "Kindergarten"
-    },
-    {
-      "name": "ALMA BAIRES",
-      "role": "Teacher (DLP), Grades: 1",
-      "department": "1st Grade"
-    },
-    {
-      "name": "MARCELA MARSHALL",
-      "role": "Teacher (DLP), Grades: 1",
-      "department": "1st Grade"
-    },
-    {
-      "name": "CARRIE BROSNAN",
-      "role": "Teacher, Grades: 1",
-      "department": "1st Grade"
-    }
-  ],
-  "reidy-creek": [
-    {
-      "name": "REIDY CREEK ELEMENTARY SCHOOL OFFICE",
-      "role": "Main Line",
-      "department": "760-739-5800"
-    },
-    {
-      "name": "MEGAN LOH",
-      "role": "Principal",
-      "department": "School Office"
-    },
-    {
-      "name": "M. LUPE GOMEZ",
-      "role": "School Office Manager - Bilingual",
-      "department": "School Office"
-    },
-    {
-      "name": "REBECCA MIDDLETON",
-      "role": "School Clerk",
-      "department": "School Office"
-    },
-    {
-      "name": "SARAHI LIBER",
-      "role": "School Clerk",
-      "department": "School Office"
-    },
-    {
-      "name": "YVETTE (MAVIS) KOVACS",
-      "role": "Licensed Vocational Nurse",
-      "department": "School Office"
-    },
-    {
-      "name": "ANNIE PARKER",
-      "role": "School Library Technician",
-      "department": "School Office"
-    },
-    {
-      "name": "YESENIA MARTINEZ",
-      "role": "Family Liaison",
-      "department": "School Office"
-    },
-    {
-      "name": "KELLY SULLIVAN",
-      "role": "Social Worker",
-      "department": "School Office"
-    },
-    {
-      "name": "JESSICA ALBORNOZ BELMONT",
-      "role": "School Psychologist",
-      "department": "School Office"
-    },
-    {
-      "name": "AMANDA ALBURY",
-      "role": "Teacher, Grades: TK",
-      "department": "Transitional Kinder"
-    },
-    {
-      "name": "ASHLEY LEATHERS",
-      "role": "Teacher, Grades: TK",
-      "department": "Transitional Kinder"
-    },
-    {
-      "name": "MARIA SAAVEDRA",
-      "role": "Teacher, Grades: TK",
-      "department": "Transitional Kinder"
-    },
-    {
-      "name": "GINA BALDWIN",
-      "role": "Teacher, Grades: K",
-      "department": "Kindergarten"
-    },
-    {
-      "name": "BETSY PLASCENCIA",
-      "role": "Teacher, Grades: K",
-      "department": "Kindergarten"
-    },
-    {
-      "name": "SUZANNE ROCKETT",
-      "role": "Teacher, Grades: K",
-      "department": "Kindergarten"
-    },
-    {
-      "name": "VANESSA WALSH",
-      "role": "Teacher, Grades: K",
-      "department": "Kindergarten"
-    },
-    {
-      "name": "ALISA CORDOVA",
-      "role": "Teacher, Grades: 1",
-      "department": "1st Grade"
-    },
-    {
-      "name": "SARAH ESCALONA",
-      "role": "Teacher, Grades: 1",
-      "department": "1st Grade"
-    },
-    {
-      "name": "KERRY MOREY",
-      "role": "Teacher, Grades: 1",
-      "department": "1st Grade"
-    }
-  ],
-  "rock-springs": [
-    {
-      "name": "ISELA JEFFERS",
-      "role": "PreSchool Teacher",
-      "department": "Preschool"
-    },
-    {
-      "name": "GRACE CLARKE",
-      "role": "PreSchool Teacher",
-      "department": "Preschool"
-    },
-    {
-      "name": "JIANA TOBEN",
-      "role": "Speech Pathologist",
-      "department": "School Office"
-    },
-    {
-      "name": "JUDITH ARIAS POLLOCK",
-      "role": "Parent Liaision",
-      "department": "School Office"
-    },
-    {
-      "name": "LANGSTON BRENDA",
-      "role": "PE Teacher",
-      "department": "School Office"
-    },
-    {
-      "name": "NGOC-HANH TRAN",
-      "role": "Special Education (SC)",
-      "department": "Separate Class (SC)"
-    },
-    {
-      "name": "ROCK SPRINGS ELEMENTARY SCHOOL OFFICE",
-      "role": "Main Line",
-      "department": "School Office"
-    },
-    {
-      "name": "ELIZABETH RAMIREZ",
-      "role": "Principal",
-      "department": "School Office"
-    },
-    {
-      "name": "SARAH SANTACROCE",
-      "role": "School Social Worker",
-      "department": "School Office"
-    },
-    {
-      "name": "BARBRA DIAS",
-      "role": "Teacher, Grades: TK",
-      "department": "Transitional Kinder"
-    },
-    {
-      "name": "TANYA PORT",
-      "role": "Teacher, Grades: TK",
-      "department": "Transitional Kinder"
-    },
-    {
-      "name": "OLIVIA FRIDELL",
-      "role": "Teacher, Grades: K",
-      "department": "Kindergarten"
-    },
-    {
-      "name": "DANIELLA EIDAM",
-      "role": "Teacher, Grades: K",
-      "department": "Kindergarten"
-    },
-    {
-      "name": "SARAH SANDIGE",
-      "role": "Teacher, Grades: 3",
-      "department": "3rd Grade"
-    },
-    {
-      "name": "JENNIFER ELIAS",
-      "role": "Teacher, Grades: 1",
-      "department": "1st Grade"
-    },
-    {
-      "name": "RENEE GOULART",
-      "role": "Teacher, Grades: 1",
-      "department": "1st Grade"
-    },
-    {
-      "name": "LORENA REYNOSO",
-      "role": "Teacher, Grades: 1",
-      "department": "1st Grade"
-    },
-    {
-      "name": "LAURA ANDREWS",
-      "role": "Teacher, Grades: 2",
-      "department": "2nd Grade"
-    },
-    {
-      "name": "AARON HORSTMAN",
-      "role": "Teacher, Grades: 2",
-      "department": "2nd Grade"
-    },
-    {
-      "name": "KRISTIN PETERS",
-      "role": "Teacher, Grades: 2",
-      "department": "2nd Grade"
-    }
-  ],
-  "rose": [
-    {
-      "name": "ROSE ELEMENTARY SCHOOL OFFICE",
-      "role": "Main Line",
-      "department": "School Office"
-    },
-    {
-      "name": "BRYAN ACCURSO",
-      "role": "Teacher, PE",
-      "department": "School Office"
-    },
-    {
-      "name": "MARTHA AGUINAGA",
-      "role": "Nutrition Staff",
-      "department": ""
-    },
-    {
-      "name": "TATIANA ALEJANDRE",
-      "role": "Bilingual Clerk",
-      "department": ""
-    },
-    {
-      "name": "GEORGINA ALLARDYCE",
-      "role": "PreSchool Paraeducator",
-      "department": ""
-    },
-    {
-      "name": "SHAWNDA ALLEN",
-      "role": "Teacher, Grades: 5",
-      "department": "5th Grade"
-    },
-    {
-      "name": "KATHLEEN ALLISON",
-      "role": "Teacher, Grades: 4",
-      "department": "4th Grade"
-    },
-    {
-      "name": "ESMERALDA ARMENTA",
-      "role": "Noon-Time Supervisor",
-      "department": ""
-    },
-    {
-      "name": "CARISSA AUNG",
-      "role": "Occupational Therapist",
-      "department": ""
-    },
-    {
-      "name": "KATIE BROOME",
-      "role": "Teacher, Grades: K",
-      "department": "Kindergarten"
-    },
-    {
-      "name": "ALEEZAH BUTLER",
-      "role": "School Psychologist",
-      "department": ""
-    },
-    {
-      "name": "ROSALEE CALDERON",
-      "role": "Teacher, Grades: K",
-      "department": "Kindergarten"
-    },
-    {
-      "name": "LAURA CARDONA",
-      "role": "Teacher, Grades: 1",
-      "department": "1st Grade"
-    },
-    {
-      "name": "GUADALUPE CASTANEDA",
-      "role": "Teacher, Grades: TK",
-      "department": "Transitional Kinder"
-    },
-    {
-      "name": "MARCY CLOUD",
-      "role": "PreSchool Teacher",
-      "department": "Preschool"
-    },
-    {
-      "name": "KATHERINE CORSON",
-      "role": "SLP",
-      "department": ""
-    },
-    {
-      "name": "CARRIE COX",
-      "role": "Teacher, Grades: 5",
-      "department": "5th Grade"
-    },
-    {
-      "name": "MARY CUNNINGHAM",
-      "role": "Physical Education Rover",
-      "department": ""
-    },
-    {
-      "name": "DAVID DANNENHOLD",
-      "role": "Adaptive P.E.",
-      "department": ""
-    },
-    {
-      "name": "VALORIE DAVINROY",
-      "role": "PreSchool SLP",
-      "department": ""
-    }
-  ],
-  "quantum-academy": [
-    {
-      "name": "JEREMY LYCHE",
-      "role": "Principal",
-      "department": "School Office"
-    },
-    {
-      "name": "QUANTUM ACADEMY OFFICE",
-      "role": "Main Line",
-      "department": "School Office"
-    },
-    {
-      "name": "CRISTAL MEYER",
-      "role": "School Office Manager - Bilingual",
-      "department": "School Office"
-    },
-    {
-      "name": "ARACELY VASQUEZ",
-      "role": "Clerk",
-      "department": "School Office"
-    },
-    {
-      "name": "LEILANI SANCHEZ",
-      "role": "Licensed Vocational Nurse",
-      "department": "School Office"
-    },
-    {
-      "name": "DESSALLY FLORES",
-      "role": "Family Liaison - Bilingual",
-      "department": "School Office"
-    },
-    {
-      "name": "RAUL FLORES",
-      "role": "Social Worker",
-      "department": ""
-    },
-    {
-      "name": "DEBBIE ELLIOTT",
-      "role": "Teacher, Grades: 4",
-      "department": "4th Grade"
-    },
-    {
-      "name": "EVAN WARD",
-      "role": "Teacher, Grades: 4",
-      "department": "4th Grade"
-    },
-    {
-      "name": "COLIN HANEL",
-      "role": "Teacher, Grades: 6",
-      "department": "6th Grade"
-    },
-    {
-      "name": "JENNIFER MOON",
-      "role": "Teacher, Grades: 6",
-      "department": "6th Grade"
-    },
-    {
-      "name": "JOSEPH BENSON",
-      "role": "Teacher, Grades: 5",
-      "department": "5th Grade"
-    },
-    {
-      "name": "VANESSA MIRAMONTES",
-      "role": "Teacher, Grades: 5",
-      "department": "5th Grade"
-    },
-    {
-      "name": "AMY MURPHY",
-      "role": "Teacher, Grades: 7",
-      "department": "7th Grade"
-    },
-    {
-      "name": "ZOE CARPENTER",
-      "role": "Teacher, Grades: 7 and 8 Science",
-      "department": ""
-    },
-    {
-      "name": "REBECCA HUDGINS",
-      "role": "Teacher, Grades: 7 and 8 Grade Math",
-      "department": ""
-    },
-    {
-      "name": "GREGORY GOMBERT",
-      "role": "Teacher, Grades: 8",
-      "department": "8th Grade"
-    },
-    {
-      "name": "ADRIANA CELIS",
-      "role": "Paraeducator",
-      "department": "Special Academic Instruction (SAI)"
-    },
-    {
-      "name": "ELIZABETH JARQUIN RAMIREZ",
-      "role": "Paraeducator",
-      "department": "Special Academic Instruction (SAI)"
-    },
-    {
-      "name": "MICHELLE CRANDALL",
-      "role": "Paraeducator",
-      "department": "Special Academic Instruction (SAI)"
-    }
-  ],
-  "bear-valley": [
-    {
-      "name": "LANA ALBERTSON",
-      "role": "Teacher, Science",
-      "department": "7th Grade"
-    },
-    {
-      "name": "LARRY ALLISON",
-      "role": "Teacher, Math",
-      "department": "8th Grade"
-    },
-    {
-      "name": "KIM ALMENDARIZ",
-      "role": "Teacher, SAI",
-      "department": "8th Grade"
-    },
-    {
-      "name": "SAM AMGAD",
-      "role": "Special Education Para Educator",
-      "department": "samgad@eusd.org"
-    },
-    {
-      "name": "ROXANNE APODACA",
-      "role": "Special Education Teacher",
-      "department": "Special Academic Instruction (SAI)"
-    },
-    {
-      "name": "CARISSA AUNG",
-      "role": "Occupational Therapist",
-      "department": "School Office"
-    },
-    {
-      "name": "STEPHANIE BACKOWSKI",
-      "role": "Teacher, English Language Arts",
-      "department": "8th Grade"
-    },
-    {
-      "name": "RAQUEL BAÑUELOS",
-      "role": "Special Education Para Educator",
-      "department": "rbanuelos@eusd.org"
-    },
-    {
-      "name": "TYLER BARRON",
-      "role": "Para Educator TREC",
-      "department": "Intervention Teachers"
-    },
-    {
-      "name": "JOHN BASTAOUROUS",
-      "role": "Noon Time Supervisor",
-      "department": "jbastaourous@eusd.org"
-    },
-    {
-      "name": "RASHA BEKHIT",
-      "role": "School Clerk-Front Office",
-      "department": "School Office"
-    },
-    {
-      "name": "CHRISTY BLAKE",
-      "role": "Teacher, Math/Science",
-      "department": "6th Grade"
-    },
-    {
-      "name": "MARY JO BLAZE",
-      "role": "TREC",
-      "department": "Intervention Teachers"
-    },
-    {
-      "name": "JENNIFER BOAZ",
-      "role": "AVID/Yearbook, Grades 7-8",
-      "department": "8th Grade"
-    },
-    {
-      "name": "TANNER BOLIN",
-      "role": "Special Education Teacher",
-      "department": "Special Academic Instruction (SAI)"
-    },
-    {
-      "name": "MARK BOLT",
-      "role": "Teacher, Science, Grades 6,8",
-      "department": "8th Grade"
-    },
-    {
-      "name": "DARA BOUKNIGHT",
-      "role": "Teacher, English Language Arts",
-      "department": "7th Grade"
-    },
-    {
-      "name": "NICOLE BRAVO",
-      "role": "DHH Interpreter",
-      "department": "Deaf / Hard of Hearing (DHH)"
-    },
-    {
-      "name": "DARIN BRITO",
-      "role": "Cafeteria Manager",
-      "department": "School Office"
-    },
-    {
-      "name": "KELLEY BROOKS",
-      "role": "DHH Interpreter",
-      "department": "Deaf / Hard of Hearing (DHH)"
-    }
-  ],
-  "del-dios": [
-    {
-      "name": "KIRSTEN BEDLEY",
-      "role": "SEAS Social Worker",
-      "department": ""
-    },
-    {
-      "name": "KEVIN ABREU",
-      "role": "School Computer Technician , Information Technology",
-      "department": ""
-    },
-    {
-      "name": "DANTE TAITANO",
-      "role": "School Psychologist - SEAS",
-      "department": ""
-    },
-    {
-      "name": "URIEL LARA",
-      "role": "Noon Time Supervisor",
-      "department": ""
-    },
-    {
-      "name": "ARLEN PEREZ",
-      "role": "Noon Time Supervisor",
-      "department": ""
-    },
-    {
-      "name": "ANTHONY VILLASENOR",
-      "role": "Noon Time Supervisor",
-      "department": ""
-    },
-    {
-      "name": "BRIAN CORDERO MARTINEZ",
-      "role": "Noon Time Supervisor",
-      "department": ""
-    },
-    {
-      "name": "RENEE RENTERIA",
-      "role": "Noon Time Supervisor",
-      "department": ""
-    },
-    {
-      "name": "FARSHID HOSHYAR",
-      "role": "Paraeducator",
-      "department": ""
-    },
-    {
-      "name": "KRYSTAL ROBERTSON",
-      "role": "Paraeducator",
-      "department": ""
-    },
-    {
-      "name": "DAISY TORRES",
-      "role": "Paraeducator",
-      "department": ""
-    },
-    {
-      "name": "CHRISTOPHER SANTAMARIA",
-      "role": "Paraeducator",
-      "department": ""
-    },
-    {
-      "name": "FRANCHESKA ESPARA",
-      "role": "Paraeducator - SEAS",
-      "department": ""
-    },
-    {
-      "name": "VANESA FELIX",
-      "role": "Noon Time Supervisor",
-      "department": ""
-    },
-    {
-      "name": "JANICE BANDERAS",
-      "role": "Paraeducator",
-      "department": ""
-    },
-    {
-      "name": "JOANNE RIGGS",
-      "role": "Teacher (TREC), Grades: 6, 7, 8",
-      "department": ""
-    },
-    {
-      "name": "MIRIAM GODINEZ",
-      "role": "Noon Time Supervisor",
-      "department": ""
-    },
-    {
-      "name": "ARTURO VELASCO",
-      "role": "Teacher",
-      "department": ""
-    },
-    {
-      "name": "PETER FISHER",
-      "role": "Teacher",
-      "department": ""
-    },
-    {
-      "name": "ANTHONY KOLLER",
-      "role": "Teacher",
-      "department": ""
-    }
-  ],
-  "hidden-valley": [
-    {
-      "name": "KARINA ABELA",
-      "role": "School Psychologist",
-      "department": "Special Academic Instruction (SAI)"
-    },
-    {
-      "name": "YOLANDA ALVAREZ",
-      "role": "Front Desk Clerk",
-      "department": "School Office"
-    },
-    {
-      "name": "WHITNEY BARKER",
-      "role": "Cafeteria Manager",
-      "department": "wbarker@eusd.org"
-    },
-    {
-      "name": "NICHOLE BOLGER",
-      "role": "Math/Science, 6th, 7th",
-      "department": "7th Grade"
-    },
-    {
-      "name": "KATIE BRAMBLE",
-      "role": "School Social Worker",
-      "department": "School Office"
-    },
-    {
-      "name": "JENNIFER BROGAN",
-      "role": "Counselor",
-      "department": "School Office"
-    },
-    {
-      "name": "GREGORY BURLISON",
-      "role": "PE, 6th, 7th",
-      "department": "6th Grade"
-    },
-    {
-      "name": "LISA BYE",
-      "role": "TREC, 7th, 8th",
-      "department": "7th Grade"
-    },
-    {
-      "name": "SAMUEL CHUNG",
-      "role": "Math, 6th, 7th",
-      "department": "6th Grade"
-    },
-    {
-      "name": "MORGAN CONROY",
-      "role": "LA/Reading, 7th",
-      "department": "7th Grade"
-    },
-    {
-      "name": "CORY CUNNINGHAM",
-      "role": "LA/Reading, 6th",
-      "department": "6th Grade"
-    },
-    {
-      "name": "ROSSELLA DUNCAN",
-      "role": "Special Ed, Paraeducator",
-      "department": "rduncan@eusd.org"
-    },
-    {
-      "name": "CHRISTOPHER EINSPAHR",
-      "role": "Science, 8th",
-      "department": "8th Grade"
-    },
-    {
-      "name": "STEVEN ELY",
-      "role": "PE, 7th, 8th",
-      "department": "7th Grade"
-    },
-    {
-      "name": "ANGELICA ESQUIVEL",
-      "role": "Para-educator",
-      "department": "Special Academic Instruction (SAI)"
-    },
-    {
-      "name": "TIMOTHY FREELAND",
-      "role": "ASB/Yearbook/Exploratory",
-      "department": "7th Grade"
-    },
-    {
-      "name": "RAMONA GARCIA",
-      "role": "LA/Reading, 6th ,7th, 8th",
-      "department": "7th Grade"
-    },
-    {
-      "name": "VIVIAN GARCIA",
-      "role": "Attendance Clerk",
-      "department": "School Office"
-    },
-    {
-      "name": "DANETTE GATES",
-      "role": "6th Grade",
-      "department": "Special Academic Instruction (SAI)"
-    },
-    {
-      "name": "CATARINA HERNANDEZ",
-      "role": "SS/Science, 6th",
-      "department": "6th Grade"
-    }
-  ],
-  "mission": [
-    {
-      "name": "MISSION MIDDLE SCHOOL OFFICE",
-      "role": "Main Line",
-      "department": "School Office"
-    },
-    {
-      "name": "JASON HOFF",
-      "role": "Principal",
-      "department": "School Office"
-    },
-    {
-      "name": "VICKIE CARROLL",
-      "role": "Assistant Principal",
-      "department": "School Office"
-    },
-    {
-      "name": "JOSIE HORTON",
-      "role": "Assistant Principal",
-      "department": "School Office"
-    },
-    {
-      "name": "MIREYA BARAJAS",
-      "role": "School Office Manager",
-      "department": "School Office"
-    },
-    {
-      "name": "ERANDI SALGADO LOPEZ",
-      "role": "School Records Clerk - Bilingual",
-      "department": "School Office"
-    },
-    {
-      "name": "ELIZABETH SIQUEIRA",
-      "role": "School Clerk - Bilingual",
-      "department": "School Office"
-    },
-    {
-      "name": "CARIDAD TUBA",
-      "role": "School Registrar",
-      "department": "School Office"
-    },
-    {
-      "name": "VERONICA BLANCO",
-      "role": "Licensed Vocational Nurse",
-      "department": "School Office"
-    },
-    {
-      "name": "LORI ABBATE",
-      "role": "Math",
-      "department": "8th Grade"
-    },
-    {
-      "name": "MARY ADAMS",
-      "role": "Social Studies",
-      "department": "6th Grade"
-    },
-    {
-      "name": "JUSTIN ARMBRUSTER",
-      "role": "Social Studies / Science",
-      "department": "7th Grade"
-    },
-    {
-      "name": "RACHEL BARNES",
-      "role": "Social Worker",
-      "department": "School Office"
-    },
-    {
-      "name": "TYLER BELLIS",
-      "role": "ELA",
-      "department": "8th Grade"
-    },
-    {
-      "name": "COLBY BETANCOURT",
-      "role": "ELA",
-      "department": "6th Grade"
-    },
-    {
-      "name": "RACHEL BRAWDY",
-      "role": "PE",
-      "department": "Send Message"
-    },
-    {
-      "name": "MONICA CAMACHO-NAVARRO",
-      "role": "Noon Time Supervisor",
-      "department": ""
-    },
-    {
-      "name": "DIANA CAMP",
-      "role": "Dual Language Program",
-      "department": "8th Grade"
-    },
-    {
-      "name": "MICHAEL CASTRO",
-      "role": "Math",
-      "department": "6th Grade"
-    },
-    {
-      "name": "LILY CHAVEZ",
-      "role": "School Counselor",
-      "department": "School Office"
-    }
-  ],
-  "rincon": [
-    {
-      "name": "CHRISTOPHER ADAMS",
-      "role": "Digital Media / Video Production",
-      "department": "https://sites.google.com/eusd.org/cadams/home"
-    },
-    {
-      "name": "PATRICIA ANDERSON",
-      "role": "Teacher, Social Studies",
-      "department": "6th Grade"
-    },
-    {
-      "name": "JOVANA ARELLANO",
-      "role": "Family Liaison - Bilingual",
-      "department": "School Office"
-    },
-    {
-      "name": "ABBY AVILA",
-      "role": "Noon Supervisors",
-      "department": ""
-    },
-    {
-      "name": "KATHLEEN BARLOW",
-      "role": "Teacher, Band / Chorus",
-      "department": "https://sites.google.com/eusd.org/rinconmiddleschoolmusicdepartm/home"
-    },
-    {
-      "name": "IDA BATISTE",
-      "role": "Social Worker",
-      "department": "School Office"
-    },
-    {
-      "name": "SELENE BAZA",
-      "role": "Noon Time supervisor",
-      "department": ""
-    },
-    {
-      "name": "ELVI BENITEZ-MACKINTOSH",
-      "role": "Teacher ELA/Electives",
-      "department": "6th Grade"
-    },
-    {
-      "name": "MICHAEL BIRD",
-      "role": "Special Education Teacher (SAI/SC/SEAS)",
-      "department": "Special Academic Instruction (SAI)"
-    },
-    {
-      "name": "KALLAN CAMPA",
-      "role": "Teacher - PE 6,7,8",
-      "department": "8th Grade"
-    },
-    {
-      "name": "VANESSA CARVAJAL",
-      "role": "Assistant Principal",
-      "department": "School Office"
-    },
-    {
-      "name": "CECILIA CATALAN",
-      "role": "Special Education Teacher (SAI), Grades: 6, 7, 8",
-      "department": "Special Academic Instruction (SAI)"
-    },
-    {
-      "name": "ALEC CHARBONNEAU",
-      "role": "Teacher, Language Arts / Social Studies / ASB",
-      "department": "8th Grade"
-    },
-    {
-      "name": "JESSICA CHAVEZ",
-      "role": "Noon Time Supervisor",
-      "department": ""
-    },
-    {
-      "name": "MARY CLEMONS",
-      "role": "Speech Pathologist - DHH",
-      "department": "Deaf / Hard of Hearing (DHH)"
-    },
-    {
-      "name": "MORGAN CONROY",
-      "role": "Assistant Principal",
-      "department": "7th Grade"
-    },
-    {
-      "name": "HOLLY CONWAY",
-      "role": "Paraeducator",
-      "department": ""
-    },
-    {
-      "name": "TARA CORKRAN",
-      "role": "Itinerant Teacher DHH",
-      "department": "Deaf / Hard of Hearing (DHH)"
-    },
-    {
-      "name": "ELIZABETH COVARRUBIAS",
-      "role": "Teacher, SEI / English Language Development (ELD)",
-      "department": ""
-    },
-    {
-      "name": "ITZEL CRUZ",
-      "role": "Paraeducator",
-      "department": ""
-    }
-  ],
-  "home-education": [
-    {
-      "name": "HOME EDUCATION PROGRAM OFFICE",
-      "role": "Main Line",
-      "department": "School Office"
-    },
-    {
-      "name": "ANABEL ALTARES",
-      "role": "School Clerk",
-      "department": "School Office"
-    },
-    {
-      "name": "AMANDA WILCOX",
-      "role": "Home Education Teacher",
-      "department": "School Office"
-    }
-  ],
-  "limitless-learning-academy": [
-    {
-      "name": "STEPHANIE HARMON",
-      "role": "Teacher 2nd and 3rd Grade",
-      "department": "3rd Grade"
-    },
-    {
-      "name": "NILA CORTES",
-      "role": "Custodian",
-      "department": ""
-    },
-    {
-      "name": "NICOLETTE TIMMONS",
-      "role": "SAI K-8",
-      "department": "Special Academic Instruction (SAI)"
-    },
-    {
-      "name": "ARTURO MELGOZA",
-      "role": "Paraeducator",
-      "department": ""
-    },
-    {
-      "name": "LIMITLESS LEARNING ACADEMY OFFICE",
-      "role": "Main Line",
-      "department": "School Office"
-    },
-    {
-      "name": "MICHAEL REICHLE",
-      "role": "Principal",
-      "department": "School Office"
-    },
-    {
-      "name": "ANABEL ALTARES",
-      "role": "School Clerk",
-      "department": "School Office"
-    },
-    {
-      "name": "KEVIN ABREU",
-      "role": "Computer Support Technician, Information Technology",
-      "department": "School Office"
-    },
-    {
-      "name": "AMANDA WILCOX",
-      "role": "Home Education Teacher",
-      "department": "x 10562"
-    },
-    {
-      "name": "CHRISTY STRINGFIELD",
-      "role": "Teacher, 4th and 5th Grade",
-      "department": "5th Grade"
-    },
-    {
-      "name": "RACHAEL BOLAS",
-      "role": "Teacher, ELA/SS, Grades: 6, 7 & 8",
-      "department": ""
-    },
-    {
-      "name": "SABRINA PERFECT",
-      "role": "Teacher, Math/Sci., Grades: 6, 7 & 8",
-      "department": "Mrs. Perfect's Class Website"
-    }
-  ]
+  "miller": [],
+  "north-broadway": [],
+  "oak-hill": [],
+  "orange-glen": [],
+  "pioneer": [],
+  "reidy-creek": [],
+  "rock-springs": [],
+  "rose": [],
+  "quantum-academy": [],
+  "bear-valley": [],
+  "del-dios": [],
+  "hidden-valley": [],
+  "mission": [],
+  "rincon": [],
+  "home-education": [],
+  "limitless-learning-academy": []
 }
